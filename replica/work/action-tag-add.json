@@ -1,0 +1,11 @@
+{
+ "id":"tag-add-1","candidate_id":"tag-add-normal","from_capture":"item-edit-1-after","channel":"ax",
+ "precondition":"合成期刊条目详情中 0 个标签及添加入口存在，按钮虽在当前视口下方但暴露 AXPress",
+ "expected_result":"条目出现 local-testing 标签，标签计数更新",
+ "operations":[
+  {"verb":"perform","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Button[0 个标签] > Button[添加]","action":"AXPress"},
+  {"verb":"type","text":"local-testing"},
+  {"verb":"key","keys":"return"}
+ ],
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

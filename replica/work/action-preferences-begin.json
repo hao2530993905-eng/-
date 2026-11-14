@@ -1,0 +1,7 @@
+{
+ "id":"preferences-review-1","candidate_id":"preferences-review","from_capture":"library-export-1-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click/pressKey",
+ "operation":"打开 Zotero 设置，逐页检查主要本地设置分类，然后关闭而不修改账号或同步",
+ "precondition":"当前为隔离文库；只读取设置页面，所有更改保持默认",
+ "expected_result":"设置窗口与主要分类可访问，能关闭返回文库且不产生业务数据变化"
+}

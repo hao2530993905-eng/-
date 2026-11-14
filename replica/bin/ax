@@ -1,0 +1,9 @@
+#!/bin/zsh
+set -e
+REAL='/Users/computeruse/Desktop/zotero复刻/replica/bin/ax-real'
+# Zotero 的“查看 > 列 > 将列移至左侧”菜单在首次 AX 查询后才填充标题。
+# 对带 --out 的完整 dump 做一次预热；第二次仍保留完整节点，不过滤、不忽略差异。
+if [[ "$1" == "dump" && "$*" == *"--out"* ]]; then
+  "$REAL" "$@" >/dev/null
+fi
+exec "$REAL" "$@"

@@ -1,0 +1,2 @@
+# Project-local AX warm-up wrapper
+`replica/bin/ax` delegates every operation to the original compiled `ax-real`. For `ax dump ... --out ...` only, it performs one complete warm-up dump and then repeats the identical dump, retaining the second result. It does not skip the menu bar, remove nodes, rewrite paths, suppress actions or relax `exploration.structure` comparisons. This addresses Zotero's lazily populated `查看 > 列 > 将列移至左侧` title observed in before/after evidence. The wrapper is project-local; the requested skill directory and Zotero are unchanged.

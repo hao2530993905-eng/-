@@ -1,0 +1,1375 @@
+{
+  "report": "/Users/computeruse/Desktop/zotero复刻/replica/reports/report.html",
+  "report_json": "/Users/computeruse/Desktop/zotero复刻/replica/reports/report.json",
+  "agent_guide": "/Users/computeruse/Desktop/zotero复刻/replica/agent-guide.md",
+  "warnings": [
+    "等待用户回复人工节点：scope-1；保存现场并结束本轮",
+    "人工节点等待用户明确回复；保存受影响工作的现场",
+    "实现前必须完成用户范围确认",
+    "主界面与导航尚未通过用户体验",
+    "最终人工体验前须完成当前构建的独立验收",
+    "最终交付须有独立验收后用户实际体验当前构建的明确同意",
+    "Codex 尚未提供本应用的人工体验清单，请补充具体操作和预期结果。",
+    "P0 核心工作流尚未全部完成；当前不能完成交付。"
+  ],
+  "summary": {
+    "project": "/Users/computeruse/Desktop/zotero复刻",
+    "phase": "preflight",
+    "original": {
+      "path": "/Applications/Zotero.app",
+      "bundle_id": "org.zotero.zotero",
+      "name": "Zotero",
+      "version": "10.0.6",
+      "build": "10.0.6",
+      "ui_region": "English",
+      "architecture": "arm64",
+      "executable_sha256": "7daa49fec5d27bdafcf49d2f425b21cba684e59718c8e5399679f6353025b116",
+      "macos": {
+        "version": "26.4",
+        "build": "25E246"
+      }
+    },
+    "replica": {
+      "name": "Zotero-replicate",
+      "bundle_id": "org.zotero.zotero.replicate",
+      "app_path": null
+    },
+    "analysis": {
+      "project_status": "complete"
+    },
+    "scope": {
+      "schema_version": 1,
+      "status": "pending",
+      "summary": "主要功能与常用配套，等待用户确认范围",
+      "included_workflows": [],
+      "included_features": [],
+      "omitted": [
+        {
+          "id": "integration",
+          "kind": "feature",
+          "title": "浏览器与文字处理集成（首版建议省略）",
+          "reason": "依赖浏览器扩展、Word/LibreOffice 加载项及本地 HTTP 服务；设置页确认两种文字处理加载项均未安装，本轮未授权安装或控制外部应用",
+          "impact": "B 首版不能保存浏览器网页、与 Word/LibreOffice 通讯或提供连接器 API；本地文库、导入、PDF 阅读和导出不受影响",
+          "evidence": [
+            "zotero-package-inventory",
+            "explore-runtime-b0e6c3b1b6a54b2380a6847587069b51"
+          ],
+          "created_at": "2026-11-13T05:39:38.084157+00:00"
+        },
+        {
+          "id": "plugins-developer",
+          "kind": "feature",
+          "title": "插件与开发者工具（首版建议省略）",
+          "reason": "属于扩展和诊断能力，不是本地文献管理主流程的必要依赖；未安装或执行第三方插件",
+          "impact": "不兼容 Zotero 插件，也不提供开发者调试入口；核心本地工作流不受影响",
+          "evidence": [
+            "zotero-package-inventory"
+          ],
+          "created_at": "2026-11-13T05:39:38.285186+00:00"
+        },
+        {
+          "id": "automation",
+          "kind": "feature",
+          "title": "AppleScript、URL Scheme 与 RTF 扫描（首版建议省略）",
+          "reason": "涉及系统自动化和额外文档处理面，需独立安全与格式验证；当前仅有包声明和菜单入口证据",
+          "impact": "首版不提供 zotero://、AppleScript 或 RTF 扫描自动化；GUI 本地功能可独立使用",
+          "evidence": [
+            "zotero-package-inventory"
+          ],
+          "created_at": "2026-11-13T05:39:38.452339+00:00"
+        },
+        {
+          "id": "feeds",
+          "kind": "feature",
+          "title": "在线文献订阅（首版建议省略）",
+          "reason": "依赖网络 feeds 与在线更新，本轮仅允许隔离本地探索，未验证服务行为和错误分支",
+          "impact": "不能通过 RSS/OPML 跟踪在线更新；本地 RIS/BibTeX 导入和文库管理不受影响",
+          "evidence": [
+            "zotero-package-inventory",
+            "desktop-permission"
+          ],
+          "created_at": "2026-11-13T05:39:38.658828+00:00"
+        }
+      ],
+      "confirmation": null
+    },
+    "collaboration": {
+      "schema_version": 6,
+      "requests": [
+        {
+          "id": "scope-1",
+          "kind": "scope",
+          "presentation": {
+            "quote": "## Zotero 10.0.6 探索结果与建议复刻范围\n\n### 已实际走通\n- **创建与整理**：新建分类、手动创建期刊并编辑标题/作者/出版物/日期、独立笔记、标签显示与筛选。\n- **导入**：RIS 默认新建分类，标题、两位作者、期刊、卷期页码、DOI、摘要和关键词均正确。\n- **附件与阅读**：PDF 子附件复制、自动重命名和索引；完整阅读器内查找文本，以 Control+Option+1 创建高亮并添加评论。\n- **搜索与输出**：快速搜索、标题条件高级搜索、清空恢复；RIS/UTF-8 导出两条正确期刊记录。\n- **维护与持久化**：设置分类、重复条目/空回收站只读视图；正常退出后的 SQLite 快照健康，重开后条目、笔记、PDF 高亮和评论保持。\n\n### 建议纳入首版实现（等待你确认）\n1. **创建、导入并整理文库**：item-entry、collections-tags、notes、import。\n2. **附件阅读与注释**：attachments、reader-annotate。\n3. **检索、引用与导出**：search、export-citation、styles。\n4. **文库维护与偏好**：duplicates-trash、preferences-layout。\n5. **同步与协作（保留但受阻）**：sync-groups；需专用测试账号和明确联网授权，当前未登录、未同步。\n\n### 建议首版省略及影响\n- **浏览器与 Word/LibreOffice 集成**：不保存网页或与文字处理软件通讯；本地导入、阅读和导出不受影响。\n- **插件与开发者工具**：不兼容第三方插件，不提供调试入口。\n- **AppleScript、zotero:// 与 RTF 扫描**：不提供系统自动化；GUI 可独立使用。\n- **在线订阅 feeds**：不支持 RSS/OPML 在线更新；本地文献导入不受影响。\n\n### 限制与未决事项\n- 运行中主库使用 SQLite EXCLUSIVE 锁，逐动作在线数据库差分仍受阻；退出状态快照已通过完整性及外键检查。\n- 截图均已保存，但当前模型不能直接读取图像，像素级视觉复核需支持图像的 Agent 或人工完成。\n- 四个历史状态缺少逐状态恢复路径；已从后继状态重建全新空文库并验证恢复。\n- 标签添加已看到结果，但两条正式动作轨迹被动态编辑器中断；取消、错误、边界、永久删除、复杂注释及外部服务仍需分批补查。\n- REA 因本机 Node 补丁版本不满足要求未运行；已使用本地包/JavaScript/AX 证据，未做原生反编译。\n\n探索摘要：`/Users/computeruse/Desktop/zotero复刻/replica/exploration/functions.md`。\n状态与动作：`/Users/computeruse/Desktop/zotero复刻/replica/exploration/ui-states.md`。\n机器状态：`/Users/computeruse/Desktop/zotero复刻/replica/features.json`、`exploration.json`、`evidence.json`。\n\n**请回复“确认范围”以按上述清单进入后续实现，或指出要增加/省略/继续补查的项目。当前仅完成探索，尚未构建复刻版。**",
+            "source": "助手本轮范围确认展示",
+            "evidence": [
+              "scope-presentation-md"
+            ]
+          },
+          "workflow_ids": [
+            "collect-organize",
+            "read-annotate",
+            "find-export",
+            "maintain",
+            "sync-collaborate"
+          ],
+          "contract": {
+            "purpose": "让用户确认 Zotero 首版复刻的完整工作流、功能、省略项和已知限制，避免把探索结果当作实现授权",
+            "input": "Zotero 10.0.6 隔离实例的实际本地工作流、退出状态数据库快照、重开持久化及范围清单",
+            "capture": "仅保存本次展示和用户后续文字回复；不持续观察桌面，不开始构建",
+            "reply_required": "回复“确认范围”，或指出需要增加、省略、继续补查的项目；账号同步保持阻塞直至另有明确授权",
+            "next_step": "收到明确范围决定后登记回复；若确认则按清单进入主界面与导航批次，否则继续补查或调整完整清单"
+          },
+          "created_at": "2026-11-13T05:41:18.127528+00:00",
+          "response": null,
+          "feedback_page": null,
+          "scope_snapshot": {
+            "scope": {
+              "schema_version": 1,
+              "summary": "Zotero 本地核心与常用配套，保留同步阻塞项，首版省略四类扩展能力",
+              "included_workflows": [
+                "collect-organize",
+                "read-annotate",
+                "find-export",
+                "maintain",
+                "sync-collaborate"
+              ],
+              "included_features": [
+                "item-entry",
+                "collections-tags",
+                "notes",
+                "import",
+                "attachments",
+                "reader-annotate",
+                "search",
+                "export-citation",
+                "styles",
+                "duplicates-trash",
+                "preferences-layout",
+                "sync-groups"
+              ]
+            },
+            "exclusions": [],
+            "omitted": [
+              {
+                "id": "integration",
+                "kind": "feature",
+                "title": "浏览器与文字处理集成（首版建议省略）",
+                "reason": "依赖浏览器扩展、Word/LibreOffice 加载项及本地 HTTP 服务；设置页确认两种文字处理加载项均未安装，本轮未授权安装或控制外部应用",
+                "impact": "B 首版不能保存浏览器网页、与 Word/LibreOffice 通讯或提供连接器 API；本地文库、导入、PDF 阅读和导出不受影响",
+                "evidence": [
+                  "zotero-package-inventory",
+                  "explore-runtime-b0e6c3b1b6a54b2380a6847587069b51"
+                ]
+              },
+              {
+                "id": "plugins-developer",
+                "kind": "feature",
+                "title": "插件与开发者工具（首版建议省略）",
+                "reason": "属于扩展和诊断能力，不是本地文献管理主流程的必要依赖；未安装或执行第三方插件",
+                "impact": "不兼容 Zotero 插件，也不提供开发者调试入口；核心本地工作流不受影响",
+                "evidence": [
+                  "zotero-package-inventory"
+                ]
+              },
+              {
+                "id": "automation",
+                "kind": "feature",
+                "title": "AppleScript、URL Scheme 与 RTF 扫描（首版建议省略）",
+                "reason": "涉及系统自动化和额外文档处理面，需独立安全与格式验证；当前仅有包声明和菜单入口证据",
+                "impact": "首版不提供 zotero://、AppleScript 或 RTF 扫描自动化；GUI 本地功能可独立使用",
+                "evidence": [
+                  "zotero-package-inventory"
+                ]
+              },
+              {
+                "id": "feeds",
+                "kind": "feature",
+                "title": "在线文献订阅（首版建议省略）",
+                "reason": "依赖网络 feeds 与在线更新，本轮仅允许隔离本地探索，未验证服务行为和错误分支",
+                "impact": "不能通过 RSS/OPML 跟踪在线更新；本地 RIS/BibTeX 导入和文库管理不受影响",
+                "evidence": [
+                  "zotero-package-inventory",
+                  "desktop-permission"
+                ]
+              }
+            ],
+            "workflows": {
+              "collect-organize": {
+                "title": "创建、导入并整理文库",
+                "goal": "从文献输入得到可检索、可组织的本地文库",
+                "entries": [
+                  "文件 > 新建条目",
+                  "文件 > 导入…",
+                  "工具栏新建分类"
+                ],
+                "steps": [
+                  "新建或导入条目",
+                  "编辑元数据",
+                  "组织分类和标签",
+                  "添加笔记"
+                ],
+                "expected_result": "条目及其元数据、分类、标签和笔记在界面中可见并保持"
+              },
+              "read-annotate": {
+                "title": "附件阅读与注释",
+                "goal": "附加并阅读本地 PDF，形成注释",
+                "entries": [
+                  "文件 > 添加附件",
+                  "条目附件",
+                  "阅读器"
+                ],
+                "steps": [
+                  "添加 PDF 附件",
+                  "打开阅读器",
+                  "创建高亮或笔记",
+                  "返回文库"
+                ],
+                "expected_result": "PDF 可阅读，注释和附件状态保持"
+              },
+              "find-export": {
+                "title": "检索、引用与导出",
+                "goal": "找到目标文献并生成可复用输出",
+                "entries": [
+                  "快速搜索",
+                  "高级搜索",
+                  "文件 > 导出文献库…",
+                  "引用/书目操作"
+                ],
+                "steps": [
+                  "检索并选择条目",
+                  "执行导出或创建书目",
+                  "检查输出"
+                ],
+                "expected_result": "选中结果和导出内容符合输入"
+              },
+              "maintain": {
+                "title": "文库维护与偏好",
+                "goal": "处理重复、回收站、布局和本地设置",
+                "entries": [
+                  "重复条目",
+                  "回收站",
+                  "Zotero > 设置",
+                  "查看"
+                ],
+                "steps": [
+                  "检查重复条目",
+                  "移动/恢复回收站条目",
+                  "调整设置"
+                ],
+                "expected_result": "维护操作和设置产生可预测结果"
+              },
+              "sync-collaborate": {
+                "title": "同步、群组与订阅",
+                "goal": "连接 Zotero 服务进行同步与协作",
+                "entries": [
+                  "同步按钮",
+                  "新建群组…",
+                  "新建订阅",
+                  "设置 > 同步"
+                ],
+                "steps": [
+                  "检查本地入口和前置条件",
+                  "在授权账号下验证服务流程"
+                ],
+                "expected_result": "账号与服务状态正确反映"
+              },
+              "extend-automate": {
+                "title": "集成、插件与自动化",
+                "goal": "连接浏览器、文字处理和开发者工具",
+                "entries": [
+                  "工具 > 安装浏览器扩展…",
+                  "工具 > 插件",
+                  "工具 > 开发者",
+                  "AppleScript/URL Scheme"
+                ],
+                "steps": [
+                  "清点入口与依赖",
+                  "在授权外部组件下验证"
+                ],
+                "expected_result": "集成入口和边界明确"
+              }
+            },
+            "features": {
+              "item-entry": {
+                "title": "手动新建与编辑文献条目",
+                "entries": [
+                  "文件 > 新建条目；工具栏新建条目；条目详情"
+                ],
+                "workflow_id": "collect-organize"
+              },
+              "collections-tags": {
+                "title": "分类与标签管理",
+                "entries": [
+                  "新建分类；分类树；标签窗格"
+                ],
+                "workflow_id": "collect-organize"
+              },
+              "notes": {
+                "title": "独立笔记与条目笔记",
+                "entries": [
+                  "文件 > 新建笔记；工具栏新建笔记；笔记编辑器"
+                ],
+                "workflow_id": "collect-organize"
+              },
+              "import": {
+                "title": "文献格式导入",
+                "entries": [
+                  "文件 > 导入…；从剪贴板导入；文档关联"
+                ],
+                "workflow_id": "collect-organize"
+              },
+              "attachments": {
+                "title": "本地附件管理",
+                "entries": [
+                  "文件 > 添加附件；附件页；存储目录"
+                ],
+                "workflow_id": "read-annotate"
+              },
+              "reader-annotate": {
+                "title": "PDF 阅读与注释",
+                "entries": [
+                  "附件阅读器；注释工具"
+                ],
+                "workflow_id": "read-annotate"
+              },
+              "search": {
+                "title": "快速与高级检索",
+                "entries": [
+                  "快速搜索；高级搜索；标签筛选"
+                ],
+                "workflow_id": "find-export"
+              },
+              "export-citation": {
+                "title": "文库导出、快速复制与书目",
+                "entries": [
+                  "文件 > 导出文献库…；条目上下文菜单；引用样式"
+                ],
+                "workflow_id": "find-export"
+              },
+              "styles": {
+                "title": "引用样式管理",
+                "entries": [
+                  "设置 > 引用 > 样式；书目格式"
+                ],
+                "workflow_id": "find-export"
+              },
+              "duplicates-trash": {
+                "title": "重复条目与回收站",
+                "entries": [
+                  "重复条目；回收站；删除/恢复"
+                ],
+                "workflow_id": "maintain"
+              },
+              "preferences-layout": {
+                "title": "偏好设置与界面布局",
+                "entries": [
+                  "Zotero > 设置；查看菜单；布局/密度/列"
+                ],
+                "workflow_id": "maintain"
+              },
+              "sync-groups": {
+                "title": "账号同步与群组",
+                "entries": [
+                  "同步；新建群组；设置同步"
+                ],
+                "workflow_id": "sync-collaborate"
+              }
+            }
+          }
+        }
+      ],
+      "batches": [],
+      "independent_reviews": [],
+      "rechecks": []
+    },
+    "workflows": {
+      "collect-organize": {
+        "title": "创建、导入并整理文库",
+        "priority": "P0",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        }
+      },
+      "read-annotate": {
+        "title": "附件阅读与注释",
+        "priority": "P0",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        }
+      },
+      "find-export": {
+        "title": "检索、引用与导出",
+        "priority": "P0",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        }
+      },
+      "maintain": {
+        "title": "文库维护与偏好",
+        "priority": "P1",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        }
+      },
+      "sync-collaborate": {
+        "title": "同步、群组与订阅",
+        "priority": "P1",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        }
+      },
+      "extend-automate": {
+        "title": "集成、插件与自动化",
+        "priority": "P2",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        }
+      }
+    },
+    "blockers": {
+      "schema_version": 1,
+      "issues": {
+        "sqlite-live-backup": {
+          "id": "sqlite-live-backup",
+          "summary": "初始在线备份等待 30 秒后超时；静态代码确认连接生命周期 EXCLUSIVE 锁",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "item-entry",
+              "collections-tags",
+              "notes",
+              "import",
+              "attachments",
+              "reader-annotate",
+              "export-citation"
+            ]
+          },
+          "status": "open",
+          "events": [
+            {
+              "result": "failed",
+              "summary": "初始在线备份等待 30 秒后超时；静态代码确认连接生命周期 EXCLUSIVE 锁",
+              "source": "replica/evidence/reverse-engineering/database-lock/initial-capture-failure.json",
+              "created_at": "2026-11-13T03:44:39.116425+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 1,
+            "unresolved": 0
+          },
+          "assessments": [
+            {
+              "decision": "continue",
+              "reason": "原因已由原版代码和实际超时共同确认；UI 探索可独立推进，数据副作用只作部分验证并在正常退出后补查",
+              "source": "replica/evidence/reverse-engineering/database-lock/assessment.md",
+              "source_sha256": "f3f9b65211d3f6265a1d7ad14617353739dfe81cb0542b0077dc2f06afe81406",
+              "scope": {
+                "kind": "features",
+                "feature_ids": [
+                  "item-entry",
+                  "collections-tags",
+                  "notes",
+                  "import",
+                  "attachments",
+                  "reader-annotate",
+                  "export-citation"
+                ]
+              },
+              "next_step": "将运行中存储采集显式标为 blocked，完成 UI 正常流程；正常退出后执行只读 SQLite 快照与查询",
+              "resume_condition": null,
+              "event_count": 1,
+              "created_at": "2026-11-13T03:44:39.223468+00:00"
+            }
+          ]
+        },
+        "preferences-layout.在我的文库与最近阅读之间导航": {
+          "id": "preferences-layout.在我的文库与最近阅读之间导航",
+          "summary": "Computer Use 点击最近阅读后，窗口标题、当前分组和中央条目表均切换；声明的 IO 范围无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "preferences-layout"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "Computer Use 点击最近阅读后，窗口标题、当前分组和中央条目表均切换；声明的 IO 范围无变化",
+              "source": "navigate-recent-1",
+              "created_at": "2026-11-13T03:55:50.573609+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "preferences-layout.从最近阅读返回我的文库": {
+          "id": "preferences-layout.从最近阅读返回我的文库",
+          "summary": "AX 点击我的文库后恢复初始窗口标题和空文库视图；两次导航形成完整可逆轨迹",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "preferences-layout"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "AX 点击我的文库后恢复初始窗口标题和空文库视图；两次导航形成完整可逆轨迹",
+              "source": "navigate-return-3",
+              "created_at": "2026-11-13T04:01:00.111306+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "collections-tags.normal.创建本地测试分类": {
+          "id": "collections-tags.normal.创建本地测试分类",
+          "summary": "通过工具栏输入并确认后创建 Replica Exploration 分类且自动选中；声明的 exports/attachment-storage 未变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "collections-tags"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "通过工具栏输入并确认后创建 Replica Exploration 分类且自动选中；声明的 exports/attachment-storage 未变化",
+              "source": "collection-create-1",
+              "created_at": "2026-11-13T04:02:28.653235+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "item-entry.normal.手动新建期刊条目并编辑元数据": {
+          "id": "item-entry.normal.手动新建期刊条目并编辑元数据",
+          "summary": "五个 AX 字段设置和 Tab 均成功；列表标题/创建者及详情字段显示预期值，修改日期更新；声明 IO 范围无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "item-entry"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "五个 AX 字段设置和 Tab 均成功；列表标题/创建者及详情字段显示预期值，修改日期更新；声明 IO 范围无变化",
+              "source": "item-edit-1",
+              "created_at": "2026-11-13T04:07:14.503946+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "notes.normal.新建并保存独立笔记": {
+          "id": "notes.normal.新建并保存独立笔记",
+          "summary": "Computer Use 完成新建独立笔记与正文输入；列表和编辑器均显示预期内容，声明 IO 无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "notes"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "Computer Use 完成新建独立笔记与正文输入；列表和编辑器均显示预期内容，声明 IO 无变化",
+              "source": "note-create-2",
+              "created_at": "2026-11-13T04:41:24.907377+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "import.normal.从本地 RIS 文件导入合成文献": {
+          "id": "import.normal.从本地 RIS 文件导入合成文献",
+          "summary": "本地 RIS 文件经来源选择、文件选择器和默认选项导入 1 个条目；导入完成计数与全部核心字段均符合样例",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "import"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "本地 RIS 文件经来源选择、文件选择器和默认选项导入 1 个条目；导入完成计数与全部核心字段均符合样例",
+              "source": "import-ris-1",
+              "created_at": "2026-11-13T04:46:25.524666+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "attachments.normal.向测试条目添加本地 PDF 附件": {
+          "id": "attachments.normal.向测试条目添加本地 PDF 附件",
+          "summary": "附加文件选择器完成后，PDF 复制到隔离存储并自动按元数据重命名；父条目展开、附件预览和索引状态出现；外部差分观察到新存储文件",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "attachments"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "附加文件选择器完成后，PDF 复制到隔离存储并自动按元数据重命名；父条目展开、附件预览和索引状态出现；外部差分观察到新存储文件",
+              "source": "attachment-add-1",
+              "created_at": "2026-11-13T04:49:35.509013+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "reader-annotate.normal.打开 PDF 阅读器并创建测试注释": {
+          "id": "reader-annotate.normal.打开 PDF 阅读器并创建测试注释",
+          "summary": "完整阅读器加载 PDF；查找 Local Exploration 返回 1/1，Control+Alt+1 创建高亮，侧边栏显示文本与评论；随后返回文库。外部差分观察到隔离附件目录变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "reader-annotate"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "完整阅读器加载 PDF；查找 Local Exploration 返回 1/1，Control+Alt+1 创建高亮，侧边栏显示文本与评论；随后返回文库。外部差分观察到隔离附件目录变化",
+              "source": "reader-annotate-1",
+              "created_at": "2026-11-13T04:54:39.090929+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "search.normal.快速搜索定位合成文献": {
+          "id": "search.normal.快速搜索定位合成文献",
+          "summary": "Synthetic 搜索通过摘要保留目标条目并过滤注释，清空后恢复完整条目层级；声明 IO 无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "search"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "Synthetic 搜索通过摘要保留目标条目并过滤注释，清空后恢复完整条目层级；声明 IO 无变化",
+              "source": "quick-search-2",
+              "created_at": "2026-11-13T04:59:22.414161+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "export-citation.normal.将隔离文库导出到项目 exports 目录": {
+          "id": "export-citation.normal.将隔离文库导出到项目 exports 目录",
+          "summary": "RIS/UTF-8 导出到登记目录，文件记录数和核心字段已用 shell 验证；外部差分捕获新文件及解析文本",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "export-citation"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "RIS/UTF-8 导出到登记目录，文件记录数和核心字段已用 shell 验证；外部差分捕获新文件及解析文本",
+              "source": "library-export-1",
+              "created_at": "2026-11-13T05:04:23.603134+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "preferences-layout.normal.设置页面与安全的布局选项": {
+          "id": "preferences-layout.normal.设置页面与安全的布局选项",
+          "summary": "常规、账户、导出、引用和高级页均可只读访问；隔离数据目录、禁用更新/HTTP、未登录和未安装文字处理加载项已核实；返回文库，声明 IO 无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "preferences-layout"
+            ]
+          },
+          "status": "open",
+          "events": [
+            {
+              "result": "unresolved",
+              "summary": "常规、账户、导出、引用和高级页均可只读访问；隔离数据目录、禁用更新/HTTP、未登录和未安装文字处理加载项已核实；返回文库，声明 IO 无变化",
+              "source": "preferences-review-1",
+              "created_at": "2026-11-13T05:07:44.517767+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 1
+          }
+        },
+        "search.normal.高级搜索按标题条件筛选": {
+          "id": "search.normal.高级搜索按标题条件筛选",
+          "summary": "高级搜索默认条件已核对，标题包含 Local Exploration 命中目标，清空与关闭恢复列表；声明 IO 无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "search"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "高级搜索默认条件已核对，标题包含 Local Exploration 命中目标，清空与关闭恢复列表；声明 IO 无变化",
+              "source": "advanced-search-1",
+              "created_at": "2026-11-13T05:10:42.842794+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        },
+        "duplicates-trash.重复条目和回收站视图": {
+          "id": "duplicates-trash.重复条目和回收站视图",
+          "summary": "重复条目无匹配，回收站为空且创建类按钮禁用；返回 sample 恢复 1 个条目，未执行合并或删除，声明 IO 无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "duplicates-trash"
+            ]
+          },
+          "status": "open",
+          "events": [
+            {
+              "result": "unresolved",
+              "summary": "重复条目无匹配，回收站为空且创建类按钮禁用；返回 sample 恢复 1 个条目，未执行合并或删除，声明 IO 无变化",
+              "source": "duplicates-trash-1",
+              "created_at": "2026-11-13T05:13:31.359932+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 1
+          }
+        },
+        "collections-tags.normal.使用标签选择器筛选条目": {
+          "id": "collections-tags.normal.使用标签选择器筛选条目",
+          "summary": "local-testing 在 0/1 间切换并恢复；当前所有顶级条目均匹配，因此列表未变化，声明 IO 无变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "collections-tags"
+            ]
+          },
+          "status": "open",
+          "events": [
+            {
+              "result": "unresolved",
+              "summary": "local-testing 在 0/1 间切换并恢复；当前所有顶级条目均匹配，因此列表未变化，声明 IO 无变化",
+              "source": "tag-filter-1",
+              "created_at": "2026-11-13T05:18:22.978416+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 1
+          }
+        },
+        "item-entry.reopen.正常退出并重开隔离文库": {
+          "id": "item-entry.reopen.正常退出并重开隔离文库",
+          "summary": "正常退出后 SQLite 快照健康且字段完整，重开后 UI 恢复相同业务数据与注释；声明 IO 无额外变化",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "item-entry"
+            ]
+          },
+          "status": "open",
+          "events": [
+            {
+              "result": "unresolved",
+              "summary": "正常退出后 SQLite 快照健康且字段完整，重开后 UI 恢复相同业务数据与注释；声明 IO 无额外变化",
+              "source": "library-reopen-1",
+              "created_at": "2026-11-13T05:24:05.205739+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 1
+          }
+        },
+        "preferences-layout.保留证据并重置为空隔离文库": {
+          "id": "preferences-layout.保留证据并重置为空隔离文库",
+          "summary": "旧测试材料完整保留在项目证据区，新隔离实例恢复初始空文库；未删除真实数据",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "preferences-layout"
+            ]
+          },
+          "status": "resolved",
+          "events": [
+            {
+              "result": "passed",
+              "summary": "旧测试材料完整保留在项目证据区，新隔离实例恢复初始空文库；未删除真实数据",
+              "source": "library-reset-1",
+              "created_at": "2026-11-13T05:27:42.509065+00:00"
+            }
+          ],
+          "resumes": [],
+          "streak": {
+            "failed": 0,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    "features": {
+      "total": 16,
+      "by_status": {
+        "excluded": 4,
+        "unresolved": 0,
+        "discovered": 12,
+        "blocked": 0,
+        "verified": 0,
+        "accepted": 0,
+        "implementing": 0,
+        "implemented": 0,
+        "understood": 0
+      },
+      "by_priority": {
+        "P0": {
+          "total": 8,
+          "passed": 0,
+          "eligible": 8,
+          "accepted": 0,
+          "blocked": 0,
+          "excluded": 0,
+          "pending": 8,
+          "pass_rate": 0.0
+        },
+        "P1": {
+          "total": 4,
+          "passed": 0,
+          "eligible": 4,
+          "accepted": 0,
+          "blocked": 0,
+          "excluded": 0,
+          "pending": 4,
+          "pass_rate": 0.0
+        },
+        "P2": {
+          "total": 4,
+          "passed": 0,
+          "eligible": 0,
+          "accepted": 0,
+          "blocked": 0,
+          "excluded": 4,
+          "pending": 0,
+          "pass_rate": null
+        }
+      },
+      "branches_by_status": {
+        "excluded": 0,
+        "unresolved": 0,
+        "discovered": 10,
+        "blocked": 0,
+        "verified": 0,
+        "accepted": 0,
+        "implementing": 0,
+        "implemented": 0,
+        "understood": 0
+      },
+      "unassigned": 0,
+      "unresolved": 0
+    },
+    "evidence": 887,
+    "last_build": null,
+    "exploration": {
+      "status": "exhausted",
+      "coverage": {
+        "basis": "仅统计已发现的入口、状态和代表性行为分支",
+        "total": 38,
+        "pending": 2,
+        "blocked": 7,
+        "by_status": {
+          "blocked": 7,
+          "reviewed": 13,
+          "explored": 16,
+          "pending": 2
+        },
+        "by_kind": {
+          "ax-gap": {
+            "total": 12,
+            "blocked": 1,
+            "reviewed": 11
+          },
+          "branch": {
+            "total": 12,
+            "explored": 10,
+            "blocked": 1,
+            "pending": 1
+          },
+          "control": {
+            "total": 4,
+            "explored": 3,
+            "pending": 1
+          },
+          "logic": {
+            "total": 6,
+            "reviewed": 1,
+            "explored": 1,
+            "blocked": 4
+          },
+          "menu": {
+            "total": 0
+          },
+          "page": {
+            "total": 2,
+            "explored": 2
+          },
+          "static": {
+            "total": 1,
+            "reviewed": 1
+          },
+          "visual-review": {
+            "total": 1,
+            "blocked": 1
+          }
+        },
+        "states": 14,
+        "actions": 23,
+        "entries": 1934,
+        "unclassified_count": 0,
+        "unfinished_captures_count": 0,
+        "failed_captures_count": 12,
+        "unfinished_actions_count": 0,
+        "unmapped_entries_count": 0
+      },
+      "completion": {
+        "finished_at": "2026-11-13T05:30:09.058454+00:00"
+      },
+      "pending_action": null,
+      "current_capture": "library-reset-1-after",
+      "artifacts": [
+        "replica/exploration/ui-states.json",
+        "replica/exploration/ui-states.md",
+        "replica/exploration/functions.json",
+        "replica/exploration/functions.md",
+        "replica/exploration/evidence-index.json",
+        "replica/exploration/evidence.md"
+      ]
+    },
+    "files_verified": true,
+    "verification_note": "本次已读取文件核验",
+    "benchmark_gold": {
+      "status": "not_created",
+      "path": "/Users/computeruse/Desktop/zotero复刻/benchmark_gold"
+    },
+    "data_validation": {
+      "item-entry": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 item-entry 数据验证：功能 item-entry 缺少数据契约或不适用复核"
+        ]
+      },
+      "collections-tags": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 collections-tags 数据验证：功能 collections-tags 缺少数据契约或不适用复核"
+        ]
+      },
+      "notes": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 notes 数据验证：功能 notes 缺少数据契约或不适用复核"
+        ]
+      },
+      "import": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 import 数据验证：功能 import 缺少数据契约或不适用复核"
+        ]
+      },
+      "attachments": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 attachments 数据验证：功能 attachments 缺少数据契约或不适用复核"
+        ]
+      },
+      "reader-annotate": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 reader-annotate 数据验证：功能 reader-annotate 缺少数据契约或不适用复核"
+        ]
+      },
+      "search": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 search 数据验证：功能 search 缺少数据契约或不适用复核"
+        ]
+      },
+      "export-citation": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 export-citation 数据验证：功能 export-citation 缺少数据契约或不适用复核"
+        ]
+      },
+      "styles": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 styles 数据验证：功能 styles 缺少数据契约或不适用复核"
+        ]
+      },
+      "duplicates-trash": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 duplicates-trash 数据验证：功能 duplicates-trash 缺少数据契约或不适用复核"
+        ]
+      },
+      "preferences-layout": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 preferences-layout 数据验证：功能 preferences-layout 缺少数据契约或不适用复核"
+        ]
+      },
+      "sync-groups": {
+        "contract_sha256": null,
+        "classification": null,
+        "reason": null,
+        "last_run": null,
+        "files_verified": true,
+        "errors": [
+          "功能 sync-groups 数据验证：功能 sync-groups 缺少数据契约或不适用复核"
+        ]
+      }
+    },
+    "recovery": {
+      "actual_build": null,
+      "build_state": "尚未构建",
+      "files_verified": true,
+      "changed_paths": [],
+      "suggested_affected": [],
+      "last_batch": {
+        "summary": "Zotero 10.0.6 全局探索完成，主要本地 P0 工作流、退出状态快照和重开持久化已验证；scope-1 等待用户确认",
+        "next_step": "等待用户回复“确认范围”或调整清单；收到回复前不开始实现、不继续桌面操作",
+        "impact_reason": "本轮仅探索原版、生成证据与范围记录，没有 B 源码或构建产物",
+        "affected_features": [],
+        "created_at": "2026-11-13T05:44:22.342843+00:00",
+        "source_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "build_sha256": null,
+        "changed_paths": [],
+        "pending_regressions": [],
+        "build_check": {
+          "status": "pending",
+          "evidence": []
+        }
+      },
+      "source": {
+        "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "file_count": 0
+      }
+    }
+  },
+  "metrics": {
+    "omitted": 4,
+    "passed": 0,
+    "eligible": 12,
+    "accepted": 0,
+    "pass_rate": 0.0,
+    "unresolved_differences": 0,
+    "blocked": 0,
+    "excluded": 4,
+    "pending": 12,
+    "by_priority": {
+      "P0": {
+        "total": 8,
+        "passed": 0,
+        "eligible": 8,
+        "accepted": 0,
+        "blocked": 0,
+        "excluded": 0,
+        "pending": 8,
+        "pass_rate": 0.0
+      },
+      "P1": {
+        "total": 4,
+        "passed": 0,
+        "eligible": 4,
+        "accepted": 0,
+        "blocked": 0,
+        "excluded": 0,
+        "pending": 4,
+        "pass_rate": 0.0
+      },
+      "P2": {
+        "total": 4,
+        "passed": 0,
+        "eligible": 0,
+        "accepted": 0,
+        "blocked": 0,
+        "excluded": 4,
+        "pending": 0,
+        "pass_rate": null
+      }
+    },
+    "workflows": {
+      "collect-organize": {
+        "title": "创建、导入并整理文库",
+        "priority": "P0",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        },
+        "completion_ready": false,
+        "required_features_complete": false
+      },
+      "read-annotate": {
+        "title": "附件阅读与注释",
+        "priority": "P0",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        },
+        "completion_ready": false,
+        "required_features_complete": false
+      },
+      "find-export": {
+        "title": "检索、引用与导出",
+        "priority": "P0",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        },
+        "completion_ready": false,
+        "required_features_complete": false
+      },
+      "maintain": {
+        "title": "文库维护与偏好",
+        "priority": "P1",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        },
+        "completion_ready": false,
+        "required_features_complete": false
+      },
+      "sync-collaborate": {
+        "title": "同步、群组与订阅",
+        "priority": "P1",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        },
+        "completion_ready": false,
+        "required_features_complete": false
+      },
+      "extend-automate": {
+        "title": "集成、插件与自动化",
+        "priority": "P2",
+        "status": "discovered",
+        "completion": {
+          "boundary": "pending",
+          "persistence": "pending",
+          "error": "pending",
+          "input": "pending",
+          "restart": "pending",
+          "entry": "pending",
+          "result": "pending",
+          "dependencies": "pending",
+          "cancel": "pending"
+        },
+        "completion_ready": false,
+        "required_features_complete": false
+      }
+    },
+    "core_complete": false,
+    "overall_complete": false,
+    "completion_state": "开发中：范围清单尚待用户确认"
+  },
+  "manual_acceptance": "missing"
+}

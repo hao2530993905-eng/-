@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "observed",
+  "invalid_artifacts": [],
+  "unsupported_artifacts": [
+    "attachment-storage/SMGAM4EP/.zotero-ft-cache",
+    "attachment-storage/SMGAM4EP/Example和Example - 2026 - Local Exploration Article.pdf"
+  ],
+  "added": [
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-ft-cache"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/Example和Example - 2026 - Local Exploration Article.pdf"
+    }
+  ],
+  "removed": [],
+  "changed": [],
+  "unchanged": [],
+  "clipboard_changed": false,
+  "clipboard": {
+    "before": null,
+    "after": null
+  },
+  "artifacts": {
+    "attachment-storage/SMGAM4EP/.zotero-ft-cache": {
+      "raw_path": "attachment-storage-9cf26f199ff753e9",
+      "raw_sha256": "37bf94176dd82ff2dde3e5ca24f2896de3c2647bc86b18763dfbd563eaa4bc1a",
+      "source_path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/library/storage/SMGAM4EP/.zotero-ft-cache",
+      "status": "unsupported",
+      "error": "没有登记 binary 解析器"
+    },
+    "attachment-storage/SMGAM4EP/Example和Example - 2026 - Local Exploration Article.pdf": {
+      "raw_path": "attachment-storage-dc98362c4cb668a9.pdf",
+      "raw_sha256": "88be908c16930422ac688acfdd0cbc300499c83eaecdfd9f15fc5e5f2c928e56",
+      "source_path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/library/storage/SMGAM4EP/Example和Example - 2026 - Local Exploration Article.pdf",
+      "status": "unsupported",
+      "error": "没有登记 binary 解析器"
+    }
+  },
+  "coverage": "declared_inputs_and_roots_only"
+}

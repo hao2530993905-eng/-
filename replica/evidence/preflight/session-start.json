@@ -1,0 +1,108 @@
+{
+  "quote": "请使用 $replicate-macos-app 探索 macOS 上的 Zotero。APP_PATH=/Applications/Zotero.app PROJECT_DIR=/Users/computeruse/Desktop/zotero-replica-explore SKILL_DIR=/Users/computeruse/Desktop/harness更新/replicate-macos-app 在/Users/computeruse/Desktop/zotero复刻 中进行",
+  "source": "用户本轮首条消息",
+  "evidence": [
+    "desktop-permission"
+  ],
+  "desktop_notice": "自动操作期间暂不操作鼠标键盘、切换窗口或关闭 Zotero；只采集已确认属于 Zotero 的窗口截图，AX、输入日志和证据仅保存在项目本地。",
+  "screenshots": "target-windows",
+  "test_data": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration",
+  "storage": {
+    "schema_version": 1,
+    "status": "declared",
+    "sources": [
+      {
+        "id": "library",
+        "path": "library/zotero.sqlite",
+        "format": "sqlite",
+        "coverage": "隔离文库的条目、分类、笔记、标签、创作者、附件及全表结构/清单",
+        "queries": [
+          {
+            "id": "libraries",
+            "sql": "SELECT libraryID, type FROM libraries ORDER BY libraryID"
+          },
+          {
+            "id": "items",
+            "sql": "SELECT itemID, itemTypeID, libraryID, key, synced FROM items ORDER BY itemID"
+          },
+          {
+            "id": "collections",
+            "sql": "SELECT collectionID, collectionName, parentCollectionID, libraryID, key FROM collections ORDER BY collectionID"
+          },
+          {
+            "id": "collection_items",
+            "sql": "SELECT collectionID, itemID, orderIndex FROM collectionItems ORDER BY collectionID, itemID"
+          },
+          {
+            "id": "notes",
+            "sql": "SELECT itemID, parentItemID, note, title FROM itemNotes ORDER BY itemID"
+          },
+          {
+            "id": "tags",
+            "sql": "SELECT it.itemID, t.name, it.type FROM itemTags it JOIN tags t ON t.tagID=it.tagID ORDER BY it.itemID, t.name, it.type"
+          },
+          {
+            "id": "item_data",
+            "sql": "SELECT d.itemID, f.fieldName, v.value FROM itemData d JOIN fields f ON f.fieldID=d.fieldID JOIN itemDataValues v ON v.valueID=d.valueID ORDER BY d.itemID, f.fieldName, v.value"
+          },
+          {
+            "id": "creators",
+            "sql": "SELECT ic.itemID, ic.orderIndex, ct.creatorType, c.lastName, c.firstName FROM itemCreators ic JOIN creators c ON c.creatorID=ic.creatorID JOIN creatorTypes ct ON ct.creatorTypeID=ic.creatorTypeID ORDER BY ic.itemID, ic.orderIndex"
+          },
+          {
+            "id": "attachments",
+            "sql": "SELECT itemID, parentItemID, linkMode, contentType, path, syncState FROM itemAttachments ORDER BY itemID"
+          }
+        ]
+      }
+    ]
+  },
+  "external": {
+    "schema_version": 1,
+    "status": "declared",
+    "roots": [
+      {
+        "id": "exports",
+        "path": "exports",
+        "format": "text"
+      },
+      {
+        "id": "attachment-storage",
+        "path": "library/storage",
+        "format": "binary"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "sample-ris",
+        "path": "io/sample.ris",
+        "format": "text"
+      },
+      {
+        "id": "sample-bib",
+        "path": "io/sample.bib",
+        "format": "text"
+      },
+      {
+        "id": "sample-pdf",
+        "path": "io/sample.pdf",
+        "format": "binary"
+      }
+    ],
+    "clipboard": false,
+    "parsers": {}
+  },
+  "owner": {
+    "pid": 8251,
+    "started_at": "Thu Nov 12 01:09:52 2026",
+    "name": "codex"
+  },
+  "executable_stat": [
+    16777236,
+    874365,
+    156432,
+    1791387527000000000,
+    1794378918939853528
+  ],
+  "started_at": "2026-11-13T03:38:54.741937+00:00"
+}

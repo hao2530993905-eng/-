@@ -1,0 +1,8 @@
+{
+  "quote": "请使用 $replicate-macos-app 探索 macOS 上的 Zotero。APP_PATH=/Applications/Zotero.app PROJECT_DIR=/Users/computeruse/Desktop/zotero-replica-explore SKILL_DIR=/Users/computeruse/Desktop/harness更新/replicate-macos-app 在/Users/computeruse/Desktop/zotero复刻 中进行",
+  "source": "用户本轮首条消息",
+  "desktop_notice": "自动操作期间暂不操作鼠标键盘、切换窗口或关闭 Zotero；只采集已确认属于 Zotero 的窗口截图，AX、输入日志和证据仅保存在项目本地。",
+  "destination_resolution": "以用户最后指定的 /Users/computeruse/Desktop/zotero复刻 为实际 PROJECT_DIR",
+  "isolation": "独立 Firefox profile 与 -datadir；禁用自动同步、在线翻译器更新、本地 HTTP 服务和应用更新",
+  "capture_scope": "Zotero 目标窗口、AX、声明的测试存储与项目内 IO 目录，不采集真实资料库"
+}

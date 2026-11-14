@@ -1,0 +1,6 @@
+{"schema_version":1,"operations":[
+ {"op":"classify","args":{"capture_id":"navigate-return-3-after","state_id":"main.empty","title":"空隔离文库主窗口","meaning":"从我的文库到最近阅读往返后恢复空文库主窗口","merge_reason":"动态菜单标题、欢迎条和前台状态可有差异；当前空文库语义及可用业务控件等价"}},
+ {"op":"interpret","args":{"action_id":"navigate-return-3","outcome":"restored","summary":"AX 点击我的文库后恢复初始窗口标题和空文库视图；两次导航形成完整可逆轨迹","side_effects":["仅恢复隔离实例导航状态；声明的 IO 范围无变化"],"expected_state":"main.empty","recipe":["navigate-recent-1","navigate-return-3"]}},
+ {"op":"resolve","args":{"id":"navigate-library-views","status":"explored","summary":"Computer Use 已成功切换最近阅读，空条目表与窗口标题同步；可由 AX 返回我的文库","evidence":["explore-runtime-e00979d156704497accdf5d95f4ae74f","explore-runtime-a46aa291ba424798a449fcdaae08de9e"],"action_ids":["navigate-recent-1","navigate-return-3"]}},
+ {"op":"resolve","args":{"id":"navigate-return-library","status":"explored","summary":"返回导航实际成功并恢复 main.empty；恢复路径已登记","evidence":["explore-runtime-a46aa291ba424798a449fcdaae08de9e"],"action_ids":["navigate-return-3"]}}
+]}

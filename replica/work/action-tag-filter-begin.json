@@ -1,0 +1,7 @@
+{
+ "id":"tag-filter-1","candidate_id":"tag-filter-normal","from_capture":"duplicates-trash-1-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click",
+ "operation":"点击 local-testing 标签筛选，再点击一次取消筛选并读取结果",
+ "precondition":"sample 分类的导入条目标记 local-testing；只改变标签筛选状态",
+ "expected_result":"选中标签时保留匹配条目，取消后恢复完整列表"
+}

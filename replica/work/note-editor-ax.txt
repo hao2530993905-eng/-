@@ -1,0 +1,567 @@
+# ax-dump {"app_path":"/Applications/Zotero.app","build":"10.0.6","bundle_id":"org.zotero.zotero","frontmost":false,"pid":46450,"root":null,"taken_at":"2026-11-13T04:39:24Z","version":"10.0.6"}
+Window[Replica Exploration - Zotero]	subrole=AXStandardWindow	actions=["AXRaise"]	frame=0,30,1000,600
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero]	expanded=false	disclosing=false	subrole=AXUnknown	desc=Replica Exploration - Zotero	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,0,1000,600
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#1	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,0,1000,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#2	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,0,927,36
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#2 > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=90,0,837,36
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#2 > Group > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=91,4,200,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#2 > Group > Group > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=97,10,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#2 > Group > Group > Group[Replica Exploration]	subrole=AXApplicationGroup	desc=Replica Exploration	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=117,9,168,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#2 > Group > Group > Group[Replica Exploration] > StaticText	subrole=AXUnknown	value="Replica Exploration"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=117,10,116,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Button[列出所有标签页]	subrole=AXUnknown	desc=列出所有标签页	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=931,4,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Button[列出所有标签页] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=955,18,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Button[与 zotero.org 同步]	subrole=AXUnknown	desc=与 zotero.org 同步	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=968,4,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Button[与 zotero.org 同步] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=992,18,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3	subrole=AXApplicationStatus	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,37,1000,34
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,37,1000,34
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=14,39,263,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1 > StaticText#1	subrole=AXUnknown	value="你已升级到 "	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=14,45,73,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1 > StaticText#2	subrole=AXUnknown	value="Zotero 10 "	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=86,46,66,17
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1 > StaticText#3	subrole=AXUnknown	value="！了解一下"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=152,45,69,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1 > Link[新特性]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=221,46,42,17
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1 > Link[新特性] > StaticText	subrole=AXUnknown	value="新特性"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=221,45,42,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#1 > StaticText#4	subrole=AXUnknown	value="。"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=263,45,14,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#2	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=824,42,168,24
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#2 > Button[稍后提醒我]	subrole=AXUnknown	desc=稍后提醒我	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=822,42,89,25
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#3 > Group > Group#2 > Button[完成]	subrole=AXUnknown	desc=完成	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=915,42,79,25
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4	subrole=AXApplicationStatus	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,71,1000,35
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,71,1000,35
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=14,73,168,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Group > StaticText	subrole=AXUnknown	value="通过Zotero备份你的文库。"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=14,79,168,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[启用同步]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=192,73,69,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[启用同步] > StaticText	subrole=AXUnknown	value="启用同步"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=199,79,55,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[了解更多]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=261,73,69,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[了解更多] > StaticText	subrole=AXUnknown	value="了解更多"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=267,79,55,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[不要再询问]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=807,73,83,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[不要再询问] > StaticText	subrole=AXUnknown	value="不要再询问"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=814,79,69,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[稍后提醒我]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=890,73,83,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Link[稍后提醒我] > StaticText	subrole=AXUnknown	value="稍后提醒我"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=897,79,69,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Button[关闭通知]	subrole=AXUnknown	desc=关闭通知	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=972,78,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#4 > Group > Button[关闭通知] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=972,78,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,105,200,41
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#1 > Button[新建分类…]	subrole=AXUnknown	desc=新建分类…	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#1 > Button[新建分类…] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=32,125,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#1 > Button[筛选分类]	subrole=AXUnknown	desc=筛选分类	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=156,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#1 > Button[筛选分类] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=180,125,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,146,200,254
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,146,200,254
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,146,200,254
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库]	expanded=true	disclosing=true	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,146,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,146,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,160,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,152,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,152,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=44,151,144,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的文库] > Group > Group#4 > StaticText	subrole=AXUnknown	value="我的文库"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=44,151,53,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,174,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,174,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,188,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,188,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=40,180,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,179,128,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[最近阅读] > Group > Group#4 > StaticText	subrole=AXUnknown	value="最近阅读"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,179,53,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,202,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,202,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,216,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,216,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=40,208,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,207,128,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[Replica Exploration] > Group > Group#4 > StaticText	subrole=AXUnknown	value="Replica Exploration"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,208,116,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,230,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,230,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,244,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,244,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=40,236,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,235,128,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[我的出版物] > Group > Group#4 > StaticText	subrole=AXUnknown	value="我的出版物"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,235,67,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,258,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,258,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,272,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,272,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=40,264,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,263,128,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[重复条目] > Group > Group#4 > StaticText	subrole=AXUnknown	value="重复条目"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,263,53,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,286,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,286,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,300,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,300,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=40,292,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,291,128,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[未分类条目] > Group > Group#4 > StaticText	subrole=AXUnknown	value="未分类条目"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,291,67,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,314,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,314,184,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站] > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,328,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站] > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=24,328,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站] > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=40,320,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站] > Group > Group#4	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,319,128,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Outline[分类] > Group > Row[回收站] > Group > Group#4 > StaticText	subrole=AXUnknown	value="回收站"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=60,319,40,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#5 > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,-9854,200,2000
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,400,200,200
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,400,200,200
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,400,200,163
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group > Group[标签选择器]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,400,200,163
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group > Group[标签选择器] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=0,400,123,57
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group > Group[标签选择器] > Group > CheckBox[local-testing]	subrole=AXUnknown	value=0	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,409,79,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group > Group[标签选择器] > Group > CheckBox[local-testing] > StaticText	subrole=AXUnknown	value="local-testing"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=12,411,71,15
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group > Group[标签选择器] > Group > CheckBox[replica-exploration]	subrole=AXUnknown	value=0	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,430,115,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Group > Group[标签选择器] > Group > CheckBox[replica-exploration] > StaticText	subrole=AXUnknown	value="replica-exploration"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=12,432,107,15
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > TextField[筛选标签]	subrole=AXSearchField	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=8,570,144,24
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Button[操作]	subrole=AXUnknown	desc=操作	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=156,570,36,24
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Button[操作] > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=160,575,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#6 > Group > Button[操作] > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=180,579,8,8
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=200,105,443,41
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[新建条目]	subrole=AXUnknown	desc=新建条目	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,111,40,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[新建条目] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=232,125,4,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[通过标识符添加条目]	subrole=AXUnknown	desc=通过标识符添加条目	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=256,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[通过标识符添加条目] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=280,125,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[添加附件]	subrole=AXUnknown	desc=添加附件	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=292,111,40,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[添加附件] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=316,125,4,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[新建笔记]	subrole=AXUnknown	desc=新建笔记	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=340,111,40,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[新建笔记] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=364,125,4,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[快速搜索模式]	subrole=AXUnknown	desc=快速搜索模式	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=453,111,36,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > TextField[快速搜索]	subrole=AXUnknown	help="所有字段和标签"	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=493,112,110,26
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[高级搜索]	subrole=AXUnknown	desc=高级搜索	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=605,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Toolbar#2 > Button[高级搜索] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=631,125,2,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=200,146,443,454
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=200,-9854,443,2000
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目]	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=200,146,443,454
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=200,146,443,30
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1 > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,152,289,17
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1 > Group#1 > StaticText	subrole=AXUnknown	value="标题"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=244,152,27,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1 > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=513,152,67,17
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1 > Group#2 > StaticText	subrole=AXUnknown	value="创建者"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=513,152,40,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1 > Group[附件]	subrole=AXUnknown	desc=附件	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=588,153,32,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#1 > Group[附件] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=596,153,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=200,180,443,420
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,180,412,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,186,297,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#1 > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,194,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#1 > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,194,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#1 > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=224,186,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#1 > Group[. 笔记.]	subrole=AXUnknown	desc=. 笔记.	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=244,194,253,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=505,194,83,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[. 笔记.] > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=588,180,32,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example]	disclosing=false	subrole=AXOutlineRow	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,208,412,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,214,297,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#1 > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,222,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#1 > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=208,222,16,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#1 > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=224,214,16,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#1 > Group[Local Replication Study. 期刊文章.]	subrole=AXUnknown	desc=Local Replication Study. 期刊文章.	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=244,214,253,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#1 > Group[Local Replication Study. 期刊文章.] > StaticText	subrole=AXUnknown	value="Local Replication Study"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=244,214,142,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=505,214,83,18
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#2 > StaticText	subrole=AXUnknown	value="Example"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=513,214,51,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#7 > Outline[条目] > Group#2 > Row[Local Replication Study. 期刊文章. Example] > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=588,208,32,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,105,320,495
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,105,320,333
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor]	value=""	actions=["AXShowMenu","AXScrollToVisible"]	frame=643,105,320,333
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,105,320,333
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,105,320,41
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[格式化文本]	expanded=false	subrole=AXUnknown	desc=格式化文本	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=688,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[格式化文本] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=692,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[文字颜色]	expanded=false	subrole=AXUnknown	desc=文字颜色	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=722,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[文字颜色] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=726,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[高亮文本]	expanded=false	subrole=AXUnknown	desc=高亮文本	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=756,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[高亮文本] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=760,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[清除格式]	subrole=AXUnknown	desc=清除格式	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=790,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[清除格式] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=794,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[添加链接]	subrole=AXUnknown	desc=添加链接	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=824,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[添加链接] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=828,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[插入引注]	subrole=AXUnknown	desc=插入引注	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=858,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[插入引注] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=862,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[查找替换]	subrole=AXUnknown	desc=查找替换	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=892,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > Button[查找替换] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=896,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[更多]	expanded=false	subrole=AXUnknown	desc=更多	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=931,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Toolbar > MenuButton[更多] > Image	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=935,115,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,146,320,292
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Group > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,146,320,292
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > ScrollArea > WebArea[Zotero Note Editor] > Group > Group > Group > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=673,166,260,21
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=643,438,320,162
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个标签]	expanded=false	subrole=AXUnknown	desc=0 个标签	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=651,443,304,24
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个标签] > StaticText	subrole=AXUnknown	value="0 个标签"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=671,446,52,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个标签] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=731,455,184,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个标签] > Button[添加]	subrole=AXUnknown	desc=添加	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=915,445,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个标签] > Button[添加] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=933,455,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个标签] > Button[展开 标签 栏]	subrole=AXUnknown	desc=展开 标签 栏	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=935,445,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=651,469,304,2
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#1 > Group	subrole=AXApplicationGroup	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=667,470,288,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[文库和分类]	expanded=true	subrole=AXUnknown	desc=文库和分类	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=651,480,304,24
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[文库和分类] > StaticText	subrole=AXUnknown	value="文库和分类"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=671,483,67,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[文库和分类] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=746,492,170,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[文库和分类] > Button[添加]	subrole=AXUnknown	desc=添加	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=915,482,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[文库和分类] > Button[添加] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=933,492,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[文库和分类] > Button[折叠 文库和分类 栏]	subrole=AXUnknown	desc=折叠 文库和分类 栏	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=935,482,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=663,506,292,53
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[我的文库]	subrole=AXUnknown	desc=我的文库	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=663,509,292,23
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[我的文库] > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=667,509,16,21
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[我的文库] > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=687,509,268,23
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[我的文库] > Group#2 > StaticText	subrole=AXUnknown	value="我的文库"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=687,511,53,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[Replica Exploration]	subrole=AXUnknown	desc=Replica Exploration	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=679,536,254,21
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[Replica Exploration] > Group#1	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=683,536,16,21
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[Replica Exploration] > Group#2	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=703,536,230,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[Replica Exploration] > Group#2 > StaticText	subrole=AXUnknown	value="Replica Exploration"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=703,538,116,16
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#2 > Button[移除]	subrole=AXUnknown	desc=移除	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=937,536,18,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个相关]	expanded=false	subrole=AXUnknown	desc=0 个相关	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=651,568,304,24
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个相关] > StaticText	subrole=AXUnknown	value="0 个相关"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=671,571,52,19
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个相关] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=731,580,184,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个相关] > Button[添加]	subrole=AXUnknown	desc=添加	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=915,570,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个相关] > Button[添加] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=933,580,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Button[0 个相关] > Button[展开 相关 栏]	subrole=AXUnknown	desc=展开 相关 栏	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=935,570,20,20
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group#8 > Group > Group#3	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=651,594,304,2
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > TabGroup	subrole=AXUnknown	value="<element>"	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=963,105,37,495
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > TabGroup > Button[开/合条目窗格]	subrole=AXUnknown	desc=开/合条目窗格	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=968,111,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > TabGroup > Button[开/合条目窗格] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=972,125,0,0
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > TabGroup > RadioButton[条目详情]	selected	subrole=AXTabButton	desc=条目详情	value=true	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=968,152,28,232
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > TabGroup > Button[检索]	subrole=AXUnknown	desc=检索	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=968,397,28,28
+Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > TabGroup > Button[检索] > Group	subrole=AXUnknown	value=""	actions=["AXShowMenu","AXScrollToVisible","AXPress"]	frame=992,411,0,0
+Window[Replica Exploration - Zotero] > Button#1	subrole=AXCloseButton	actions=["AXPress"]	frame=13,11,12,14
+Window[Replica Exploration - Zotero] > Button#2	subrole=AXFullScreenButton	help="this button also has an action to zoom the window"	actions=["AXPress","AXZoomWindow","AXShowMenu"]	frame=53,11,12,14
+Window[Replica Exploration - Zotero] > Button#2 > Group	frame=52,10,14,16
+Window[Replica Exploration - Zotero] > Button#2 > Group > Group	frame=52,10,14,16
+Window[Replica Exploration - Zotero] > Button#3	subrole=AXMinimizeButton	actions=["AXPress"]	frame=33,11,12,14
+MenuBar	expanded=false	disclosing=false	actions=["AXCancel"]
+MenuBar > MenuBarItem[Apple]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[关于本机]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[系统信息]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[系统设置…, 1项更新]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[App Store]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[应用程序]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounter]#1	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounter”]#1	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounter]#2	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounter”]#2	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounter]#3	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounter”]#3	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounter]#4	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounter”]#4	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounterB]#1	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounterB”]#1	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounterB]#2	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounterB”]#2	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounterB]#3	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounterB”]#3	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[GoldCounterB]#4	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“GoldCounterB”]#4	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[Safari浏览器]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“Safari浏览器”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[Zotero]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“Zotero”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[文稿]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[benchmark-gold.md]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“benchmark-gold.md”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[config.toml]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“config.toml”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[manifest.json]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“manifest.json”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[new.yaml]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“new.yaml”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[SKILL.md]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“SKILL.md”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[test_ax_pencil_document.py]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“test_ax_pencil_document.py”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[test_ax_pencil_files.py]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“test_ax_pencil_files.py”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[test_ax_pencil_pages.py]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“test_ax_pencil_pages.py”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[test_ax_pencil_shell.py]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“test_ax_pencil_shell.py”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[tests.json]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[在访达中显示“tests.json”]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[服务器]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[Macintosh HD]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目] > MenuItem[清除菜单]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[强制退出…]	shortcut=⌥⌘⎋	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[强制退出“Zotero”]	shortcut=⌥⇧⌘⎋	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem#4	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[睡眠]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[重新启动…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[重新启动]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[关机…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[关机]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem#5	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[锁定屏幕]	shortcut=⌃⌘Q	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[退出登录“computer use”…]	shortcut=⇧⌘Q	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem[退出登录“computer use”]	shortcut=⌥⇧⌘Q	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Apple] > MenuItem#6	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[关于 Zotero]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[设置]	shortcut=⌘,	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[服务]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[服务] > MenuItem[No Services Apply]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[服务] > MenuItem[Services Settings…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[隐藏 Zotero]	shortcut=⌘H	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[隐藏其他]	shortcut=⌥⌘H	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[显示所有]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem#4	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[Zotero] > MenuItem[退出 Zotero]	shortcut=⌘Q	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[报纸文章]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[期刊文章]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[图书]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[图书章节]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[文档]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[百科条目]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[报告]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[标准]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[播客]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[博客帖文]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[词条]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[地图]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[电视广播]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[电台广播]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[电影]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[电子邮件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[法案]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[法律]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[访谈]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[会议论文]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[即时消息]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[论坛帖文]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[软件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[视频]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[手稿]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[数据集]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[司法案例]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[听证会]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[信件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[学位论文]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[演示文档]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[艺术品]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[音频]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[预印本]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[杂志文章]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[专利]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[根据标识符新增...]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件] > MenuItem[添加文件...]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件] > MenuItem[添加文件链接...]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件] > MenuItem	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件] > MenuItem[附加文件...]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件] > MenuItem[附加文件链接…]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[添加附件] > MenuItem[附加网页链接...]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建笔记]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建笔记] > MenuItem[新建独立笔记]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建笔记] > MenuItem[新建条目笔记]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建分类…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建群组…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建订阅]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建订阅] > MenuItem[从网址…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[新建订阅] > MenuItem[从 OPML…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[关闭]	shortcut=⌘W	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[在访达中显示]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem#4	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[导入…]	shortcut=⇧⌘I	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[从剪贴板导入]	shortcut=⌥⇧⌘I	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[文件] > MenuItem[导出文献库…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[撤销]	shortcut=⌘Z	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[重做]	shortcut=⇧⌘Z	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[剪切]	shortcut=⌘X	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[复制]	shortcut=⌘C	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[复制笔记]	shortcut=⇧⌘C	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[粘贴]	shortcut=⌘V	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[删除]	shortcut=⌦	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[全选]	shortcut=⌘A	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[查找]	shortcut=⌘F	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[编辑] > MenuItem[高级搜索]	shortcut=⇧⌘F	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局] > MenuItem[标准视图]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局] > MenuItem[堆叠视图]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局] > MenuItem	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局] > MenuItem[分类窗格]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局] > MenuItem[条目窗格]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[布局] > MenuItem[标签选择器]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[密度]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[密度] > MenuItem[紧凑]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[密度] > MenuItem[舒适]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[字体大小]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[字体大小] > MenuItem[更大]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[字体大小] > MenuItem[更小]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[字体大小] > MenuItem	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[字体大小] > MenuItem[重置]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[11]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[12]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[13]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[14]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[15]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[16]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[18]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[24]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[36]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[48]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[64]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[72]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[96]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小] > MenuItem[重置]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[11]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[12]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[13]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[14]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[15]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[16]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[18]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[24]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[36]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[48]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[64]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[72]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[96]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小] > MenuItem[重置]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[创建者]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[条目类型]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[日期]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[年]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[出版社]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[出版物]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[添加日期]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[修改日期]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[最后阅读时间]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[其他]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[附件]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[笔记]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[版/版次]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[版权]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[档案]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[档案编号]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[地点]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[短标题]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[访问时间]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[号码]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[卷次]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[刊名简称]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[类型]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[媒体]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[期号]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[审判法院]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[索书号]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[文库编目]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[系列]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[系列标题]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[系统]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[页码]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[引用关键词]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[更多列] > MenuItem[语言]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[创建者]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[条目类型]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[日期]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[年]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[出版社]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[出版物]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[添加日期]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[二次排序（标题）] > MenuItem[修改日期]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[将列移至左侧]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[将列移至左侧] > MenuItem[创建者]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[将列移至左侧] > MenuItem[附件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[列] > MenuItem[恢复列顺序]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[排序方式]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[排序方式] > MenuItem[标题]	shortcut=⌃⌥⌘1	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[排序方式] > MenuItem[创建者]	shortcut=⌃⌥⌘2	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[排序方式] > MenuItem[附件]	shortcut=⌃⌥⌘3	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[显示子分类中的条目]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[隐藏不匹配的注释]	mark=✓	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[查看] > MenuItem[显示标签页列表]	shortcut=⌘;	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[RTF 扫描]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[安装浏览器扩展…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[插件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[开发者]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[开发者] > MenuItem[Error Console]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[开发者] > MenuItem[Run JavaScript]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[开发者] > MenuItem[Style Editor]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[开发者] > MenuItem[Translator Editor]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[管理附件]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[管理附件] > MenuItem[转换已链接文件为已存储文件…]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[工具] > MenuItem[管理附件] > MenuItem[规范附件标题…]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Fill]	shortcut=⌃F	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Center]	shortcut=⌃C	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Halves]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Left]	shortcut=⌃key:123	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Right]	shortcut=⌃key:124	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Top]	shortcut=⌃key:126	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Bottom]	shortcut=⌃key:125	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Quarters]#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Top Left]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Top Right]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Bottom Left]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Bottom Right]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Arrange]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Left & Right]	shortcut=⌃⇧key:123	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Left & Quarters]	shortcut=⌃⌥⇧key:123	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Right & Left]	shortcut=⌃⇧key:124	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Right & Quarters]	shortcut=⌃⌥⇧key:124	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Top & Bottom]	shortcut=⌃⇧key:126	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Top & Quarters]	shortcut=⌃⌥⇧key:126	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Bottom & Top]	shortcut=⌃⇧key:125	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Bottom & Quarters]	shortcut=⌃⌥⇧key:125	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Quarters]#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize] > MenuItem[Return to Previous Size]	shortcut=⌃R	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Full Screen Tile]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Full Screen Tile] > MenuItem[Left of Screen]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Full Screen Tile] > MenuItem[Right of Screen]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Remove Window from Set]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[最小化]	shortcut=⌘M	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[缩放]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem#4	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[窗口] > MenuItem[Replica Exploration - Zotero]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem#1	expanded=false	disclosing=false
+MenuBar > MenuBarItem[帮助] > MenuItem#1 > TextField	subrole=AXSearchField	value=""	actions=["AXShowMenu","AXConfirm"]	unreadable=AXChildren
+MenuBar > MenuBarItem[帮助] > MenuItem#1 > Table[search result]
+MenuBar > MenuBarItem[帮助] > MenuItem#1 > Table[search result] > Column
+MenuBar > MenuBarItem[帮助] > MenuItem[支持与文档]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[故障排除信息]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[论坛]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[报告错误…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem[启用]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem#1	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem[已记录 0 行]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem#2	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem[查看输出日志]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem[清空输出日志]	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[调试日志] > MenuItem[重启为启用日志模式…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[以故障排除模式重启...]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem#3	disabled	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]
+MenuBar > MenuBarItem[帮助] > MenuItem[检查更新…]	expanded=false	disclosing=false	actions=["AXCancel","AXPress","AXPick"]

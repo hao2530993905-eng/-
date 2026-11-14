@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "dump",
+    "org.zotero.zotero",
+    "--out",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/tag-add-1-after/ax.json"
+  ],
+  "started_at": "2026-11-13T04:07:17.910736+00:00",
+  "timeout": 60,
+  "stdout": "",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:07:18.197088+00:00"
+}

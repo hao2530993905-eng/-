@@ -1,0 +1,11 @@
+{
+ "id":"collection-create-1","candidate_id":"collection-create-normal","from_capture":"navigate-return-3-after","channel":"ax",
+ "precondition":"我的文库空视图稳定，工具栏新建分类按钮可用；仅操作隔离测试数据",
+ "expected_result":"创建并选中名为 Replica Exploration 的分类",
+ "operations":[
+   {"verb":"click","path":"Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Toolbar#1 > Button[新建分类…]"},
+   {"verb":"type","text":"Replica Exploration"},
+   {"verb":"key","keys":"return"}
+ ],
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

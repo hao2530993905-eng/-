@@ -1,0 +1,6 @@
+{
+  "id": "library-reset-1",
+  "success": true,
+  "source": "app_instances + shell + Computer Use：旧测试目录已移动到 replica/evidence/exploration/retained-test-data，旧 profile 移动到 work/profile-a-retained；新 PID 49755 显示“我的文库”“欢迎来到 Zotero”“此视图中没有条目”和无标签",
+  "summary": "已通过保留材料并重建隔离环境恢复初始空文库；未删除或修改任何真实用户数据"
+}

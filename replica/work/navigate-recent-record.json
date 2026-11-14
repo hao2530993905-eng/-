@@ -1,0 +1,4 @@
+{"schema_version":1,"operations":[
+ {"op":"classify","args":{"capture_id":"navigate-recent-1-after","state_id":"main.recent.empty","title":"最近阅读空视图","meaning":"左侧最近阅读视图被选中，窗口标题和中央空条目表同步变化"}},
+ {"op":"interpret","args":{"action_id":"navigate-recent-1","outcome":"changed","summary":"Computer Use 点击最近阅读后，窗口标题、当前分组和中央条目表均切换；声明的 IO 范围无变化","side_effects":["仅改变隔离实例的视图/选择状态；运行中数据库存储采集仍 blocked"]}}
+]}

@@ -1,0 +1,56 @@
+{
+  "app_path" : "/Applications/Zotero.app",
+  "build" : "10.0.6",
+  "bundle_id" : "org.zotero.zotero",
+  "frames" : "窗口为屏幕坐标，窗口内元素相对所在窗口左上角",
+  "frontmost" : true,
+  "node_count" : 2,
+  "pid" : 46450,
+  "root" : null,
+  "roots" : [
+    {
+      "actions" : [
+        "AXRaise"
+      ],
+      "focused" : false,
+      "frame" : [
+        0,
+        30,
+        1000,
+        600
+      ],
+      "path" : "Window[最近阅读 - Zotero]",
+      "role" : "AXWindow",
+      "subrole" : "AXStandardWindow",
+      "title" : "最近阅读 - Zotero",
+      "truncated" : true
+    },
+    {
+      "actions" : [
+        "AXCancel"
+      ],
+      "disclosing" : false,
+      "enabled" : true,
+      "expanded" : false,
+      "focused" : false,
+      "path" : "MenuBar",
+      "role" : "AXMenuBar",
+      "selected" : false,
+      "truncated" : true
+    }
+  ],
+  "taken_at" : "2026-11-13T03:59:25Z",
+  "version" : "10.0.6",
+  "windows" : [
+    {
+      "bounds" : {
+        "Height" : 600,
+        "Width" : 1000,
+        "X" : 0,
+        "Y" : 30
+      },
+      "id" : 1898,
+      "owner_pid" : 46450
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{"schema_version":1,"operations":[
+ {"op":"classify","args":{"capture_id":"library-reset-1-after","state_id":"main.empty","title":"空隔离文库主窗口","meaning":"通过保留旧测试材料并重建隔离环境，恢复我的文库、欢迎页、无标签和空条目状态","merge_reason":"全新 profile/进程与初始实例不同，但窗口结构、空文库语义和可用控件等价"}},
+ {"op":"interpret","args":{"action_id":"library-reset-1","outcome":"restored","summary":"旧测试材料完整保留在项目证据区，新隔离实例恢复初始空文库；未删除真实数据","side_effects":["项目内测试目录和 profile 被移动保留；新建空隔离文库"],"expected_state":"main.empty","recipe":["library-reset-1"]}},
+ {"op":"resolve","args":{"id":"reset-exploration-library","status":"explored","summary":"通过正常退出、移动项目内测试材料及全新 profile 实际恢复 main.empty","evidence":["explore-runtime-2dd7718508f648689a5230b4a808bb70"],"action_ids":["library-reset-1"]}},
+ {"op":"candidate","args":{"id":"visual-pixel-review","kind":"visual-review","title":"截图像素级视觉复核","feature_id":"preferences-layout","state_id":"main.empty","evidence":["explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36"]}},
+ {"op":"resolve","args":{"id":"visual-pixel-review","status":"blocked","summary":"所有关键状态已保存目标窗口 JPEG，Computer Use 的 AX/文本和几何信息已核对；当前模型工具明确提示不支持图像输入，不能声称完成像素级视觉审查","evidence":["explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36","preflight-check"],"attempts":["调用 Computer Use getScreenshot，工具返回 image omitted because you do not support image input","使用 AX 文本、角色、值、动作和 frame 核对主要布局"],"resume_condition":"由支持图像输入的 Agent 或用户查看保存的窗口截图，复核颜色、间距、图标和动效","feature_id":"preferences-layout"}},
+ {"op":"candidate","args":{"id":"remaining-entry-review","kind":"control","title":"其他辅助控件与未覆盖入口","feature_id":"preferences-layout","evidence":["explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36"]}},
+ {"op":"plan","args":{"id":"remaining-entry-review","safety":"review","precondition":"仅用于归并已发现但尚未单独执行的结构或辅助入口；后续按功能批次补查","feature_id":"preferences-layout","input_class":"覆盖限制"}}
+]}

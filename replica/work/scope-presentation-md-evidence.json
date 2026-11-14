@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "add-evidence",
+      "args": {
+        "evidence_id": "scope-presentation-md",
+        "kind": "other",
+        "path": "/Users/computeruse/Desktop/zotero复刻/replica/evidence/scope-presentation.md",
+        "tool": "conversation",
+        "summary": "实际展示的完整范围清单原文与来源"
+      }
+    }
+  ]
+}

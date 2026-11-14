@@ -1,0 +1,4 @@
+{"schema_version":1,"operations":[
+ {"op":"candidate","args":{"id":"navigate-return-library","kind":"control","title":"从最近阅读返回我的文库","feature_id":"preferences-layout","evidence":["explore-runtime-e00979d156704497accdf5d95f4ae74f"]}},
+ {"op":"plan","args":{"id":"navigate-return-library","safety":"navigation","precondition":"当前为最近阅读空视图；点击我的文库仅恢复初始导航状态","feature_id":"preferences-layout","input_class":"纯导航恢复"}}
+]}

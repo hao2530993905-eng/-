@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "observed",
+  "invalid_artifacts": [],
+  "unsupported_artifacts": [],
+  "added": [],
+  "removed": [
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-ft-cache"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-reader-state"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-sdt-cache"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/Example和Example - 2026 - Local Exploration Article.pdf"
+    },
+    {
+      "root_id": "exports",
+      "path": "library.ris"
+    }
+  ],
+  "changed": [],
+  "unchanged": [],
+  "clipboard_changed": false,
+  "clipboard": {
+    "before": null,
+    "after": null
+  },
+  "artifacts": {},
+  "coverage": "declared_inputs_and_roots_only"
+}

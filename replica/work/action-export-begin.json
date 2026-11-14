@@ -1,0 +1,8 @@
+{
+ "id":"library-export-1","candidate_id":"library-export-normal","from_capture":"quick-search-2-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click/pressKey/setValue",
+ "operation":"通过文件 > 导出文献库…选择 RIS 格式并保存到项目 exports/library.ris，读取完成后的 AX 和文件",
+ "precondition":"当前文库全部为合成测试数据，exports 是已登记输出目录；不包含真实文献或账号信息",
+ "expected_result":"导出对话框可选择 RIS，生成项目内 library.ris，内容包含两条期刊记录",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

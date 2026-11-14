@@ -1,0 +1,8 @@
+{"schema_version":1,"operations":[
+ {"op":"classify","args":{"capture_id":"library-reopen-1-after","state_id":"library.reopened","title":"隔离文库重开后状态","meaning":"新进程恢复分类、手动期刊、独立笔记和阅读器标签；页 1 高亮及评论仍在"}},
+ {"op":"interpret","args":{"action_id":"library-reopen-1","outcome":"no_change","summary":"正常退出后 SQLite 快照健康且字段完整，重开后 UI 恢复相同业务数据与注释；声明 IO 无额外变化","side_effects":["退出状态新增一致性快照证据；实例正常重启"]}},
+ {"op":"resolve","args":{"id":"library-reopen-normal","status":"explored","summary":"正常退出、退出状态数据库快照和重开 UI 持久化均通过","evidence":["explore-runtime-e43d3562127d44fba9c988c21f71572b"],"action_ids":["library-reopen-1"]}},
+ {"op":"finding","args":{"feature_id":"item-entry","confidence":"observed","summary":"手动条目在创建/编辑后可保存；正常退出后的 SQLite 快照和重开 UI 均证明条目、分类、笔记、标签、附件及注释持久化","inputs":["已保存隔离文库"],"outputs":["完整性健康的快照；重开后相同条目、笔记与阅读注释"],"side_effects":["新增退出状态数据库快照证据"],"unknowns":["运行中逐动作 SQLite 差分仍受 EXCLUSIVE 锁限制"],"state_ids":["library.reopened"],"action_ids":["library-reopen-1"],"evidence":["explore-runtime-e43d3562127d44fba9c988c21f71572b"],"branches":["reopen"],"branch_results":{"reopen":{"confidence":"observed","summary":"正常退出和重开后数据保持，数据库完整性及外键检查通过","input":"同一隔离 profile 与 datadir","output":"两条期刊、笔记、标签、PDF 高亮和评论均恢复","action_ids":["library-reopen-1"],"evidence":["explore-runtime-e43d3562127d44fba9c988c21f71572b"]}}}},
+ {"op":"candidate","args":{"id":"reset-exploration-library","kind":"logic","title":"保留证据并重置为空隔离文库","feature_id":"preferences-layout","evidence":["explore-runtime-e43d3562127d44fba9c988c21f71572b"]}},
+ {"op":"plan","args":{"id":"reset-exploration-library","safety":"test-data","precondition":"持久化证据已保存；仅移动项目内隔离测试目录并新建空 profile，不触碰真实数据","feature_id":"preferences-layout","input_class":"授权测试环境恢复"}}
+]}

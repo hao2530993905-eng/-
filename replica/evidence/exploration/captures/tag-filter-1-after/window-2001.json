@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/usr/sbin/screencapture",
+    "-x",
+    "-o",
+    "-t",
+    "png",
+    "-l",
+    "2001",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/tag-filter-1-after/window-2001.png"
+  ],
+  "started_at": "2026-11-13T05:15:14.059345+00:00",
+  "timeout": 30,
+  "stdout": "",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T05:15:14.314325+00:00"
+}

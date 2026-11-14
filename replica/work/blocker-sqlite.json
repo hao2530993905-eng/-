@@ -1,0 +1,1 @@
+{"issue_id":"sqlite-live-backup","summary":"初始在线备份等待 30 秒后超时；静态代码确认连接生命周期 EXCLUSIVE 锁","result":"failed","source":"replica/evidence/reverse-engineering/database-lock/initial-capture-failure.json","scope":{"kind":"features","feature_ids":["item-entry","collections-tags","notes","import","attachments","reader-annotate","export-citation"]}}

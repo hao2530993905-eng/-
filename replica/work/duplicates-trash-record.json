@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "classify",
+      "args": {
+        "capture_id": "duplicates-trash-1-after",
+        "state_id": "library.exported",
+        "title": "文库已导出 RIS",
+        "meaning": "重复条目与回收站只读往返后返回 sample，显示 1 个顶级条目",
+        "merge_reason": "临时维护视图切换不改变 sample 文库数据或导出结果"
+      }
+    },
+    {
+      "op": "interpret",
+      "args": {
+        "action_id": "duplicates-trash-1",
+        "outcome": "no_change",
+        "summary": "重复条目无匹配，回收站为空且创建类按钮禁用；返回 sample 恢复 1 个条目，未执行合并或删除，声明 IO 无变化",
+        "side_effects": []
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "duplicates-trash-review",
+        "status": "explored",
+        "summary": "重复条目与回收站只读视图、禁用状态和返回路径已核实",
+        "evidence": [
+          "explore-runtime-9083040a53774aac9dc43f9274838214"
+        ],
+        "action_ids": [
+          "duplicates-trash-1"
+        ]
+      }
+    },
+    {
+      "op": "finding",
+      "args": {
+        "feature_id": "duplicates-trash",
+        "confidence": "observed",
+        "summary": "重复条目视图提供合并选择上下文；回收站为空时显示无条目并禁用新建/附件/笔记按钮，均可从分类树往返",
+        "inputs": [
+          "无重复、空回收站的隔离文库"
+        ],
+        "outputs": [
+          "重复条目选择上下文、空回收站与禁用按钮、sample 恢复 1 个条目"
+        ],
+        "side_effects": [],
+        "unknowns": [
+          "重复检测与合并、移至回收站、恢复、永久删除和自动清理尚未实测"
+        ],
+        "state_ids": [
+          "library.exported"
+        ],
+        "action_ids": [
+          "duplicates-trash-1"
+        ],
+        "evidence": [
+          "explore-runtime-9083040a53774aac9dc43f9274838214"
+        ],
+        "branches": [],
+        "branch_results": {}
+      }
+    }
+  ]
+}

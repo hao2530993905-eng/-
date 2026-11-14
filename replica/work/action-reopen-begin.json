@@ -1,0 +1,8 @@
+{
+ "id":"library-reopen-1","candidate_id":"library-reopen-normal","from_capture":"tag-filter-1-after","channel":"system",
+ "tool":"app_instances.py stop/start + storage_capture.py",
+ "operation":"正常退出隔离 Zotero，退出后执行 SQLite 在线备份，再启动同一隔离 profile 与 datadir 并核对 UI",
+ "precondition":"所有当前数据均为合成测试数据；实例由本项目登记且可正常退出",
+ "expected_result":"退出状态快照完整，重开后手动条目、导入条目、笔记、PDF 与注释保持",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

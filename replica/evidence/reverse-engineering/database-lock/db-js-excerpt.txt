@@ -1,0 +1,68 @@
+    24	*/
+    25	
+    26	"use strict";
+    27	
+    28	// Exclusive locking mode (default) prevents access to Zotero database while Zotero is open
+    29	// and speeds up DB access (http://www.sqlite.org/pragma.html#pragma_locking_mode).
+    30	// Normal mode is more convenient for development, but risks database corruption, particularly if
+    31	// the same database is accessed simultaneously by multiple Zotero instances.
+    32	const DB_LOCK_EXCLUSIVE = true;
+    33	
+    34	Zotero.DBConnection = function (dbNameOrPath) {
+    35	  if (!dbNameOrPath) {
+    36	    throw 'DB name not provided in Zotero.DBConnection()';
+  1578	    // error from the conversion goes through the same recovery as one from the open.
+  1579	    if (!this._externalDB && !useWAL) {
+  1580	      await this._downgradeDatabaseFromWAL(file);
+  1581	    }
+  1582	    // On macOS, open without an exclusive lock at the OS level so the database can be opened
+  1583	    // on network filesystems (e.g., SMB shares), where acquiring the exclusive open lock
+  1584	    // fails with an I/O error. We still set locking_mode=EXCLUSIVE below, which gives us a
+  1585	    // connection-lifetime SQLite lock preventing undetected concurrent writes. See #4860.
+  1586	    //
+  1587	    // On other platforms, keep the default exclusive open, which performs all locking under
+  1588	    // a single held lock -- avoiding SQLite's lock-upgrade sequence, which fails on some
+  1589	    // network filesystems (e.g., Linux CIFS mounts) -- and keeps the WAL index in heap
+  1590	    // memory, so no -shm file is created.
+  1591	    this._connection = await Promise.resolve(this.Sqlite.openConnection({
+  1592	      path: file,
+  1593	      openNotExclusive: Zotero.isMac
+  1594	    }));
+  1595	  }
+  1596	  catch (e) {
+  1597	    // Don't deal with corrupted external dbs
+  1598	    if (this._externalDB) {
+  1599	      throw e;
+  1600	    }
+  1601	
+  1602	    Zotero.logError(e);
+  1603	
+  1604	    if (this.isCorruptionError(e)) {
+  1605	      await this._handleCorruptionMarker();
+  1606	      // Recovery just verified or replaced the database file and removed any journal
+  1607	      // files, so the unclean-shutdown integrity check below would be redundant
+  1608	      uncleanShutdown = false;
+  1609	    } else
+  1610	    {
+  1611	      // Some other error that we don't yet know how to deal with
+  1612	      throw e;
+  1613	    }
+  1614	  }
+  1615	
+  1616	  if (!this._externalDB) {
+  1617	    if (DB_LOCK_EXCLUSIVE) {
+  1618	      await this.queryAsync("PRAGMA main.locking_mode=EXCLUSIVE");
+  1619	    } else
+  1620	    {
+  1621	      await this.queryAsync("PRAGMA main.locking_mode=NORMAL");
+  1622	    }
+  1623	
+  1624	    if (useWAL) {
+  1625	      try {
+  1626	        // Enable WAL mode for better write performance
+  1627	        await this.queryAsync("PRAGMA journal_mode=WAL");
+  1628	        // NORMAL synchronous is safe with WAL -- only risks losing the last
+  1629	        // transaction on power loss, not corruption
+  1630	        await this.queryAsync("PRAGMA synchronous=NORMAL");
+  1631	      }
+  1632	      catch (e) {

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "dump",
+    "org.zotero.zotero",
+    "--out",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/import-ris-1-after/ax.json"
+  ],
+  "started_at": "2026-11-13T04:45:29.135232+00:00",
+  "timeout": 60,
+  "stdout": "",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:45:30.088045+00:00"
+}

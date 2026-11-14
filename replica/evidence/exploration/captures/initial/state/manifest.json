@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "sources": {},
+  "error": "SQLite 一致性备份超时"
+}

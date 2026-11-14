@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "dump",
+    "org.zotero.zotero",
+    "--out",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/reader-annotate-1-after/ax-after-screenshot.json"
+  ],
+  "started_at": "2026-11-13T04:53:23.011957+00:00",
+  "timeout": 60,
+  "stdout": "",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:53:24.079787+00:00"
+}

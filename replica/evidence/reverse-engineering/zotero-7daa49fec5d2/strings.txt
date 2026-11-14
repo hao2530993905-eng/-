@@ -1,0 +1,80 @@
+AWAVAUATSH
+[A\A]A^A_]
+AWAVSH
+.u'fff.
+[A^A_]
+AWAVSH
+[A^A_]
+AWAVATSH
+[A\A^A_]
+AWAVSH
+[A^A_]
+AWAVATSH
+[A\A^A_]
+AWAVATSH
+[A\A^A_]
+AWAVATSH
+ [A\A^A_]
+AWAVAUATSH
+[A\A]A^A_]
+$MacOL
+nsBrowserApp main
+silentmode
+MOZ_APP_SILENT_START=1
+MOZ_APP_NO_DOCK=1
+/dev/null
+Couldn't find the application directory.
+Couldn't load XPCOM.
+MOZ_ALLOW_DOWNGRADE
+MOZ_LEGACY_PROFILES
+Couldn't find application.ini.
+Incorrect number of arguments passed to -app
+XUL_APP_FILE=%s
+Couldn't set %s.
+xpcshell
+browser
+application.ini
+Mozilla
+Firefox
+firefox-default
+20250701094627
+{ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+https://crash-reports.mozilla.com/submit?id={ec8030f7-c20a-464f-9b0e-13a3a9e97384}&version=140.0&buildid=20250701094627
+https://aus5.mozilla.org/update/6/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%SYSTEM_CAPABILITIES%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml
+private-window
+ReadAheadLib
+XRE_GetBootstrap
+/Resources/dependentlibs.list
+MOZ_RUN_GTEST
+XPCOMGlueLoad error for file %s:
+*ki8_)
+*ki8_)
+nsBrowserApp main
+silentmode
+MOZ_APP_SILENT_START=1
+MOZ_APP_NO_DOCK=1
+/dev/null
+Couldn't find the application directory.
+Couldn't load XPCOM.
+MOZ_ALLOW_DOWNGRADE
+MOZ_LEGACY_PROFILES
+Couldn't find application.ini.
+Incorrect number of arguments passed to -app
+XUL_APP_FILE=%s
+Couldn't set %s.
+xpcshell
+browser
+application.ini
+Mozilla
+Firefox
+firefox-default
+20250701094627
+{ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+https://crash-reports.mozilla.com/submit?id={ec8030f7-c20a-464f-9b0e-13a3a9e97384}&version=140.0&buildid=20250701094627
+https://aus5.mozilla.org/update/6/%PRODUCT%/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%SYSTEM_CAPABILITIES%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml
+private-window
+ReadAheadLib
+XRE_GetBootstrap
+/Resources/dependentlibs.list
+MOZ_RUN_GTEST
+XPCOMGlueLoad error for file %s:

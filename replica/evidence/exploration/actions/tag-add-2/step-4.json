@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "key",
+    "--pid",
+    "46450",
+    "--",
+    "org.zotero.zotero",
+    "escape"
+  ],
+  "started_at": "2026-11-13T04:33:13.664798+00:00",
+  "timeout": 60,
+  "stdout": "key\tescape\n",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:33:13.798219+00:00"
+}

@@ -1,0 +1,10 @@
+{
+ "id":"quick-search-1","candidate_id":"quick-search-normal","from_capture":"reader-annotate-1-after","channel":"ax",
+ "precondition":"sample 分类中包含标题 Local Exploration Article，快速搜索为空且模式为所有字段和标签",
+ "expected_result":"快速搜索 Local Exploration 后保留匹配的期刊条目并可清空恢复",
+ "operations":[
+  {"verb":"set","path":"Window[sample - Zotero] > Group[sample - Zotero] > Toolbar#2 > TextField[快速搜索]","value":"Local Exploration"},
+  {"verb":"key","keys":"return"}
+ ],
+ "equivalence_reason":"AX 设置搜索字段等价于聚焦后键盘输入，输入和结果可分别核对"
+}

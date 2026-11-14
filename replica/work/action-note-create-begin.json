@@ -1,0 +1,8 @@
+{
+ "id":"note-create-1","candidate_id":"note-create-normal","from_capture":"tags-present","channel":"computer-use",
+ "tool":"Computer Use cua App.click/typeText/pressKey",
+ "operation":"通过文件 > 新建笔记 > 新建独立笔记创建笔记，在编辑器输入固定正文并读取稳定 AX",
+ "precondition":"隔离文库和两个标签状态稳定；只创建专用测试笔记",
+ "expected_result":"出现独立笔记编辑页，正文为 Replica note body: local persistence check.，并可返回文库",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

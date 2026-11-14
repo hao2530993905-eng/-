@@ -1,0 +1,58 @@
+{
+  "schema_version": 3,
+  "batches": [
+    {
+      "summary": "全局调查完成",
+      "next_step": "展示能力清单、范围与阻塞并请求确认",
+      "impact_reason": "保存批次边界；变更和待回归项由当前结构化记录提供",
+      "affected_features": [],
+      "unchanged_reason": "本边界无已关联的业务源码变化，功能验证仍以实际证据为准",
+      "created_at": "2026-11-13T05:30:09.278323+00:00",
+      "source_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "build_sha256": null,
+      "changed_paths": [],
+      "pending_regressions": [],
+      "build_check": {
+        "status": "pending",
+        "evidence": []
+      }
+    },
+    {
+      "summary": "等待人工节点 scope-1",
+      "next_step": "收到对应回复后继续已确认范围",
+      "impact_reason": "保存批次边界；变更和待回归项由当前结构化记录提供",
+      "affected_features": [],
+      "unchanged_reason": "本边界无已关联的业务源码变化，功能验证仍以实际证据为准",
+      "created_at": "2026-11-13T05:41:18.292437+00:00",
+      "source_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "build_sha256": null,
+      "changed_paths": [],
+      "pending_regressions": [],
+      "build_check": {
+        "status": "pending",
+        "evidence": []
+      }
+    },
+    {
+      "summary": "Zotero 10.0.6 全局探索完成，主要本地 P0 工作流、退出状态快照和重开持久化已验证；scope-1 等待用户确认",
+      "next_step": "等待用户回复“确认范围”或调整清单；收到回复前不开始实现、不继续桌面操作",
+      "impact_reason": "本轮仅探索原版、生成证据与范围记录，没有 B 源码或构建产物",
+      "affected_features": [],
+      "created_at": "2026-11-13T05:44:22.342843+00:00",
+      "source_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "build_sha256": null,
+      "changed_paths": [],
+      "pending_regressions": [],
+      "build_check": {
+        "status": "pending",
+        "evidence": []
+      }
+    }
+  ],
+  "checkpoint": {
+    "source": {
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "files": {}
+    }
+  }
+}

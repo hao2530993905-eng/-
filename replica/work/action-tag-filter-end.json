@@ -1,0 +1,1 @@
+{"id":"tag-filter-1","success":true,"source":"Computer Use AX：local-testing checkbox 从 0 变为 1，再次点击恢复 0；当前 sample 顶级条目均带该标签，因此列表保持 1 个条目","summary":"标签选择器可选中与取消；本次样例全部匹配，未观察到列表数量差异"}

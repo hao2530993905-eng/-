@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "captured",
+  "roots": {
+    "exports": {
+      "path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/exports",
+      "files": {},
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "attachment-storage": {
+      "path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/library/storage",
+      "files": {},
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  },
+  "inputs": {
+    "sample-ris": {
+      "raw_path": "sample-ris.ris",
+      "raw_sha256": "fe0f677c48871083d0feda1a5ea2987201367fcc196569ad8a9defd85259c028",
+      "source_path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/io/sample.ris",
+      "status": "parsed",
+      "value_path": "sample-ris.value.json",
+      "parser": {
+        "format": "text",
+        "parser": {
+          "id": "python-stdlib-text",
+          "version": "3.9.6",
+          "builtin": true
+        },
+        "raw_sha256": "fe0f677c48871083d0feda1a5ea2987201367fcc196569ad8a9defd85259c028",
+        "value_sha256": "737f6d901752b7142c3cf8341356bf2233744479e57a23b7104c3c657488f1c3"
+      }
+    },
+    "sample-bib": {
+      "raw_path": "sample-bib.bib",
+      "raw_sha256": "51f4bd304f65015185ec7d96d8502bc837919ee936e88b9ac105782bf2eed541",
+      "source_path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/io/sample.bib",
+      "status": "parsed",
+      "value_path": "sample-bib.value.json",
+      "parser": {
+        "format": "text",
+        "parser": {
+          "id": "python-stdlib-text",
+          "version": "3.9.6",
+          "builtin": true
+        },
+        "raw_sha256": "51f4bd304f65015185ec7d96d8502bc837919ee936e88b9ac105782bf2eed541",
+        "value_sha256": "f59195a69329bca474668d233cd72cad99266bd6f3371ea0bf48488dc51e4c1a"
+      }
+    },
+    "sample-pdf": {
+      "raw_path": "sample-pdf.pdf",
+      "raw_sha256": "88be908c16930422ac688acfdd0cbc300499c83eaecdfd9f15fc5e5f2c928e56",
+      "source_path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/io/sample.pdf",
+      "status": "unsupported",
+      "error": "没有登记 binary 解析器"
+    }
+  },
+  "invalid_inputs": [],
+  "unsupported_inputs": [
+    "sample-pdf"
+  ],
+  "clipboard": null,
+  "coverage": "declared_inputs_and_roots_only"
+}

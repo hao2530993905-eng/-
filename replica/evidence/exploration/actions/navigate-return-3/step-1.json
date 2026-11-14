@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "click",
+    "--pid",
+    "46450",
+    "--",
+    "org.zotero.zotero",
+    "Window[最近阅读 - Zotero] > Group[最近阅读 - Zotero] > Group#4 > Outline[分类] > Group > Row[我的文库]"
+  ],
+  "started_at": "2026-11-13T03:59:57.050571+00:00",
+  "timeout": 60,
+  "stdout": "click\tWindow[最近阅读 - Zotero] > Group[最近阅读 - Zotero] > Group#4 > Outline[分类] > Group > Row[我的文库]\n",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T03:59:57.234882+00:00"
+}

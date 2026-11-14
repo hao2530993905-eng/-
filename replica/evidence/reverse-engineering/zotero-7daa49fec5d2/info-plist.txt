@@ -1,0 +1,121 @@
+{
+  "CFBundleDevelopmentRegion" => "English"
+  "CFBundleDocumentTypes" => [
+    0 => {
+      "CFBundleTypeExtensions" => [
+        0 => "ris"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/x-research-info-systems"
+        1 => "text/x-research-info-systems"
+        2 => "text/ris"
+        3 => "ris"
+        4 => "application/x-endnote-refer"
+      ]
+      "CFBundleTypeName" => "Research Information Systems Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    1 => {
+      "CFBundleTypeExtensions" => [
+        0 => "ciw"
+        1 => "isi"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/x-inst-for-Scientific-info"
+      ]
+      "CFBundleTypeName" => "ISI Common Export Format Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    2 => {
+      "CFBundleTypeExtensions" => [
+        0 => "mods"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/mods+xml"
+      ]
+      "CFBundleTypeName" => "Metadata Object Description Schema Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    3 => {
+      "CFBundleTypeExtensions" => [
+        0 => "rdf"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/rdf+xml"
+      ]
+      "CFBundleTypeName" => "Resource Description Framework Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    4 => {
+      "CFBundleTypeExtensions" => [
+        0 => "bib"
+        1 => "bibtex"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/x-bibtex"
+        1 => "text/x-bibtex"
+      ]
+      "CFBundleTypeName" => "BibTeX Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    5 => {
+      "CFBundleTypeExtensions" => [
+        0 => "mrc"
+        1 => "marc"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/marc"
+      ]
+      "CFBundleTypeName" => "MARC Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    6 => {
+      "CFBundleTypeExtensions" => [
+        0 => "csl"
+        1 => "csl.txt"
+      ]
+      "CFBundleTypeMIMETypes" => [
+        0 => "application/vnd.citationstyles.style+xml"
+      ]
+      "CFBundleTypeName" => "CSL Citation Style"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    7 => {
+      "CFBundleTypeExtensions" => [
+        0 => "xml"
+      ]
+      "CFBundleTypeName" => "XML Document"
+      "CFBundleTypeRole" => "Viewer"
+    }
+    8 => {
+      "CFBundleTypeExtensions" => [
+        0 => "txt"
+      ]
+      "CFBundleTypeName" => "Text File"
+      "CFBundleTypeRole" => "Viewer"
+    }
+  ]
+  "CFBundleExecutable" => "zotero"
+  "CFBundleGetInfoString" => "Zotero 10.0.6, © 2006-2018 Contributors"
+  "CFBundleIconName" => "AppIcon"
+  "CFBundleIdentifier" => "org.zotero.zotero"
+  "CFBundleInfoDictionaryVersion" => "6.0"
+  "CFBundleName" => "Zotero"
+  "CFBundlePackageType" => "APPL"
+  "CFBundleShortVersionString" => "10.0.6"
+  "CFBundleSignature" => "ZOTR"
+  "CFBundleURLTypes" => [
+    0 => {
+      "CFBundleURLName" => "zotero URL"
+      "CFBundleURLSchemes" => [
+        0 => "zotero"
+      ]
+    }
+  ]
+  "CFBundleVersion" => "10.0.6"
+  "CGDisableCoalescedUpdates" => true
+  "LSMinimumSystemVersion" => "10.9.0"
+  "NSAppleScriptEnabled" => true
+  "NSHighResolutionCapable" => true
+  "NSSupportsAutomaticGraphicsSwitching" => true
+}

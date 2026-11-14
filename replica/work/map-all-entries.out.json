@@ -1,0 +1,177 @@
+{
+  "basis": "仅统计已发现的入口、状态和代表性行为分支",
+  "total": 34,
+  "pending": 2,
+  "blocked": 3,
+  "by_status": {
+    "blocked": 3,
+    "reviewed": 13,
+    "explored": 16,
+    "pending": 2
+  },
+  "by_kind": {
+    "ax-gap": {
+      "total": 12,
+      "blocked": 1,
+      "reviewed": 11
+    },
+    "branch": {
+      "total": 12,
+      "explored": 10,
+      "blocked": 1,
+      "pending": 1
+    },
+    "control": {
+      "total": 4,
+      "explored": 3,
+      "pending": 1
+    },
+    "logic": {
+      "total": 2,
+      "reviewed": 1,
+      "explored": 1
+    },
+    "menu": {
+      "total": 0
+    },
+    "page": {
+      "total": 2,
+      "explored": 2
+    },
+    "static": {
+      "total": 1,
+      "reviewed": 1
+    },
+    "visual-review": {
+      "total": 1,
+      "blocked": 1
+    }
+  },
+  "states": 14,
+  "actions": 23,
+  "entries": 1934,
+  "unmapped_entries": [],
+  "unclassified": [],
+  "unfinished_captures": [],
+  "failed_captures": [
+    "initial",
+    "initial-ui",
+    "navigate-return-1-before",
+    "navigate-return-2-before",
+    "item-create-1-after",
+    "tag-add-1-after",
+    "tag-added",
+    "tag-stable",
+    "tag-settled",
+    "tag-add-2-after",
+    "note-create-1-before",
+    "quick-search-1-after"
+  ],
+  "unfinished_actions": [],
+  "blockers": [
+    {
+      "id": "capture-failure-initial",
+      "kind": "ax-gap",
+      "title": "取证失败：initial",
+      "evidence": [
+        "explore-runtime-94e8f80421fc4027af43e26cdc3bdce3"
+      ],
+      "status": "blocked",
+      "safety": "review",
+      "state_id": null,
+      "history": [
+        {
+          "status": "pending",
+          "resolution": null,
+          "updated_at": "2026-11-13T03:52:46.656858+00:00"
+        }
+      ],
+      "created_at": "2026-11-13T03:39:25.954160+00:00",
+      "resolution": {
+        "id": "capture-failure-initial",
+        "status": "blocked",
+        "summary": "原版主库连接生命周期 EXCLUSIVE 锁使运行中在线备份超时；不修改原 App，UI 流程继续，数据副作用在正常退出后补查",
+        "evidence": [
+          "sqlite-live-backup-lock"
+        ],
+        "attempts": [
+          "初始 exploration_capture.py capture initial：SQLite 一致性备份 30 秒超时",
+          "直接 sqlite3 mode=ro 查询：database is locked",
+          "静态核对 db.js：DB_LOCK_EXCLUSIVE=true"
+        ],
+        "resume_condition": "正常退出隔离实例后取得只读一致性快照；若必须运行中逐动作数据库差分，需要不改变原版的安全新取证方法",
+        "feature_id": "item-entry"
+      }
+    },
+    {
+      "id": "sync-online-blocked",
+      "kind": "branch",
+      "title": "账号同步、群组与在线服务",
+      "feature_id": "sync-groups",
+      "evidence": [
+        "zotero-package-inventory"
+      ],
+      "status": "blocked",
+      "safety": "review",
+      "state_id": null,
+      "history": [
+        {
+          "status": "pending",
+          "resolution": null,
+          "updated_at": "2026-11-13T03:52:46.663505+00:00"
+        }
+      ],
+      "created_at": "2026-11-13T03:52:46.663230+00:00",
+      "resolution": {
+        "id": "sync-online-blocked",
+        "status": "blocked",
+        "summary": "隔离 profile 无账号且本轮未授权登录或联网副作用；仅记录入口，不执行同步/建群",
+        "evidence": [
+          "desktop-permission",
+          "explore-ax-56299e05aef042bdb1ed81a06efe29ce"
+        ],
+        "attempts": [
+          "检查初始窗口同步按钮与新建群组菜单",
+          "核对隔离 user.js 已禁用自动同步"
+        ],
+        "resume_condition": "用户提供专用测试账号并明确授权具体联网、同步和群组操作",
+        "feature_id": "sync-groups"
+      }
+    },
+    {
+      "id": "visual-pixel-review",
+      "kind": "visual-review",
+      "title": "截图像素级视觉复核",
+      "feature_id": "preferences-layout",
+      "state_id": "main.empty",
+      "evidence": [
+        "explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36"
+      ],
+      "status": "blocked",
+      "safety": "review",
+      "history": [
+        {
+          "status": "pending",
+          "resolution": null,
+          "updated_at": "2026-11-13T05:27:42.260246+00:00"
+        }
+      ],
+      "created_at": "2026-11-13T05:27:42.258526+00:00",
+      "resolution": {
+        "id": "visual-pixel-review",
+        "status": "blocked",
+        "summary": "所有关键状态已保存目标窗口 JPEG，Computer Use 的 AX/文本和几何信息已核对；当前模型工具明确提示不支持图像输入，不能声称完成像素级视觉审查",
+        "evidence": [
+          "explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36",
+          "preflight-check"
+        ],
+        "attempts": [
+          "调用 Computer Use getScreenshot，工具返回 image omitted because you do not support image input",
+          "使用 AX 文本、角色、值、动作和 frame 核对主要布局"
+        ],
+        "resume_condition": "由支持图像输入的 Agent 或用户查看保存的窗口截图，复核颜色、间距、图标和动效",
+        "feature_id": "preferences-layout"
+      }
+    }
+  ]
+}

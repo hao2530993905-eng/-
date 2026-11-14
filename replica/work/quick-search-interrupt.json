@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "interrupt",
+      "args": {
+        "summary": "Local Exploration 搜索已实际返回期刊条目、PDF 与高亮注释；异步列表更新使后快照不稳定。保留结果现场并用 Computer Use 完成搜索/清空轨迹",
+        "evidence": [
+          "explore-runtime-c30379def78e4cedb95118b5a972f48b",
+          "explore-runtime-fb9fcf849a284901b48ab359b6289df2",
+          "explore-ax-ba0af6f6b85b44849c3871458470fe87",
+          "explore-ax-eb03e69f68774108a91a26092ed0ba51"
+        ]
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-quick-search-1-after",
+        "status": "reviewed",
+        "summary": "搜索结果已出现且正确；异步列表刷新导致后快照失败，单独采集稳定结果",
+        "evidence": [
+          "explore-ax-ba0af6f6b85b44849c3871458470fe87",
+          "explore-ax-eb03e69f68774108a91a26092ed0ba51"
+        ]
+      }
+    }
+  ]
+}

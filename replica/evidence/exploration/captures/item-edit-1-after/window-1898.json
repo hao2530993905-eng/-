@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/usr/sbin/screencapture",
+    "-x",
+    "-o",
+    "-t",
+    "png",
+    "-l",
+    "1898",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/item-edit-1-after/window-1898.png"
+  ],
+  "started_at": "2026-11-13T04:05:26.704844+00:00",
+  "timeout": 30,
+  "stdout": "",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:05:26.905530+00:00"
+}

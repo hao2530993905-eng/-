@@ -1,0 +1,7 @@
+{
+ "id":"duplicates-trash-1","candidate_id":"duplicates-trash-review","from_capture":"advanced-search-1-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click",
+ "operation":"依次点击重复条目、回收站和 sample 分类，读取只读视图并返回",
+ "precondition":"隔离文库视图稳定；不点击合并、删除或清空按钮",
+ "expected_result":"重复条目与回收站显示各自当前状态，sample 可重新选中并恢复原条目"
+}

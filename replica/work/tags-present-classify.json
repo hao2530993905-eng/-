@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "classify",
+      "args": {
+        "capture_id": "tags-present",
+        "state_id": "item.tagged.2",
+        "title": "条目含两个测试标签",
+        "meaning": "Local Replication Study 详情显示 2 个标签，左侧选择器列出 local-testing 与 replica-exploration",
+        "merge_reason": "标签编辑焦点、空白行和菜单占位变化不影响两个已保存标签的语义"
+      }
+    },
+    {
+      "op": "candidate",
+      "args": {
+        "id": "tag-filter-normal",
+        "kind": "control",
+        "title": "使用标签选择器筛选条目",
+        "feature_id": "collections-tags",
+        "branch_id": "normal",
+        "evidence": [
+          "explore-ax-58f616b52b994b1ca569cb76a8d5d7d4"
+        ]
+      }
+    },
+    {
+      "op": "plan",
+      "args": {
+        "id": "tag-filter-normal",
+        "safety": "navigation",
+        "precondition": "两个测试标签已在当前隔离文库中，点击标签选择器只改变筛选状态",
+        "feature_id": "collections-tags",
+        "input_class": "正常标签筛选"
+      }
+    }
+  ]
+}

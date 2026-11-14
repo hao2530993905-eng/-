@@ -1,0 +1,6 @@
+{
+  "id": "reader-annotate-1",
+  "success": true,
+  "source": "Computer Use AX：完整 PDF 阅读器显示 1/1 页；查找 Local Exploration 得到 1/1，Control+Alt+1 后侧边栏出现页 1 高亮，评论 Replica highlight comment 可见；点击 sample 标签返回文库",
+  "summary": "完整阅读器、文本查找、键盘创建高亮、评论编辑和返回文库均已走通；高亮文本与评论已核对"
+}

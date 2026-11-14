@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27",
+  "states": {
+    "main.empty": {
+      "id": "main.empty",
+      "title": "空隔离文库主窗口",
+      "meaning": "Zotero 10 欢迎条与空我的文库；左侧分类、中央条目区、右侧条目详情和完整菜单可用",
+      "captures": [
+        "initial-stable",
+        "navigate-recent-1-before",
+        "navigate-return-3-after",
+        "collection-create-1-before",
+        "library-reset-1-after"
+      ],
+      "recoveries": [
+        {
+          "action_ids": [
+            "navigate-recent-1",
+            "navigate-return-3"
+          ],
+          "precondition": "最近阅读空视图稳定，左侧我的文库行可见",
+          "capture_id": "navigate-return-3-after"
+        },
+        {
+          "action_ids": [
+            "library-reset-1"
+          ],
+          "precondition": "重开持久化已验证且 post-quit-sqlite 已登记；只移动项目内合成测试材料",
+          "capture_id": "library-reset-1-after"
+        }
+      ]
+    },
+    "main.recent.empty": {
+      "id": "main.recent.empty",
+      "title": "最近阅读空视图",
+      "meaning": "左侧最近阅读视图被选中，窗口标题和中央空条目表同步变化",
+      "captures": [
+        "navigate-recent-1-after",
+        "recent-stable",
+        "recent-active",
+        "navigate-return-3-before"
+      ],
+      "recoveries": []
+    },
+    "collection.empty": {
+      "id": "collection.empty",
+      "title": "Replica Exploration 空分类",
+      "meaning": "新建分类已被创建并选中，窗口标题与分类树同步，中央条目表为空",
+      "captures": [
+        "collection-create-1-after",
+        "item-create-1-before"
+      ],
+      "recoveries": []
+    },
+    "item.editing.blank": {
+      "id": "item.editing.blank",
+      "title": "新期刊条目编辑",
+      "meaning": "已创建的空白期刊文章选中，右侧条目详情可编辑，标题获得焦点，出现可关闭的同步提醒",
+      "captures": [
+        "item-created",
+        "item-edit-1-before"
+      ],
+      "recoveries": []
+    },
+    "item.editing.saved": {
+      "id": "item.editing.saved",
+      "title": "合成期刊条目已填写",
+      "meaning": "Local Replication Study 在列表和详情中显示，作者 Example, Ada、出版物和 2026 日期已保存，焦点移至下一字段",
+      "captures": [
+        "item-edit-1-after",
+        "tag-add-1-before"
+      ],
+      "recoveries": []
+    },
+    "item.tagged": {
+      "id": "item.tagged",
+      "title": "条目已添加首个标签",
+      "meaning": "菜单懒加载完成后，Local Replication Study 保留 1 个标签 local-testing，左侧标签选择器可见",
+      "captures": [
+        "tag-settled-2",
+        "tag-add-2-before"
+      ],
+      "recoveries": []
+    },
+    "item.tagged.2": {
+      "id": "item.tagged.2",
+      "title": "条目含两个测试标签",
+      "meaning": "Local Replication Study 详情显示 2 个标签，左侧选择器列出 local-testing 与 replica-exploration",
+      "captures": [
+        "tags-present",
+        "note-base",
+        "note-create-2-before"
+      ],
+      "recoveries": []
+    },
+    "note.editing": {
+      "id": "note.editing",
+      "title": "独立笔记编辑器",
+      "meaning": "新独立笔记与期刊条目并列显示，右侧 Zotero Note Editor 显示固定正文，工具栏和标签/分类区域可用",
+      "captures": [
+        "note-create-2-after",
+        "import-ris-1-before"
+      ],
+      "recoveries": []
+    },
+    "import.ris.selected": {
+      "id": "import.ris.selected",
+      "title": "RIS 导入条目已选中",
+      "meaning": "默认新建 sample 分类并选中 Local Exploration Article，完整元数据、摘要和两个标签在详情中可见",
+      "captures": [
+        "import-ris-1-after",
+        "attachment-add-1-before"
+      ],
+      "recoveries": []
+    },
+    "attachment.pdf.selected": {
+      "id": "attachment.pdf.selected",
+      "title": "PDF 子附件已选中",
+      "meaning": "父条目展开并显示 PDF 附件，子附件被选中，右侧附件信息、自动文件名、页数、索引状态和 PDF.js 预览可见",
+      "captures": [
+        "attachment-add-1-after",
+        "reader-annotate-1-before"
+      ],
+      "recoveries": []
+    },
+    "reader.returned": {
+      "id": "reader.returned",
+      "title": "阅读注释后返回文库",
+      "meaning": "sample 文库与 PDF 子附件重新可见；完整阅读器标签已往返，附件预览保留",
+      "captures": [
+        "reader-annotate-1-after",
+        "quick-search-1-before",
+        "quick-search-2-after",
+        "library-export-1-before"
+      ],
+      "recoveries": []
+    },
+    "search.results": {
+      "id": "search.results",
+      "title": "快速搜索结果",
+      "meaning": "搜索框为 Local Exploration，匹配期刊条目、PDF 附件及 Local Exploration 高亮注释可见",
+      "captures": [
+        "search-results",
+        "quick-search-2-before"
+      ],
+      "recoveries": []
+    },
+    "library.exported": {
+      "id": "library.exported",
+      "title": "文库已导出 RIS",
+      "meaning": "sample 文库界面保持，项目 exports/library.ris 已生成且含两条合成期刊记录",
+      "captures": [
+        "library-export-1-after",
+        "preferences-review-1-before",
+        "preferences-review-1-after",
+        "advanced-search-1-before",
+        "advanced-search-1-after",
+        "duplicates-trash-1-before",
+        "duplicates-trash-1-after",
+        "tag-filter-1-before",
+        "tag-filter-1-after",
+        "library-reopen-1-before"
+      ],
+      "recoveries": []
+    },
+    "library.reopened": {
+      "id": "library.reopened",
+      "title": "隔离文库重开后状态",
+      "meaning": "新进程恢复分类、手动期刊、独立笔记和阅读器标签；页 1 高亮及评论仍在",
+      "captures": [
+        "library-reopen-1-after",
+        "library-reset-1-before"
+      ],
+      "recoveries": []
+    }
+  },
+  "transitions": [
+    {
+      "id": "navigate-recent-1",
+      "from": "main.empty",
+      "to": "main.recent.empty",
+      "outcome": "changed",
+      "summary": "Computer Use 点击最近阅读后，窗口标题、当前分组和中央条目表均切换；声明的 IO 范围无变化",
+      "before": "navigate-recent-1-before",
+      "after": "navigate-recent-1-after"
+    },
+    {
+      "id": "navigate-return-3",
+      "from": "main.recent.empty",
+      "to": "main.empty",
+      "outcome": "restored",
+      "summary": "AX 点击我的文库后恢复初始窗口标题和空文库视图；两次导航形成完整可逆轨迹",
+      "before": "navigate-return-3-before",
+      "after": "navigate-return-3-after"
+    },
+    {
+      "id": "collection-create-1",
+      "from": "main.empty",
+      "to": "collection.empty",
+      "outcome": "changed",
+      "summary": "通过工具栏输入并确认后创建 Replica Exploration 分类且自动选中；声明的 exports/attachment-storage 未变化",
+      "before": "collection-create-1-before",
+      "after": "collection-create-1-after"
+    },
+    {
+      "id": "item-edit-1",
+      "from": "item.editing.blank",
+      "to": "item.editing.saved",
+      "outcome": "changed",
+      "summary": "五个 AX 字段设置和 Tab 均成功；列表标题/创建者及详情字段显示预期值，修改日期更新；声明 IO 范围无变化",
+      "before": "item-edit-1-before",
+      "after": "item-edit-1-after"
+    },
+    {
+      "id": "note-create-2",
+      "from": "item.tagged.2",
+      "to": "note.editing",
+      "outcome": "changed",
+      "summary": "Computer Use 完成新建独立笔记与正文输入；列表和编辑器均显示预期内容，声明 IO 无变化",
+      "before": "note-create-2-before",
+      "after": "note-create-2-after"
+    },
+    {
+      "id": "import-ris-1",
+      "from": "note.editing",
+      "to": "import.ris.selected",
+      "outcome": "changed",
+      "summary": "本地 RIS 文件经来源选择、文件选择器和默认选项导入 1 个条目；导入完成计数与全部核心字段均符合样例",
+      "before": "import-ris-1-before",
+      "after": "import-ris-1-after"
+    },
+    {
+      "id": "attachment-add-1",
+      "from": "import.ris.selected",
+      "to": "attachment.pdf.selected",
+      "outcome": "changed",
+      "summary": "附加文件选择器完成后，PDF 复制到隔离存储并自动按元数据重命名；父条目展开、附件预览和索引状态出现；外部差分观察到新存储文件",
+      "before": "attachment-add-1-before",
+      "after": "attachment-add-1-after"
+    },
+    {
+      "id": "reader-annotate-1",
+      "from": "attachment.pdf.selected",
+      "to": "reader.returned",
+      "outcome": "changed",
+      "summary": "完整阅读器加载 PDF；查找 Local Exploration 返回 1/1，Control+Alt+1 创建高亮，侧边栏显示文本与评论；随后返回文库。外部差分观察到隔离附件目录变化",
+      "before": "reader-annotate-1-before",
+      "after": "reader-annotate-1-after"
+    },
+    {
+      "id": "quick-search-2",
+      "from": "search.results",
+      "to": "reader.returned",
+      "outcome": "changed",
+      "summary": "Synthetic 搜索通过摘要保留目标条目并过滤注释，清空后恢复完整条目层级；声明 IO 无变化",
+      "before": "quick-search-2-before",
+      "after": "quick-search-2-after"
+    },
+    {
+      "id": "library-export-1",
+      "from": "reader.returned",
+      "to": "library.exported",
+      "outcome": "changed",
+      "summary": "RIS/UTF-8 导出到登记目录，文件记录数和核心字段已用 shell 验证；外部差分捕获新文件及解析文本",
+      "before": "library-export-1-before",
+      "after": "library-export-1-after"
+    },
+    {
+      "id": "preferences-review-1",
+      "from": "library.exported",
+      "to": "library.exported",
+      "outcome": "no_change",
+      "summary": "常规、账户、导出、引用和高级页均可只读访问；隔离数据目录、禁用更新/HTTP、未登录和未安装文字处理加载项已核实；返回文库，声明 IO 无变化",
+      "before": "preferences-review-1-before",
+      "after": "preferences-review-1-after"
+    },
+    {
+      "id": "advanced-search-1",
+      "from": "library.exported",
+      "to": "library.exported",
+      "outcome": "changed",
+      "summary": "高级搜索默认条件已核对，标题包含 Local Exploration 命中目标，清空与关闭恢复列表；声明 IO 无变化",
+      "before": "advanced-search-1-before",
+      "after": "advanced-search-1-after"
+    },
+    {
+      "id": "duplicates-trash-1",
+      "from": "library.exported",
+      "to": "library.exported",
+      "outcome": "no_change",
+      "summary": "重复条目无匹配，回收站为空且创建类按钮禁用；返回 sample 恢复 1 个条目，未执行合并或删除，声明 IO 无变化",
+      "before": "duplicates-trash-1-before",
+      "after": "duplicates-trash-1-after"
+    },
+    {
+      "id": "tag-filter-1",
+      "from": "library.exported",
+      "to": "library.exported",
+      "outcome": "no_change",
+      "summary": "local-testing 在 0/1 间切换并恢复；当前所有顶级条目均匹配，因此列表未变化，声明 IO 无变化",
+      "before": "tag-filter-1-before",
+      "after": "tag-filter-1-after"
+    },
+    {
+      "id": "library-reopen-1",
+      "from": "library.exported",
+      "to": "library.reopened",
+      "outcome": "no_change",
+      "summary": "正常退出后 SQLite 快照健康且字段完整，重开后 UI 恢复相同业务数据与注释；声明 IO 无额外变化",
+      "before": "library-reopen-1-before",
+      "after": "library-reopen-1-after"
+    },
+    {
+      "id": "library-reset-1",
+      "from": "library.reopened",
+      "to": "main.empty",
+      "outcome": "restored",
+      "summary": "旧测试材料完整保留在项目证据区，新隔离实例恢复初始空文库；未删除真实数据",
+      "before": "library-reset-1-before",
+      "after": "library-reset-1-after"
+    }
+  ],
+  "capture_ids": [
+    "initial",
+    "initial-ui",
+    "initial-stable",
+    "navigate-recent-1-before",
+    "navigate-recent-1-after",
+    "navigate-return-1-before",
+    "recent-stable",
+    "navigate-return-2-before",
+    "recent-active",
+    "navigate-return-3-before",
+    "navigate-return-3-after",
+    "collection-create-1-before",
+    "collection-create-1-after",
+    "item-create-1-before",
+    "item-create-1-after",
+    "item-created",
+    "item-edit-1-before",
+    "item-edit-1-after",
+    "tag-add-1-before",
+    "tag-add-1-after",
+    "tag-added",
+    "tag-stable",
+    "tag-settled",
+    "tag-settled-2",
+    "tag-add-2-before",
+    "tag-add-2-after",
+    "tags-present",
+    "note-create-1-before",
+    "note-base",
+    "note-create-2-before",
+    "note-create-2-after",
+    "import-ris-1-before",
+    "import-ris-1-after",
+    "attachment-add-1-before",
+    "attachment-add-1-after",
+    "reader-annotate-1-before",
+    "reader-annotate-1-after",
+    "quick-search-1-before",
+    "quick-search-1-after",
+    "search-results",
+    "quick-search-2-before",
+    "quick-search-2-after",
+    "library-export-1-before",
+    "library-export-1-after",
+    "preferences-review-1-before",
+    "preferences-review-1-after",
+    "advanced-search-1-before",
+    "advanced-search-1-after",
+    "duplicates-trash-1-before",
+    "duplicates-trash-1-after",
+    "tag-filter-1-before",
+    "tag-filter-1-after",
+    "library-reopen-1-before",
+    "library-reopen-1-after",
+    "library-reset-1-before",
+    "library-reset-1-after"
+  ],
+  "entry_count": 1934,
+  "candidate_ids": [
+    "capture-failure-initial",
+    "capture-failure-initial-ui",
+    "capture-failure-live-db-review",
+    "navigate-library-views",
+    "collection-create-normal",
+    "item-create-normal",
+    "note-create-normal",
+    "import-ris-normal",
+    "attachment-add-pdf",
+    "reader-annotate-normal",
+    "quick-search-normal",
+    "library-export-normal",
+    "preferences-review",
+    "sync-online-blocked",
+    "external-integration-review",
+    "navigate-return-library",
+    "capture-failure-navigate-return-1-before",
+    "capture-failure-navigate-return-2-before",
+    "capture-failure-item-create-1-after",
+    "tag-add-normal",
+    "capture-failure-tag-add-1-after",
+    "capture-failure-tag-added",
+    "capture-failure-tag-stable",
+    "capture-failure-tag-settled",
+    "capture-failure-tag-add-2-after",
+    "tag-filter-normal",
+    "capture-failure-note-create-1-before",
+    "capture-failure-quick-search-1-after",
+    "advanced-search-normal",
+    "duplicates-trash-review",
+    "library-reopen-normal",
+    "reset-exploration-library",
+    "visual-pixel-review",
+    "remaining-entry-review",
+    "recovery-collection-empty",
+    "recovery-item-blank",
+    "recovery-item-saved",
+    "recovery-item-tagged"
+  ]
+}

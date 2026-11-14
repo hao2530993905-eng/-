@@ -1,0 +1,4 @@
+{"schema_version":1,"operations":[
+ {"op":"interrupt","args":{"summary":"第二次动作仍未发送输入；差异仍仅为查看菜单懒加载标题。先用 Escape 定位并激活 A，再重新观察稳定状态","evidence":["explore-ax-512af42fa88f49b4b43a6c7705a23e16","explore-ax-94aeb6e0a08c4da882358dac34d1dc5a"]}},
+ {"op":"resolve","args":{"id":"capture-failure-navigate-return-2-before","status":"reviewed","summary":"未执行动作；与已记录的懒加载菜单相同，改用激活后的稳定快照，不重复盲目点击","evidence":["explore-ax-512af42fa88f49b4b43a6c7705a23e16","explore-ax-94aeb6e0a08c4da882358dac34d1dc5a"]}}
+]}

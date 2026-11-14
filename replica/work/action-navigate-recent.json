@@ -1,0 +1,10 @@
+{
+  "id":"navigate-recent-1",
+  "candidate_id":"navigate-library-views",
+  "from_capture":"initial-stable",
+  "channel":"computer-use",
+  "tool":"Computer Use cua App.click",
+  "operation":"点击左侧“最近阅读”行，然后再读取最新 AX",
+  "precondition":"空隔离文库主窗口稳定，最近阅读行可见；不涉及业务数据修改",
+  "expected_result":"左侧选中最近阅读，中央显示该视图的空状态，可再返回我的文库"
+}

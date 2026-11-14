@@ -1,0 +1,50 @@
+{
+  "quote": "请使用 $replicate-macos-app 探索 macOS 上的 Zotero。APP_PATH=/Applications/Zotero.app PROJECT_DIR=/Users/computeruse/Desktop/zotero-replica-explore SKILL_DIR=/Users/computeruse/Desktop/harness更新/replicate-macos-app 在/Users/computeruse/Desktop/zotero复刻 中进行",
+  "source": "用户本轮首条消息",
+  "evidence": [
+    "desktop-permission"
+  ],
+  "desktop_notice": "自动操作期间暂不操作鼠标键盘、切换窗口或关闭 Zotero；只采集已确认属于 Zotero 的窗口截图，AX、输入日志和证据仅保存在项目本地。",
+  "screenshots": "target-windows",
+  "test_data": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration",
+  "storage": {
+    "schema_version": 1,
+    "status": "blocked",
+    "reason": "Zotero 10.0.6 主库在连接生命周期内使用 EXCLUSIVE 锁，在线一致性备份已实际超时；见 sqlite-live-backup-lock。正常退出后另行只读核验。"
+  },
+  "external": {
+    "schema_version": 1,
+    "status": "declared",
+    "roots": [
+      {
+        "id": "exports",
+        "path": "exports",
+        "format": "text"
+      },
+      {
+        "id": "attachment-storage",
+        "path": "library/storage",
+        "format": "binary"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "sample-ris",
+        "path": "io/sample.ris",
+        "format": "text"
+      },
+      {
+        "id": "sample-bib",
+        "path": "io/sample.bib",
+        "format": "text"
+      },
+      {
+        "id": "sample-pdf",
+        "path": "io/sample.pdf",
+        "format": "binary"
+      }
+    ],
+    "clipboard": false,
+    "parsers": {}
+  }
+}

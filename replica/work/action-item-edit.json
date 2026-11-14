@@ -1,0 +1,14 @@
+{
+ "id":"item-edit-1","candidate_id":"item-create-normal","from_capture":"item-created","channel":"ax",
+ "precondition":"新期刊条目已选中且右侧字段可编辑；输入全为合成测试数据",
+ "expected_result":"标题、作者、出版物和日期显示在条目详情与条目列表中，焦点移出后保存",
+ "operations":[
+  {"verb":"set","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > Unknown[标题] > TextArea[标题]","value":"Local Replication Study"},
+  {"verb":"set","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > TextField[(姓)]","value":"Example"},
+  {"verb":"set","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > TextField[(名)]","value":"Ada"},
+  {"verb":"set","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > Unknown[出版物] > TextArea[出版物]","value":"Journal of Local Testing"},
+  {"verb":"set","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > Unknown[日期] > TextArea[日期]","value":"2026"},
+  {"verb":"key","keys":"tab"}
+ ],
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

@@ -1,0 +1,26 @@
+{
+  "identity": {
+    "app_path": "/Applications/Zotero.app",
+    "bundle_id": "org.zotero.zotero",
+    "executable": "/Applications/Zotero.app/Contents/MacOS/zotero",
+    "sha256": "7daa49fec5d27bdafcf49d2f425b21cba684e59718c8e5399679f6353025b116"
+  },
+  "test_data": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration",
+  "arguments": [
+    "-no-remote",
+    "-profile",
+    "/Users/computeruse/Desktop/zotero复刻/replica/work/profile-a",
+    "-datadir",
+    "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/library"
+  ],
+  "environment": {},
+  "role": "a",
+  "process": {
+    "pid": 46450,
+    "started_at": "Thu Nov 12 19:35:20 2026",
+    "name": "zotero"
+  },
+  "purpose": "隔离资料库中的 Zotero 主要本地工作流探索",
+  "keep": null,
+  "reused": false
+}

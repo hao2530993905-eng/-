@@ -1,0 +1,1 @@
+{"schema_version":1,"operations":[{"op":"classify","args":{"capture_id":"note-base","state_id":"item.tagged.2","title":"条目含两个测试标签","meaning":"AX 预热后完整窗口与菜单稳定，当前条目仍保留两个测试标签","merge_reason":"仅动态菜单标题和编辑焦点变化，业务状态与 tags-present 等价"}}]}

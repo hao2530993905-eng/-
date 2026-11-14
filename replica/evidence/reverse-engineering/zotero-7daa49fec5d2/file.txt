@@ -1,0 +1,3 @@
+/Applications/Zotero.app/Contents/MacOS/zotero: Mach-O universal binary with 2 architectures: [x86_64:Mach-O 64-bit executable x86_64] [arm64:Mach-O 64-bit executable arm64]
+/Applications/Zotero.app/Contents/MacOS/zotero (for architecture x86_64):	Mach-O 64-bit executable x86_64
+/Applications/Zotero.app/Contents/MacOS/zotero (for architecture arm64):	Mach-O 64-bit executable arm64

@@ -1,0 +1,5266 @@
+{
+  "objects": [
+    {
+      "type": "index",
+      "name": "baseFieldMappingsCombined_baseFieldID",
+      "tbl_name": "baseFieldMappingsCombined",
+      "sql": "CREATE INDEX baseFieldMappingsCombined_baseFieldID ON baseFieldMappingsCombined(baseFieldID)"
+    },
+    {
+      "type": "index",
+      "name": "baseFieldMappingsCombined_fieldID",
+      "tbl_name": "baseFieldMappingsCombined",
+      "sql": "CREATE INDEX baseFieldMappingsCombined_fieldID ON baseFieldMappingsCombined(fieldID)"
+    },
+    {
+      "type": "index",
+      "name": "baseFieldMappings_baseFieldID",
+      "tbl_name": "baseFieldMappings",
+      "sql": "CREATE INDEX baseFieldMappings_baseFieldID ON baseFieldMappings(baseFieldID)"
+    },
+    {
+      "type": "index",
+      "name": "baseFieldMappings_fieldID",
+      "tbl_name": "baseFieldMappings",
+      "sql": "CREATE INDEX baseFieldMappings_fieldID ON baseFieldMappings(fieldID)"
+    },
+    {
+      "type": "index",
+      "name": "charsets_charset",
+      "tbl_name": "charsets",
+      "sql": "CREATE INDEX charsets_charset ON charsets(charset)"
+    },
+    {
+      "type": "index",
+      "name": "collectionItems_itemID",
+      "tbl_name": "collectionItems",
+      "sql": "CREATE INDEX collectionItems_itemID ON collectionItems(itemID)"
+    },
+    {
+      "type": "index",
+      "name": "collectionRelations_object",
+      "tbl_name": "collectionRelations",
+      "sql": "CREATE INDEX collectionRelations_object ON collectionRelations(object)"
+    },
+    {
+      "type": "index",
+      "name": "collectionRelations_predicateID",
+      "tbl_name": "collectionRelations",
+      "sql": "CREATE INDEX collectionRelations_predicateID ON collectionRelations(predicateID)"
+    },
+    {
+      "type": "index",
+      "name": "collections_synced",
+      "tbl_name": "collections",
+      "sql": "CREATE INDEX collections_synced ON collections(synced)"
+    },
+    {
+      "type": "index",
+      "name": "customBaseFieldMappings_baseFieldID",
+      "tbl_name": "customBaseFieldMappings",
+      "sql": "CREATE INDEX customBaseFieldMappings_baseFieldID ON customBaseFieldMappings(baseFieldID)"
+    },
+    {
+      "type": "index",
+      "name": "customBaseFieldMappings_customFieldID",
+      "tbl_name": "customBaseFieldMappings",
+      "sql": "CREATE INDEX customBaseFieldMappings_customFieldID ON customBaseFieldMappings(customFieldID)"
+    },
+    {
+      "type": "index",
+      "name": "customItemTypeFields_customFieldID",
+      "tbl_name": "customItemTypeFields",
+      "sql": "CREATE INDEX customItemTypeFields_customFieldID ON customItemTypeFields(customFieldID)"
+    },
+    {
+      "type": "index",
+      "name": "customItemTypeFields_fieldID",
+      "tbl_name": "customItemTypeFields",
+      "sql": "CREATE INDEX customItemTypeFields_fieldID ON customItemTypeFields(fieldID)"
+    },
+    {
+      "type": "index",
+      "name": "deletedCollections_dateDeleted",
+      "tbl_name": "deletedCollections",
+      "sql": "CREATE INDEX deletedCollections_dateDeleted ON deletedCollections(dateDeleted)"
+    },
+    {
+      "type": "index",
+      "name": "deletedItems_dateDeleted",
+      "tbl_name": "deletedItems",
+      "sql": "CREATE INDEX deletedItems_dateDeleted ON deletedItems(dateDeleted)"
+    },
+    {
+      "type": "index",
+      "name": "deletedSearches_dateDeleted",
+      "tbl_name": "deletedItems",
+      "sql": "CREATE INDEX deletedSearches_dateDeleted ON deletedItems(dateDeleted)"
+    },
+    {
+      "type": "index",
+      "name": "fileTypeMimeTypes_mimeType",
+      "tbl_name": "fileTypeMimeTypes",
+      "sql": "CREATE INDEX fileTypeMimeTypes_mimeType ON fileTypeMimeTypes(mimeType)"
+    },
+    {
+      "type": "index",
+      "name": "fileTypes_fileType",
+      "tbl_name": "fileTypes",
+      "sql": "CREATE INDEX fileTypes_fileType ON fileTypes(fileType)"
+    },
+    {
+      "type": "index",
+      "name": "fulltextItems_synced",
+      "tbl_name": "fulltextItems",
+      "sql": "CREATE INDEX fulltextItems_synced ON fulltextItems(synced)"
+    },
+    {
+      "type": "index",
+      "name": "fulltextItems_version",
+      "tbl_name": "fulltextItems",
+      "sql": "CREATE INDEX fulltextItems_version ON fulltextItems(version)"
+    },
+    {
+      "type": "index",
+      "name": "itemAnnotations_parentItemID",
+      "tbl_name": "itemAnnotations",
+      "sql": "CREATE INDEX itemAnnotations_parentItemID ON itemAnnotations(parentItemID)"
+    },
+    {
+      "type": "index",
+      "name": "itemAttachments_charsetID",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE INDEX itemAttachments_charsetID ON itemAttachments(charsetID)"
+    },
+    {
+      "type": "index",
+      "name": "itemAttachments_contentType",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE INDEX itemAttachments_contentType ON itemAttachments(contentType)"
+    },
+    {
+      "type": "index",
+      "name": "itemAttachments_lastProcessedModificationTime",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE INDEX itemAttachments_lastProcessedModificationTime ON itemAttachments(lastProcessedModificationTime)"
+    },
+    {
+      "type": "index",
+      "name": "itemAttachments_lastRead",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE INDEX itemAttachments_lastRead ON itemAttachments(lastRead)"
+    },
+    {
+      "type": "index",
+      "name": "itemAttachments_parentItemID",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE INDEX itemAttachments_parentItemID ON itemAttachments(parentItemID)"
+    },
+    {
+      "type": "index",
+      "name": "itemAttachments_syncState",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE INDEX itemAttachments_syncState ON itemAttachments(syncState)"
+    },
+    {
+      "type": "index",
+      "name": "itemCreators_creatorTypeID",
+      "tbl_name": "itemCreators",
+      "sql": "CREATE INDEX itemCreators_creatorTypeID ON itemCreators(creatorTypeID)"
+    },
+    {
+      "type": "index",
+      "name": "itemData_fieldID",
+      "tbl_name": "itemData",
+      "sql": "CREATE INDEX itemData_fieldID ON itemData(fieldID)"
+    },
+    {
+      "type": "index",
+      "name": "itemData_valueID",
+      "tbl_name": "itemData",
+      "sql": "CREATE INDEX itemData_valueID ON itemData(valueID)"
+    },
+    {
+      "type": "index",
+      "name": "itemNotes_parentItemID",
+      "tbl_name": "itemNotes",
+      "sql": "CREATE INDEX itemNotes_parentItemID ON itemNotes(parentItemID)"
+    },
+    {
+      "type": "index",
+      "name": "itemRelations_object",
+      "tbl_name": "itemRelations",
+      "sql": "CREATE INDEX itemRelations_object ON itemRelations(object)"
+    },
+    {
+      "type": "index",
+      "name": "itemRelations_predicateID",
+      "tbl_name": "itemRelations",
+      "sql": "CREATE INDEX itemRelations_predicateID ON itemRelations(predicateID)"
+    },
+    {
+      "type": "index",
+      "name": "itemTags_tagID",
+      "tbl_name": "itemTags",
+      "sql": "CREATE INDEX itemTags_tagID ON itemTags(tagID)"
+    },
+    {
+      "type": "index",
+      "name": "itemTypeCreatorTypes_creatorTypeID",
+      "tbl_name": "itemTypeCreatorTypes",
+      "sql": "CREATE INDEX itemTypeCreatorTypes_creatorTypeID ON itemTypeCreatorTypes(creatorTypeID)"
+    },
+    {
+      "type": "index",
+      "name": "itemTypeFieldsCombined_fieldID",
+      "tbl_name": "itemTypeFieldsCombined",
+      "sql": "CREATE INDEX itemTypeFieldsCombined_fieldID ON itemTypeFieldsCombined(fieldID)"
+    },
+    {
+      "type": "index",
+      "name": "itemTypeFields_fieldID",
+      "tbl_name": "itemTypeFields",
+      "sql": "CREATE INDEX itemTypeFields_fieldID ON itemTypeFields(fieldID)"
+    },
+    {
+      "type": "index",
+      "name": "items_synced",
+      "tbl_name": "items",
+      "sql": "CREATE INDEX items_synced ON items(synced)"
+    },
+    {
+      "type": "index",
+      "name": "proxyHosts_proxyID",
+      "tbl_name": "proxyHosts",
+      "sql": "CREATE INDEX proxyHosts_proxyID ON proxyHosts(proxyID)"
+    },
+    {
+      "type": "index",
+      "name": "savedSearches_synced",
+      "tbl_name": "savedSearches",
+      "sql": "CREATE INDEX savedSearches_synced ON savedSearches(synced)"
+    },
+    {
+      "type": "index",
+      "name": "schema",
+      "tbl_name": "version",
+      "sql": "CREATE INDEX schema ON version(schema)"
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_baseFieldMappingsCombined_1",
+      "tbl_name": "baseFieldMappingsCombined",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_baseFieldMappings_1",
+      "tbl_name": "baseFieldMappings",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_charsets_1",
+      "tbl_name": "charsets",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_collectionItems_1",
+      "tbl_name": "collectionItems",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_collectionRelations_1",
+      "tbl_name": "collectionRelations",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_collections_1",
+      "tbl_name": "collections",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_creators_1",
+      "tbl_name": "creators",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_customBaseFieldMappings_1",
+      "tbl_name": "customBaseFieldMappings",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_customItemTypeFields_1",
+      "tbl_name": "customItemTypeFields",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_feedItems_1",
+      "tbl_name": "feedItems",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_feeds_1",
+      "tbl_name": "feeds",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_fieldsCombined_1",
+      "tbl_name": "fieldsCombined",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_fileTypeMimeTypes_1",
+      "tbl_name": "fileTypeMimeTypes",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_fileTypes_1",
+      "tbl_name": "fileTypes",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_groups_1",
+      "tbl_name": "groups",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemCreators_1",
+      "tbl_name": "itemCreators",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemCreators_2",
+      "tbl_name": "itemCreators",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemDataValues_1",
+      "tbl_name": "itemDataValues",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemData_1",
+      "tbl_name": "itemData",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemRelations_1",
+      "tbl_name": "itemRelations",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTags_1",
+      "tbl_name": "itemTags",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTypeCreatorTypes_1",
+      "tbl_name": "itemTypeCreatorTypes",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTypeFieldsCombined_1",
+      "tbl_name": "itemTypeFieldsCombined",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTypeFieldsCombined_2",
+      "tbl_name": "itemTypeFieldsCombined",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTypeFields_1",
+      "tbl_name": "itemTypeFields",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTypeFields_2",
+      "tbl_name": "itemTypeFields",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_itemTypesCombined_1",
+      "tbl_name": "itemTypesCombined",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_items_1",
+      "tbl_name": "items",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_relationPredicates_1",
+      "tbl_name": "relationPredicates",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_savedSearchConditions_1",
+      "tbl_name": "savedSearchConditions",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_savedSearches_1",
+      "tbl_name": "savedSearches",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_settings_1",
+      "tbl_name": "settings",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_storageDeleteLog_1",
+      "tbl_name": "storageDeleteLog",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_syncCache_1",
+      "tbl_name": "syncCache",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_syncDeleteLog_1",
+      "tbl_name": "syncDeleteLog",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_syncQueue_1",
+      "tbl_name": "syncQueue",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_syncedSettings_1",
+      "tbl_name": "syncedSettings",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_tags_1",
+      "tbl_name": "tags",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_translatorCache_1",
+      "tbl_name": "translatorCache",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "sqlite_autoindex_version_1",
+      "tbl_name": "version",
+      "sql": null
+    },
+    {
+      "type": "index",
+      "name": "syncObjectTypes_name",
+      "tbl_name": "syncObjectTypes",
+      "sql": "CREATE INDEX syncObjectTypes_name ON syncObjectTypes(name)"
+    },
+    {
+      "type": "table",
+      "name": "baseFieldMappings",
+      "tbl_name": "baseFieldMappings",
+      "sql": "CREATE TABLE baseFieldMappings (    itemTypeID INT,    baseFieldID INT,    fieldID INT,    PRIMARY KEY (itemTypeID, baseFieldID, fieldID),    FOREIGN KEY (itemTypeID) REFERENCES itemTypes(itemTypeID),    FOREIGN KEY (baseFieldID) REFERENCES fields(fieldID),    FOREIGN KEY (fieldID) REFERENCES fields(fieldID))"
+    },
+    {
+      "type": "table",
+      "name": "baseFieldMappingsCombined",
+      "tbl_name": "baseFieldMappingsCombined",
+      "sql": "CREATE TABLE baseFieldMappingsCombined (    itemTypeID INT,    baseFieldID INT,    fieldID INT,    PRIMARY KEY (itemTypeID, baseFieldID, fieldID))"
+    },
+    {
+      "type": "table",
+      "name": "charsets",
+      "tbl_name": "charsets",
+      "sql": "CREATE TABLE charsets (    charsetID INTEGER PRIMARY KEY,    charset TEXT UNIQUE)"
+    },
+    {
+      "type": "table",
+      "name": "collectionItems",
+      "tbl_name": "collectionItems",
+      "sql": "CREATE TABLE collectionItems (    collectionID INT NOT NULL,    itemID INT NOT NULL,    orderIndex INT NOT NULL DEFAULT 0,    PRIMARY KEY (collectionID, itemID),    FOREIGN KEY (collectionID) REFERENCES collections(collectionID) ON DELETE CASCADE,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "collectionRelations",
+      "tbl_name": "collectionRelations",
+      "sql": "CREATE TABLE collectionRelations (    collectionID INT NOT NULL,    predicateID INT NOT NULL,    object TEXT NOT NULL,    PRIMARY KEY (collectionID, predicateID, object),    FOREIGN KEY (collectionID) REFERENCES collections(collectionID) ON DELETE CASCADE,    FOREIGN KEY (predicateID) REFERENCES relationPredicates(predicateID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "collections",
+      "tbl_name": "collections",
+      "sql": "CREATE TABLE collections (    collectionID INTEGER PRIMARY KEY,    collectionName TEXT NOT NULL,    parentCollectionID INT DEFAULT NULL,    clientDateModified TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    libraryID INT NOT NULL,    key TEXT NOT NULL,    version INT NOT NULL DEFAULT 0,    clientVersion INT NOT NULL DEFAULT 0,    synced INT NOT NULL DEFAULT 0,    UNIQUE (libraryID, key),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE,    FOREIGN KEY (parentCollectionID) REFERENCES collections(collectionID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "creatorTypes",
+      "tbl_name": "creatorTypes",
+      "sql": "CREATE TABLE creatorTypes (    creatorTypeID INTEGER PRIMARY KEY,    creatorType TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "creators",
+      "tbl_name": "creators",
+      "sql": "CREATE TABLE creators (    creatorID INTEGER PRIMARY KEY,    firstName TEXT,    lastName TEXT,    fieldMode INT,    firstNameNormalized TEXT,    lastNameNormalized TEXT,    UNIQUE (lastName, firstName, fieldMode))"
+    },
+    {
+      "type": "table",
+      "name": "customBaseFieldMappings",
+      "tbl_name": "customBaseFieldMappings",
+      "sql": "CREATE TABLE customBaseFieldMappings (    customItemTypeID INT,    baseFieldID INT,    customFieldID INT,    PRIMARY KEY (customItemTypeID, baseFieldID, customFieldID),    FOREIGN KEY (customItemTypeID) REFERENCES customItemTypes(customItemTypeID),    FOREIGN KEY (baseFieldID) REFERENCES fields(fieldID),    FOREIGN KEY (customFieldID) REFERENCES customFields(customFieldID))"
+    },
+    {
+      "type": "table",
+      "name": "customFields",
+      "tbl_name": "customFields",
+      "sql": "CREATE TABLE customFields (    customFieldID INTEGER PRIMARY KEY,    fieldName TEXT,    label TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "customItemTypeFields",
+      "tbl_name": "customItemTypeFields",
+      "sql": "CREATE TABLE customItemTypeFields (    customItemTypeID INT NOT NULL,    fieldID INT,    customFieldID INT,    hide INT NOT NULL,    orderIndex INT NOT NULL,    PRIMARY KEY (customItemTypeID, orderIndex),    FOREIGN KEY (customItemTypeID) REFERENCES customItemTypes(customItemTypeID),    FOREIGN KEY (fieldID) REFERENCES fields(fieldID),    FOREIGN KEY (customFieldID) REFERENCES customFields(customFieldID))"
+    },
+    {
+      "type": "table",
+      "name": "customItemTypes",
+      "tbl_name": "customItemTypes",
+      "sql": "CREATE TABLE customItemTypes (    customItemTypeID INTEGER PRIMARY KEY,    typeName TEXT,    label TEXT,    display INT DEFAULT 1,     icon TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "dbDebug1",
+      "tbl_name": "dbDebug1",
+      "sql": "CREATE TABLE dbDebug1 (    a INTEGER PRIMARY KEY)"
+    },
+    {
+      "type": "table",
+      "name": "deletedCollections",
+      "tbl_name": "deletedCollections",
+      "sql": "CREATE TABLE deletedCollections (    collectionID INTEGER PRIMARY KEY,    dateDeleted DEFAULT CURRENT_TIMESTAMP NOT NULL,    FOREIGN KEY (collectionID) REFERENCES collections(collectionID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "deletedItems",
+      "tbl_name": "deletedItems",
+      "sql": "CREATE TABLE deletedItems (    itemID INTEGER PRIMARY KEY,    dateDeleted DEFAULT CURRENT_TIMESTAMP NOT NULL,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "deletedSearches",
+      "tbl_name": "deletedSearches",
+      "sql": "CREATE TABLE deletedSearches (    savedSearchID INTEGER PRIMARY KEY,    dateDeleted DEFAULT CURRENT_TIMESTAMP NOT NULL,    FOREIGN KEY (savedSearchID) REFERENCES savedSearches(savedSearchID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "feedItems",
+      "tbl_name": "feedItems",
+      "sql": "CREATE TABLE feedItems (    itemID INTEGER PRIMARY KEY,    guid TEXT NOT NULL UNIQUE,    readTime TIMESTAMP,    translatedTime TIMESTAMP,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "feeds",
+      "tbl_name": "feeds",
+      "sql": "CREATE TABLE feeds (    libraryID INTEGER PRIMARY KEY,    name TEXT NOT NULL,    url TEXT NOT NULL UNIQUE,    lastUpdate TIMESTAMP,    lastCheck TIMESTAMP,    lastCheckError TEXT,    cleanupReadAfter INT,    cleanupUnreadAfter INT,    refreshInterval INT,    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "fieldFormats",
+      "tbl_name": "fieldFormats",
+      "sql": "CREATE TABLE fieldFormats (    fieldFormatID INTEGER PRIMARY KEY,    regex TEXT,    isInteger INT)"
+    },
+    {
+      "type": "table",
+      "name": "fields",
+      "tbl_name": "fields",
+      "sql": "CREATE TABLE fields (    fieldID INTEGER PRIMARY KEY,    fieldName TEXT,    fieldFormatID INT,    FOREIGN KEY (fieldFormatID) REFERENCES fieldFormats(fieldFormatID))"
+    },
+    {
+      "type": "table",
+      "name": "fieldsCombined",
+      "tbl_name": "fieldsCombined",
+      "sql": "CREATE TABLE fieldsCombined (    fieldID INT NOT NULL,    fieldName TEXT NOT NULL,    label TEXT,    fieldFormatID INT,    custom INT NOT NULL,    PRIMARY KEY (fieldID))"
+    },
+    {
+      "type": "table",
+      "name": "fileTypeMimeTypes",
+      "tbl_name": "fileTypeMimeTypes",
+      "sql": "CREATE TABLE fileTypeMimeTypes (    fileTypeID INT,    mimeType TEXT,    PRIMARY KEY (fileTypeID, mimeType),    FOREIGN KEY (fileTypeID) REFERENCES fileTypes(fileTypeID))"
+    },
+    {
+      "type": "table",
+      "name": "fileTypes",
+      "tbl_name": "fileTypes",
+      "sql": "CREATE TABLE fileTypes (    fileTypeID INTEGER PRIMARY KEY,    fileType TEXT UNIQUE)"
+    },
+    {
+      "type": "table",
+      "name": "fulltextItems",
+      "tbl_name": "fulltextItems",
+      "sql": "CREATE TABLE fulltextItems (    itemID INTEGER PRIMARY KEY,    indexedPages INT,    totalPages INT,    indexedChars INT,    totalChars INT,    version INT NOT NULL DEFAULT 0,    synced INT NOT NULL DEFAULT 0,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "groupItems",
+      "tbl_name": "groupItems",
+      "sql": "CREATE TABLE groupItems (    itemID INTEGER PRIMARY KEY,    createdByUserID INT,    lastModifiedByUserID INT,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (createdByUserID) REFERENCES users(userID) ON DELETE SET NULL,    FOREIGN KEY (lastModifiedByUserID) REFERENCES users(userID) ON DELETE SET NULL)"
+    },
+    {
+      "type": "table",
+      "name": "groups",
+      "tbl_name": "groups",
+      "sql": "CREATE TABLE groups (    groupID INTEGER PRIMARY KEY,    libraryID INT NOT NULL UNIQUE,    name TEXT NOT NULL,    description TEXT NOT NULL,    version INT NOT NULL,    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "itemAnnotations",
+      "tbl_name": "itemAnnotations",
+      "sql": "CREATE TABLE itemAnnotations (    itemID INTEGER PRIMARY KEY,    parentItemID INT NOT NULL,    type INTEGER NOT NULL,    authorName TEXT,    text TEXT,    textNormalized TEXT,    comment TEXT,    commentNormalized TEXT,    color TEXT,    pageLabel TEXT,    sortIndex TEXT NOT NULL,    position TEXT NOT NULL,    isExternal INT NOT NULL,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (parentItemID) REFERENCES itemAttachments(itemID))"
+    },
+    {
+      "type": "table",
+      "name": "itemAttachments",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE TABLE itemAttachments (    itemID INTEGER PRIMARY KEY,    parentItemID INT,    linkMode INT,    contentType TEXT,    charsetID INT,    path TEXT,    syncState INT DEFAULT 0,    storageModTime INT,    storageHash TEXT,    lastProcessedModificationTime INT,    lastRead INT,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (parentItemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (charsetID) REFERENCES charsets(charsetID) ON DELETE SET NULL)"
+    },
+    {
+      "type": "table",
+      "name": "itemCreators",
+      "tbl_name": "itemCreators",
+      "sql": "CREATE TABLE itemCreators (    itemID INT NOT NULL,    creatorID INT NOT NULL,    creatorTypeID INT NOT NULL DEFAULT 1,    orderIndex INT NOT NULL DEFAULT 0,    PRIMARY KEY (itemID, creatorID, creatorTypeID, orderIndex),    UNIQUE (itemID, orderIndex),    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (creatorID) REFERENCES creators(creatorID) ON DELETE CASCADE,    FOREIGN KEY (creatorTypeID) REFERENCES creatorTypes(creatorTypeID))"
+    },
+    {
+      "type": "table",
+      "name": "itemData",
+      "tbl_name": "itemData",
+      "sql": "CREATE TABLE itemData (    itemID INT,    fieldID INT,    valueID,    PRIMARY KEY (itemID, fieldID),    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (fieldID) REFERENCES fieldsCombined(fieldID),    FOREIGN KEY (valueID) REFERENCES itemDataValues(valueID))"
+    },
+    {
+      "type": "table",
+      "name": "itemDataValues",
+      "tbl_name": "itemDataValues",
+      "sql": "CREATE TABLE itemDataValues (    valueID INTEGER PRIMARY KEY,    value UNIQUE,    valueNormalized TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "itemNotes",
+      "tbl_name": "itemNotes",
+      "sql": "CREATE TABLE itemNotes (    itemID INTEGER PRIMARY KEY,    parentItemID INT,    note TEXT,    title TEXT,    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (parentItemID) REFERENCES items(itemID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "itemRelations",
+      "tbl_name": "itemRelations",
+      "sql": "CREATE TABLE itemRelations (    itemID INT NOT NULL,    predicateID INT NOT NULL,    object TEXT NOT NULL,    PRIMARY KEY (itemID, predicateID, object),    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (predicateID) REFERENCES relationPredicates(predicateID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "itemTags",
+      "tbl_name": "itemTags",
+      "sql": "CREATE TABLE itemTags (    itemID INT NOT NULL,    tagID INT NOT NULL,    type INT NOT NULL,    PRIMARY KEY (itemID, tagID),    FOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE,    FOREIGN KEY (tagID) REFERENCES tags(tagID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "itemTypeCreatorTypes",
+      "tbl_name": "itemTypeCreatorTypes",
+      "sql": "CREATE TABLE itemTypeCreatorTypes (    itemTypeID INT,    creatorTypeID INT,    primaryField INT,    PRIMARY KEY (itemTypeID, creatorTypeID),    FOREIGN KEY (itemTypeID) REFERENCES itemTypes(itemTypeID),    FOREIGN KEY (creatorTypeID) REFERENCES creatorTypes(creatorTypeID))"
+    },
+    {
+      "type": "table",
+      "name": "itemTypeFields",
+      "tbl_name": "itemTypeFields",
+      "sql": "CREATE TABLE itemTypeFields (    itemTypeID INT,    fieldID INT,    hide INT,    orderIndex INT,    PRIMARY KEY (itemTypeID, orderIndex),    UNIQUE (itemTypeID, fieldID),    FOREIGN KEY (itemTypeID) REFERENCES itemTypes(itemTypeID),    FOREIGN KEY (fieldID) REFERENCES fields(fieldID))"
+    },
+    {
+      "type": "table",
+      "name": "itemTypeFieldsCombined",
+      "tbl_name": "itemTypeFieldsCombined",
+      "sql": "CREATE TABLE itemTypeFieldsCombined (    itemTypeID INT NOT NULL,    fieldID INT NOT NULL,    hide INT,    orderIndex INT NOT NULL,    PRIMARY KEY (itemTypeID, orderIndex),    UNIQUE (itemTypeID, fieldID))"
+    },
+    {
+      "type": "table",
+      "name": "itemTypes",
+      "tbl_name": "itemTypes",
+      "sql": "CREATE TABLE itemTypes (    itemTypeID INTEGER PRIMARY KEY,    typeName TEXT,    templateItemTypeID INT,    display INT DEFAULT 1 )"
+    },
+    {
+      "type": "table",
+      "name": "itemTypesCombined",
+      "tbl_name": "itemTypesCombined",
+      "sql": "CREATE TABLE itemTypesCombined (    itemTypeID INT NOT NULL,    typeName TEXT NOT NULL,    display INT DEFAULT 1 NOT NULL,    custom INT NOT NULL,    PRIMARY KEY (itemTypeID))"
+    },
+    {
+      "type": "table",
+      "name": "items",
+      "tbl_name": "items",
+      "sql": "CREATE TABLE items (    itemID INTEGER PRIMARY KEY,    itemTypeID INT NOT NULL,    dateAdded TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    dateModified TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    clientDateModified TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    libraryID INT NOT NULL,    key TEXT NOT NULL,    version INT NOT NULL DEFAULT 0,    clientVersion INT NOT NULL DEFAULT 0,    synced INT NOT NULL DEFAULT 0,    UNIQUE (libraryID, key),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "libraries",
+      "tbl_name": "libraries",
+      "sql": "CREATE TABLE libraries (    libraryID INTEGER PRIMARY KEY,    type TEXT NOT NULL,    editable INT NOT NULL,    filesEditable INT NOT NULL,    version INT NOT NULL DEFAULT 0,    clientVersion INT NOT NULL DEFAULT 0,    storageVersion INT NOT NULL DEFAULT 0,    lastSync INT NOT NULL DEFAULT 0,    archived INT NOT NULL DEFAULT 0,    isAdmin INT NOT NULL DEFAULT 0)"
+    },
+    {
+      "type": "table",
+      "name": "proxies",
+      "tbl_name": "proxies",
+      "sql": "CREATE TABLE proxies (    proxyID INTEGER PRIMARY KEY,    multiHost INT,    autoAssociate INT,    scheme TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "proxyHosts",
+      "tbl_name": "proxyHosts",
+      "sql": "CREATE TABLE proxyHosts (    hostID INTEGER PRIMARY KEY,    proxyID INTEGER,    hostname TEXT,    FOREIGN KEY (proxyID) REFERENCES proxies(proxyID))"
+    },
+    {
+      "type": "table",
+      "name": "publicationsItems",
+      "tbl_name": "publicationsItems",
+      "sql": "CREATE TABLE publicationsItems (    itemID INTEGER PRIMARY KEY)"
+    },
+    {
+      "type": "table",
+      "name": "relationPredicates",
+      "tbl_name": "relationPredicates",
+      "sql": "CREATE TABLE relationPredicates (    predicateID INTEGER PRIMARY KEY,    predicate TEXT UNIQUE)"
+    },
+    {
+      "type": "table",
+      "name": "retractedItems",
+      "tbl_name": "retractedItems",
+      "sql": "CREATE TABLE retractedItems (\titemID INTEGER PRIMARY KEY,\tdata TEXT,\tflag INT DEFAULT 0,\tFOREIGN KEY (itemID) REFERENCES items(itemID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "savedSearchConditions",
+      "tbl_name": "savedSearchConditions",
+      "sql": "CREATE TABLE savedSearchConditions (    savedSearchID INT NOT NULL,    searchConditionID INT NOT NULL,    condition TEXT NOT NULL,    operator TEXT,    value TEXT,    PRIMARY KEY (savedSearchID, searchConditionID),    FOREIGN KEY (savedSearchID) REFERENCES savedSearches(savedSearchID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "savedSearches",
+      "tbl_name": "savedSearches",
+      "sql": "CREATE TABLE savedSearches (    savedSearchID INTEGER PRIMARY KEY,    savedSearchName TEXT NOT NULL,    clientDateModified TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,    libraryID INT NOT NULL,    key TEXT NOT NULL,    version INT NOT NULL DEFAULT 0,    clientVersion INT NOT NULL DEFAULT 0,    synced INT NOT NULL DEFAULT 0,    UNIQUE (libraryID, key),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "settings",
+      "tbl_name": "settings",
+      "sql": "CREATE TABLE settings (    setting TEXT,    key TEXT,    value,    PRIMARY KEY (setting, key))"
+    },
+    {
+      "type": "table",
+      "name": "storageDeleteLog",
+      "tbl_name": "storageDeleteLog",
+      "sql": "CREATE TABLE storageDeleteLog (    libraryID INT NOT NULL,    key TEXT NOT NULL,    dateDeleted TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,    PRIMARY KEY (libraryID, key),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "syncCache",
+      "tbl_name": "syncCache",
+      "sql": "CREATE TABLE syncCache (    libraryID INT NOT NULL,    key TEXT NOT NULL,    syncObjectTypeID INT NOT NULL,    version INT NOT NULL,    data TEXT,    PRIMARY KEY (libraryID, key, syncObjectTypeID, version),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE,    FOREIGN KEY (syncObjectTypeID) REFERENCES syncObjectTypes(syncObjectTypeID))"
+    },
+    {
+      "type": "table",
+      "name": "syncDeleteLog",
+      "tbl_name": "syncDeleteLog",
+      "sql": "CREATE TABLE syncDeleteLog (    syncObjectTypeID INT NOT NULL,    libraryID INT NOT NULL,    key TEXT NOT NULL,    dateDeleted TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,    UNIQUE (syncObjectTypeID, libraryID, key),    FOREIGN KEY (syncObjectTypeID) REFERENCES syncObjectTypes(syncObjectTypeID),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "syncObjectTypes",
+      "tbl_name": "syncObjectTypes",
+      "sql": "CREATE TABLE syncObjectTypes (    syncObjectTypeID INTEGER PRIMARY KEY,    name TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "syncQueue",
+      "tbl_name": "syncQueue",
+      "sql": "CREATE TABLE syncQueue (    libraryID INT NOT NULL,    key TEXT NOT NULL,    syncObjectTypeID INT NOT NULL,    lastCheck TIMESTAMP,    tries INT,    PRIMARY KEY (libraryID, key, syncObjectTypeID),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE,    FOREIGN KEY (syncObjectTypeID) REFERENCES syncObjectTypes(syncObjectTypeID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "syncedSettings",
+      "tbl_name": "syncedSettings",
+      "sql": "CREATE TABLE syncedSettings (    setting TEXT NOT NULL,    libraryID INT NOT NULL,    value NOT NULL,    version INT NOT NULL DEFAULT 0,    synced INT NOT NULL DEFAULT 0,    PRIMARY KEY (setting, libraryID),    FOREIGN KEY (libraryID) REFERENCES libraries(libraryID) ON DELETE CASCADE)"
+    },
+    {
+      "type": "table",
+      "name": "tags",
+      "tbl_name": "tags",
+      "sql": "CREATE TABLE tags (    tagID INTEGER PRIMARY KEY,    name TEXT NOT NULL UNIQUE,    nameNormalized TEXT)"
+    },
+    {
+      "type": "table",
+      "name": "translatorCache",
+      "tbl_name": "translatorCache",
+      "sql": "CREATE TABLE translatorCache (    fileName TEXT PRIMARY KEY,    metadataJSON TEXT,    lastModifiedTime INT)"
+    },
+    {
+      "type": "table",
+      "name": "users",
+      "tbl_name": "users",
+      "sql": "CREATE TABLE users (    userID INTEGER PRIMARY KEY,    name TEXT NOT NULL)"
+    },
+    {
+      "type": "table",
+      "name": "version",
+      "tbl_name": "version",
+      "sql": "CREATE TABLE version (    schema TEXT PRIMARY KEY,    version INT NOT NULL)"
+    },
+    {
+      "type": "trigger",
+      "name": "fki_collectionItems_itemID_parentItemID",
+      "tbl_name": "collectionItems",
+      "sql": "CREATE TRIGGER fki_collectionItems_itemID_parentItemID  BEFORE INSERT ON collectionItems  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'insert on table \"collectionItems\" violates foreign key constraint \"fki_collectionItems_itemID_parentItemID\"')    WHERE NEW.itemID IN (SELECT itemID FROM itemAttachments WHERE parentItemID IS NOT NULL UNION SELECT itemID FROM itemNotes WHERE parentItemID IS NOT NULL);  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fki_collectionItems_libraryID",
+      "tbl_name": "collectionItems",
+      "sql": "CREATE TRIGGER fki_collectionItems_libraryID  BEFORE INSERT ON collectionItems  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'insert on table \"collectionItems\" violates foreign key constraint \"fki_collectionItems_libraryID\"')    WHERE (SELECT libraryID FROM collections WHERE collectionID = NEW.collectionID) != (SELECT libraryID FROM items WHERE itemID = NEW.itemID);  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fki_collections_parentCollectionID_libraryID",
+      "tbl_name": "collections",
+      "sql": "CREATE TRIGGER fki_collections_parentCollectionID_libraryID  BEFORE INSERT ON collections  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'insert on table \"collections\" violates foreign key constraint \"fki_collections_parentCollectionID_libraryID\"')    WHERE NEW.parentCollectionID IS NOT NULL AND    NEW.libraryID != (SELECT libraryID FROM collections WHERE collectionID = NEW.parentCollectionID);  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fki_tagsBEFORE",
+      "tbl_name": "tags",
+      "sql": "CREATE TRIGGER fki_tagsBEFORE INSERT ON tags  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'Tag cannot be blank')    WHERE TRIM(NEW.name)='';  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fku_collectionItems_itemID_parentItemID",
+      "tbl_name": "collectionItems",
+      "sql": "CREATE TRIGGER fku_collectionItems_itemID_parentItemID  BEFORE UPDATE OF itemID ON collectionItems  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'update on table \"collectionItems\" violates foreign key constraint \"fku_collectionItems_itemID_parentItemID\"')    WHERE NEW.itemID IN (SELECT itemID FROM itemAttachments WHERE parentItemID IS NOT NULL UNION SELECT itemID FROM itemNotes WHERE parentItemID IS NOT NULL);  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fku_collectionItems_libraryID",
+      "tbl_name": "collectionItems",
+      "sql": "CREATE TRIGGER fku_collectionItems_libraryID  BEFORE UPDATE ON collectionItems  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'update on table \"collectionItems\" violates foreign key constraint \"fku_collectionItems_libraryID\"')    WHERE (SELECT libraryID FROM collections WHERE collectionID = NEW.collectionID) != (SELECT libraryID FROM items WHERE itemID = NEW.itemID);  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fku_collections_parentCollectionID_libraryID",
+      "tbl_name": "collections",
+      "sql": "CREATE TRIGGER fku_collections_parentCollectionID_libraryID  BEFORE UPDATE ON collections  FOR EACH ROW BEGIN    SELECT RAISE(ABORT, 'update on table \"collections\" violates foreign key constraint \"fku_collections_parentCollectionID_libraryID\"')    WHERE NEW.parentCollectionID IS NOT NULL AND    NEW.libraryID != (SELECT libraryID FROM collections WHERE collectionID = NEW.parentCollectionID);  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fku_itemAttachments_parentItemID_collectionItems_itemID",
+      "tbl_name": "itemAttachments",
+      "sql": "CREATE TRIGGER fku_itemAttachments_parentItemID_collectionItems_itemID  BEFORE UPDATE OF parentItemID ON itemAttachments  FOR EACH ROW WHEN OLD.parentItemID IS NULL AND NEW.parentItemID IS NOT NULL BEGIN    DELETE FROM collectionItems WHERE itemID = NEW.itemID;  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fku_itemNotes_parentItemID_collectionItems_itemID",
+      "tbl_name": "itemNotes",
+      "sql": "CREATE TRIGGER fku_itemNotes_parentItemID_collectionItems_itemID  BEFORE UPDATE OF parentItemID ON itemNotes  FOR EACH ROW WHEN OLD.parentItemID IS NULL AND NEW.parentItemID IS NOT NULL BEGIN    DELETE FROM collectionItems WHERE itemID = NEW.itemID;  END"
+    },
+    {
+      "type": "trigger",
+      "name": "fku_tags",
+      "tbl_name": "tags",
+      "sql": "CREATE TRIGGER fku_tags  BEFORE UPDATE OF name ON tags  FOR EACH ROW BEGIN      SELECT RAISE(ABORT, 'Tag cannot be blank')      WHERE TRIM(NEW.name)='';  END"
+    },
+    {
+      "type": "trigger",
+      "name": "insert_creators",
+      "tbl_name": "creators",
+      "sql": "CREATE TRIGGER insert_creators BEFORE INSERT ON creators  FOR EACH ROW WHEN NEW.firstName='' AND NEW.lastName=''  BEGIN    SELECT RAISE (ABORT, 'Creator names cannot be empty');  END"
+    },
+    {
+      "type": "trigger",
+      "name": "update_creators",
+      "tbl_name": "creators",
+      "sql": "CREATE TRIGGER update_creators BEFORE UPDATE ON creators  FOR EACH ROW WHEN NEW.firstName='' AND NEW.lastName=''  BEGIN    SELECT RAISE (ABORT, 'Creator names cannot be empty');  END"
+    }
+  ],
+  "tables": {
+    "baseFieldMappings": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "baseFieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 3
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "fields",
+          "from": "fieldID",
+          "to": "fieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "fields",
+          "from": "baseFieldID",
+          "to": "fieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "itemTypes",
+          "from": "itemTypeID",
+          "to": "itemTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "baseFieldMappings_fieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "baseFieldMappings_baseFieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "baseFieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_baseFieldMappings_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "baseFieldID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "fieldID"
+            }
+          ]
+        }
+      ]
+    },
+    "baseFieldMappingsCombined": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "baseFieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 3
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "baseFieldMappingsCombined_fieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "baseFieldMappingsCombined_baseFieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "baseFieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_baseFieldMappingsCombined_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "baseFieldID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "fieldID"
+            }
+          ]
+        }
+      ]
+    },
+    "charsets": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "charsetID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "charset",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "charsets_charset",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "charset"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_charsets_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "charset"
+            }
+          ]
+        }
+      ]
+    },
+    "collectionItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "collectionID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "itemID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "orderIndex",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "collections",
+          "from": "collectionID",
+          "to": "collectionID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "collectionItems_itemID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "itemID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_collectionItems_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "collectionID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "itemID"
+            }
+          ]
+        }
+      ]
+    },
+    "collectionRelations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "collectionID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "predicateID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "object",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 3
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "relationPredicates",
+          "from": "predicateID",
+          "to": "predicateID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "collections",
+          "from": "collectionID",
+          "to": "collectionID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "collectionRelations_object",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "object"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "collectionRelations_predicateID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "predicateID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_collectionRelations_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "collectionID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "predicateID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "object"
+            }
+          ]
+        }
+      ]
+    },
+    "collections": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "collectionID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "collectionName",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "parentCollectionID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": "NULL",
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "clientDateModified",
+          "type": "TIMESTAMP",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "clientVersion",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "synced",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "collections",
+          "from": "parentCollectionID",
+          "to": "collectionID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "collections_synced",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 8,
+              "name": "synced"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_collections_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 4,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 1,
+              "cid": 5,
+              "name": "key"
+            }
+          ]
+        }
+      ]
+    },
+    "creatorTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "creatorTypeID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "creatorType",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "creators": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "creatorID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "firstName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "lastName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "fieldMode",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "firstNameNormalized",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "lastNameNormalized",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_creators_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "lastName"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "firstName"
+            },
+            {
+              "seqno": 2,
+              "cid": 3,
+              "name": "fieldMode"
+            }
+          ]
+        }
+      ]
+    },
+    "customBaseFieldMappings": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "customItemTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "baseFieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "customFieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 3
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "customFields",
+          "from": "customFieldID",
+          "to": "customFieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "fields",
+          "from": "baseFieldID",
+          "to": "fieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "customItemTypes",
+          "from": "customItemTypeID",
+          "to": "customItemTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "customBaseFieldMappings_customFieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "customFieldID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "customBaseFieldMappings_baseFieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "baseFieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_customBaseFieldMappings_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "customItemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "baseFieldID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "customFieldID"
+            }
+          ]
+        }
+      ]
+    },
+    "customFields": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "customFieldID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "label",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "customItemTypeFields": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "customItemTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "customFieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "hide",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "orderIndex",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "customFields",
+          "from": "customFieldID",
+          "to": "customFieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "fields",
+          "from": "fieldID",
+          "to": "fieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "customItemTypes",
+          "from": "customItemTypeID",
+          "to": "customItemTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "customItemTypeFields_customFieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "customFieldID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "customItemTypeFields_fieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_customItemTypeFields_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "customItemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 4,
+              "name": "orderIndex"
+            }
+          ]
+        }
+      ]
+    },
+    "customItemTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "customItemTypeID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "typeName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "label",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "display",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": "1",
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "icon",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "dbDebug1": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "a",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "deletedCollections": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "collectionID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "dateDeleted",
+          "type": "",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "collections",
+          "from": "collectionID",
+          "to": "collectionID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "deletedCollections_dateDeleted",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "dateDeleted"
+            }
+          ]
+        }
+      ]
+    },
+    "deletedItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "dateDeleted",
+          "type": "",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "deletedSearches_dateDeleted",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "dateDeleted"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "deletedItems_dateDeleted",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "dateDeleted"
+            }
+          ]
+        }
+      ]
+    },
+    "deletedSearches": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "savedSearchID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "dateDeleted",
+          "type": "",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "savedSearches",
+          "from": "savedSearchID",
+          "to": "savedSearchID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": []
+    },
+    "feedItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "guid",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "readTime",
+          "type": "TIMESTAMP",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "translatedTime",
+          "type": "TIMESTAMP",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_feedItems_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "guid"
+            }
+          ]
+        }
+      ]
+    },
+    "feeds": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "libraryID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "name",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "url",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "lastUpdate",
+          "type": "TIMESTAMP",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "lastCheck",
+          "type": "TIMESTAMP",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "lastCheckError",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "cleanupReadAfter",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "cleanupUnreadAfter",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "refreshInterval",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_feeds_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "url"
+            }
+          ]
+        }
+      ]
+    },
+    "fieldFormats": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "fieldFormatID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "regex",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "isInteger",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "fields": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "fieldID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "fieldFormatID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "fieldFormats",
+          "from": "fieldFormatID",
+          "to": "fieldFormatID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": []
+    },
+    "fieldsCombined": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldName",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "label",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "fieldFormatID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "custom",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_fieldsCombined_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "fieldID"
+            }
+          ]
+        }
+      ]
+    },
+    "fileTypeMimeTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "fileTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "mimeType",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "fileTypes",
+          "from": "fileTypeID",
+          "to": "fileTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "fileTypeMimeTypes_mimeType",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "mimeType"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_fileTypeMimeTypes_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "fileTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "mimeType"
+            }
+          ]
+        }
+      ]
+    },
+    "fileTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "fileTypeID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fileType",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "fileTypes_fileType",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "fileType"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_fileTypes_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "fileType"
+            }
+          ]
+        }
+      ]
+    },
+    "fulltextItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "indexedPages",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "totalPages",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "indexedChars",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "totalChars",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "synced",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "fulltextItems_version",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 5,
+              "name": "version"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "fulltextItems_synced",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 6,
+              "name": "synced"
+            }
+          ]
+        }
+      ]
+    },
+    "groupItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "createdByUserID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "lastModifiedByUserID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "users",
+          "from": "lastModifiedByUserID",
+          "to": "userID",
+          "on_update": "NO ACTION",
+          "on_delete": "SET NULL",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "users",
+          "from": "createdByUserID",
+          "to": "userID",
+          "on_update": "NO ACTION",
+          "on_delete": "SET NULL",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": []
+    },
+    "groups": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "groupID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "name",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "description",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_groups_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "libraryID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemAnnotations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "parentItemID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "type",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "authorName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "text",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "textNormalized",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "comment",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "commentNormalized",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "color",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "pageLabel",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "sortIndex",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "position",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "isExternal",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "itemAttachments",
+          "from": "parentItemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemAnnotations_parentItemID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "parentItemID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemAttachments": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "parentItemID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "linkMode",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "contentType",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "charsetID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "path",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "syncState",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "storageModTime",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "storageHash",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "lastProcessedModificationTime",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "lastRead",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "charsets",
+          "from": "charsetID",
+          "to": "charsetID",
+          "on_update": "NO ACTION",
+          "on_delete": "SET NULL",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "items",
+          "from": "parentItemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemAttachments_lastRead",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 10,
+              "name": "lastRead"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "itemAttachments_lastProcessedModificationTime",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 9,
+              "name": "lastProcessedModificationTime"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "itemAttachments_syncState",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 6,
+              "name": "syncState"
+            }
+          ]
+        },
+        {
+          "seq": 3,
+          "name": "itemAttachments_contentType",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 3,
+              "name": "contentType"
+            }
+          ]
+        },
+        {
+          "seq": 4,
+          "name": "itemAttachments_charsetID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 4,
+              "name": "charsetID"
+            }
+          ]
+        },
+        {
+          "seq": 5,
+          "name": "itemAttachments_parentItemID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "parentItemID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemCreators": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "creatorID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "creatorTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "1",
+          "pk": 3
+        },
+        {
+          "cid": 3,
+          "name": "orderIndex",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 4
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "creatorTypes",
+          "from": "creatorTypeID",
+          "to": "creatorTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "creators",
+          "from": "creatorID",
+          "to": "creatorID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemCreators_creatorTypeID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "creatorTypeID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_itemCreators_2",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemID"
+            },
+            {
+              "seqno": 1,
+              "cid": 3,
+              "name": "orderIndex"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_itemCreators_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "creatorID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "creatorTypeID"
+            },
+            {
+              "seqno": 3,
+              "cid": 3,
+              "name": "orderIndex"
+            }
+          ]
+        }
+      ]
+    },
+    "itemData": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "valueID",
+          "type": "",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "itemDataValues",
+          "from": "valueID",
+          "to": "valueID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "fieldsCombined",
+          "from": "fieldID",
+          "to": "fieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 2,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemData_valueID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "valueID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "itemData_fieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_itemData_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemDataValues": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "valueID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "value",
+          "type": "",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "valueNormalized",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_itemDataValues_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "value"
+            }
+          ]
+        }
+      ]
+    },
+    "itemNotes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "parentItemID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "note",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "title",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "items",
+          "from": "parentItemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemNotes_parentItemID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "parentItemID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemRelations": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "predicateID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "object",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 3
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "relationPredicates",
+          "from": "predicateID",
+          "to": "predicateID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemRelations_object",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 2,
+              "name": "object"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "itemRelations_predicateID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "predicateID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_itemRelations_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "predicateID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "object"
+            }
+          ]
+        }
+      ]
+    },
+    "itemTags": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "tagID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "type",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "tags",
+          "from": "tagID",
+          "to": "tagID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemTags_tagID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "tagID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_itemTags_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "tagID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemTypeCreatorTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "creatorTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "primaryField",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "creatorTypes",
+          "from": "creatorTypeID",
+          "to": "creatorTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "itemTypes",
+          "from": "itemTypeID",
+          "to": "itemTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemTypeCreatorTypes_creatorTypeID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "creatorTypeID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_itemTypeCreatorTypes_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "creatorTypeID"
+            }
+          ]
+        }
+      ]
+    },
+    "itemTypeFields": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "hide",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "orderIndex",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "fields",
+          "from": "fieldID",
+          "to": "fieldID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "itemTypes",
+          "from": "itemTypeID",
+          "to": "itemTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemTypeFields_fieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_itemTypeFields_2",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_itemTypeFields_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 3,
+              "name": "orderIndex"
+            }
+          ]
+        }
+      ]
+    },
+    "itemTypeFieldsCombined": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "fieldID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "hide",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "orderIndex",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "itemTypeFieldsCombined_fieldID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_itemTypeFieldsCombined_2",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "fieldID"
+            }
+          ]
+        },
+        {
+          "seq": 2,
+          "name": "sqlite_autoindex_itemTypeFieldsCombined_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 3,
+              "name": "orderIndex"
+            }
+          ]
+        }
+      ]
+    },
+    "itemTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "typeName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "templateItemTypeID",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "display",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": "1",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "itemTypesCombined": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "typeName",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "display",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "1",
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "custom",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_itemTypesCombined_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "itemTypeID"
+            }
+          ]
+        }
+      ]
+    },
+    "items": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "itemTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "dateAdded",
+          "type": "TIMESTAMP",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "dateModified",
+          "type": "TIMESTAMP",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "clientDateModified",
+          "type": "TIMESTAMP",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "clientVersion",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "synced",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "items_synced",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 9,
+              "name": "synced"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_items_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 5,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 1,
+              "cid": 6,
+              "name": "key"
+            }
+          ]
+        }
+      ]
+    },
+    "libraries": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "libraryID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "type",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "editable",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "filesEditable",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "clientVersion",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "storageVersion",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "lastSync",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "archived",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "isAdmin",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "proxies": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "proxyID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "multiHost",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "autoAssociate",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "scheme",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "proxyHosts": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "hostID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "proxyID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "hostname",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "proxies",
+          "from": "proxyID",
+          "to": "proxyID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "proxyHosts_proxyID",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "proxyID"
+            }
+          ]
+        }
+      ]
+    },
+    "publicationsItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "relationPredicates": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "predicateID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "predicate",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_relationPredicates_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "predicate"
+            }
+          ]
+        }
+      ]
+    },
+    "retractedItems": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "itemID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "data",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "flag",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "items",
+          "from": "itemID",
+          "to": "itemID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": []
+    },
+    "savedSearchConditions": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "savedSearchID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "searchConditionID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "condition",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "operator",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "value",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "savedSearches",
+          "from": "savedSearchID",
+          "to": "savedSearchID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_savedSearchConditions_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "savedSearchID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "searchConditionID"
+            }
+          ]
+        }
+      ]
+    },
+    "savedSearches": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "savedSearchID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "savedSearchName",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "clientDateModified",
+          "type": "TIMESTAMP",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "clientVersion",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "synced",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "savedSearches_synced",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 7,
+              "name": "synced"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_savedSearches_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 3,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 1,
+              "cid": 4,
+              "name": "key"
+            }
+          ]
+        }
+      ]
+    },
+    "settings": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "setting",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "value",
+          "type": "",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_settings_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "setting"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "key"
+            }
+          ]
+        }
+      ]
+    },
+    "storageDeleteLog": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "dateDeleted",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_storageDeleteLog_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "key"
+            }
+          ]
+        }
+      ]
+    },
+    "syncCache": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "syncObjectTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 3
+        },
+        {
+          "cid": 3,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 4
+        },
+        {
+          "cid": 4,
+          "name": "data",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "syncObjectTypes",
+          "from": "syncObjectTypeID",
+          "to": "syncObjectTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_syncCache_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "key"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "syncObjectTypeID"
+            },
+            {
+              "seqno": 3,
+              "cid": 3,
+              "name": "version"
+            }
+          ]
+        }
+      ]
+    },
+    "syncDeleteLog": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "syncObjectTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 1,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "dateDeleted",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "syncObjectTypes",
+          "from": "syncObjectTypeID",
+          "to": "syncObjectTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_syncDeleteLog_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "syncObjectTypeID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "key"
+            }
+          ]
+        }
+      ]
+    },
+    "syncObjectTypes": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "syncObjectTypeID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "name",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "syncObjectTypes_name",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "name"
+            }
+          ]
+        }
+      ]
+    },
+    "syncQueue": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "syncObjectTypeID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 3
+        },
+        {
+          "cid": 3,
+          "name": "lastCheck",
+          "type": "TIMESTAMP",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "tries",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "syncObjectTypes",
+          "from": "syncObjectTypeID",
+          "to": "syncObjectTypeID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        },
+        {
+          "id": 1,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_syncQueue_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "libraryID"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "key"
+            },
+            {
+              "seqno": 2,
+              "cid": 2,
+              "name": "syncObjectTypeID"
+            }
+          ]
+        }
+      ]
+    },
+    "syncedSettings": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "setting",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "libraryID",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "value",
+          "type": "",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "synced",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [
+        {
+          "id": 0,
+          "seq": 0,
+          "table": "libraries",
+          "from": "libraryID",
+          "to": "libraryID",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE",
+          "match": "NONE"
+        }
+      ],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_syncedSettings_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "setting"
+            },
+            {
+              "seqno": 1,
+              "cid": 1,
+              "name": "libraryID"
+            }
+          ]
+        }
+      ]
+    },
+    "tags": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "tagID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "name",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "nameNormalized",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_tags_1",
+          "unique": 1,
+          "origin": "u",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 1,
+              "name": "name"
+            }
+          ]
+        }
+      ]
+    },
+    "translatorCache": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "fileName",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "metadataJSON",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "lastModifiedTime",
+          "type": "INT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "sqlite_autoindex_translatorCache_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "fileName"
+            }
+          ]
+        }
+      ]
+    },
+    "users": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "userID",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "name",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    "version": {
+      "columns": [
+        {
+          "cid": 0,
+          "name": "schema",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "version",
+          "type": "INT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "foreign_keys": [],
+      "indexes": [
+        {
+          "seq": 0,
+          "name": "schema",
+          "unique": 0,
+          "origin": "c",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "schema"
+            }
+          ]
+        },
+        {
+          "seq": 1,
+          "name": "sqlite_autoindex_version_1",
+          "unique": 1,
+          "origin": "pk",
+          "partial": 0,
+          "columns": [
+            {
+              "seqno": 0,
+              "cid": 0,
+              "name": "schema"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pragma": {
+    "user_version": 0,
+    "application_id": 0,
+    "page_size": 32768,
+    "journal_mode": "delete"
+  }
+}

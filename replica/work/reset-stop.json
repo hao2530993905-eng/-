@@ -1,0 +1,9 @@
+{
+  "role": "a",
+  "status": "exited",
+  "process": {
+    "pid": 49571,
+    "started_at": "Thu Nov 12 21:20:19 2026",
+    "name": "zotero"
+  }
+}

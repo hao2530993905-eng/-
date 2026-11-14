@@ -1,0 +1,8 @@
+{
+ "id":"reader-annotate-1","candidate_id":"reader-annotate-normal","from_capture":"attachment-add-1-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click/drag/pressKey",
+ "operation":"双击 PDF 子附件打开完整阅读器，选择文本并创建高亮注释，读取稳定 AX",
+ "precondition":"测试 PDF 子附件已选中且已索引；仅在该隔离附件中创建注释",
+ "expected_result":"完整 Zotero Reader 标签页显示 PDF，创建可见高亮/注释并可返回文库",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

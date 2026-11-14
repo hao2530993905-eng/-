@@ -1,0 +1,1 @@
+{"schema_version":1,"operations":[{"op":"classify","args":{"capture_id":"recent-active","state_id":"main.recent.empty","title":"最近阅读空视图","meaning":"激活窗口后最近阅读空视图及懒加载菜单稳定","merge_reason":"前台状态和菜单占位标题不改变最近阅读空视图的业务语义"}}]}

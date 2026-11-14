@@ -1,0 +1,1 @@
+{"id":"library-reopen-1","success":true,"source":"app_instances + storage_capture + Computer Use：退出后在线备份成功且 integrity_check=ok/foreign_key_check=[]；新 PID 49571 重开后 Replica Exploration 含 Local Replication Study 与笔记，阅读器恢复页 1 Local Exploration 高亮和 Replica highlight comment","summary":"正常退出/重开持久化验证通过；陈旧实例登记已在确认进程不存在后清理，未强制终止或修改数据库"}

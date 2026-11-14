@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "observed",
+  "invalid_artifacts": [],
+  "unsupported_artifacts": [],
+  "added": [
+    {
+      "root_id": "exports",
+      "path": "library.ris"
+    }
+  ],
+  "removed": [],
+  "changed": [],
+  "unchanged": [
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-ft-cache"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-reader-state"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/.zotero-sdt-cache"
+    },
+    {
+      "root_id": "attachment-storage",
+      "path": "SMGAM4EP/Example和Example - 2026 - Local Exploration Article.pdf"
+    }
+  ],
+  "clipboard_changed": false,
+  "clipboard": {
+    "before": null,
+    "after": null
+  },
+  "artifacts": {
+    "exports/library.ris": {
+      "raw_path": "exports-52079b2fd0e0f767.ris",
+      "raw_sha256": "701662c724093e27fcf7585facfe9c528fb9501fccbcacad75bc339aa410dd92",
+      "source_path": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/exports/library.ris",
+      "status": "parsed",
+      "value_path": "exports-52079b2fd0e0f767.value.json",
+      "parser": {
+        "format": "text",
+        "parser": {
+          "id": "python-stdlib-text",
+          "version": "3.9.6",
+          "builtin": true
+        },
+        "raw_sha256": "701662c724093e27fcf7585facfe9c528fb9501fccbcacad75bc339aa410dd92",
+        "value_sha256": "40945e4eb83d5db6be697592941d0fea4fc740babd9a613dac1a14348ea63ddd"
+      }
+    }
+  },
+  "coverage": "declared_inputs_and_roots_only"
+}

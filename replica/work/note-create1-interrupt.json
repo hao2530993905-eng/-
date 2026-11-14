@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "interrupt",
+      "args": {
+        "summary": "Computer Use 尚未发送新建笔记输入；前快照再次遇到菜单懒加载标题变化。保存现场并先修复项目 AX 读取预热，不放宽结构比较",
+        "evidence": [
+          "explore-ax-bda31cae4541457083c2b081d48afe54",
+          "explore-ax-67eea6ba1eab4c5085dd2a4089da4002"
+        ]
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-note-create-1-before",
+        "status": "reviewed",
+        "summary": "动作未执行；与已确认的动态菜单标题相同，使用双次完整 AX 读取预热后重试",
+        "evidence": [
+          "explore-ax-bda31cae4541457083c2b081d48afe54",
+          "explore-ax-67eea6ba1eab4c5085dd2a4089da4002"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "status": "blocked",
+  "reason": "Zotero 10.0.6 主库在连接生命周期内使用 EXCLUSIVE 锁，在线一致性备份已实际超时；见 sqlite-live-backup-lock。正常退出后另行只读核验。",
+  "legacy": false,
+  "sources": {}
+}

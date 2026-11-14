@@ -1,0 +1,208 @@
+{
+  "libraries": [
+    {
+      "libraryID": 1,
+      "type": "user"
+    }
+  ],
+  "items": [
+    {
+      "itemID": 1,
+      "itemTypeID": 22,
+      "libraryID": 1,
+      "key": "THDWL7VT",
+      "synced": 0
+    },
+    {
+      "itemID": 2,
+      "itemTypeID": 28,
+      "libraryID": 1,
+      "key": "S3BE8GXY",
+      "synced": 0
+    },
+    {
+      "itemID": 3,
+      "itemTypeID": 22,
+      "libraryID": 1,
+      "key": "27SL8GUC",
+      "synced": 0
+    },
+    {
+      "itemID": 4,
+      "itemTypeID": 3,
+      "libraryID": 1,
+      "key": "SMGAM4EP",
+      "synced": 0
+    },
+    {
+      "itemID": 5,
+      "itemTypeID": 1,
+      "libraryID": 1,
+      "key": "F6N97WCH",
+      "synced": 0
+    }
+  ],
+  "collections": [
+    {
+      "collectionID": 1,
+      "collectionName": "Replica Exploration",
+      "parentCollectionID": null,
+      "libraryID": 1,
+      "key": "R4V5VF72"
+    },
+    {
+      "collectionID": 2,
+      "collectionName": "sample",
+      "parentCollectionID": null,
+      "libraryID": 1,
+      "key": "KS4PNSDM"
+    }
+  ],
+  "collection_items": [
+    {
+      "collectionID": 1,
+      "itemID": 1,
+      "orderIndex": 0
+    },
+    {
+      "collectionID": 1,
+      "itemID": 2,
+      "orderIndex": 1
+    },
+    {
+      "collectionID": 2,
+      "itemID": 3,
+      "orderIndex": 0
+    }
+  ],
+  "notes": [
+    {
+      "itemID": 2,
+      "parentItemID": null,
+      "note": "<div class=\"zotero-note znv1\"><div data-schema-version=\"9\"><p>Replica note body: local persistence check.</p>\n</div></div>",
+      "title": "Replica note body: local persistence check."
+    }
+  ],
+  "tags": [
+    {
+      "itemID": 1,
+      "name": "local-testing",
+      "type": 0
+    },
+    {
+      "itemID": 1,
+      "name": "replica-exploration",
+      "type": 0
+    },
+    {
+      "itemID": 3,
+      "name": "local-testing",
+      "type": 0
+    },
+    {
+      "itemID": 3,
+      "name": "zotero-replica",
+      "type": 0
+    }
+  ],
+  "item_data": [
+    {
+      "itemID": 1,
+      "fieldName": "date",
+      "value": "2026-00-00 2026"
+    },
+    {
+      "itemID": 1,
+      "fieldName": "publicationTitle",
+      "value": "Journal of Local Testing"
+    },
+    {
+      "itemID": 1,
+      "fieldName": "title",
+      "value": "Local Replication Study"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "DOI",
+      "value": "10.1234/local.exploration"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "abstractNote",
+      "value": "A synthetic record used only for local Zotero exploration."
+    },
+    {
+      "itemID": 3,
+      "fieldName": "date",
+      "value": "2026-00-00 2026"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "issue",
+      "value": "3"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "journalAbbreviation",
+      "value": "Journal of Local Testing"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "pages",
+      "value": "101-115"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "publicationTitle",
+      "value": "Journal of Local Testing"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "title",
+      "value": "Local Exploration Article"
+    },
+    {
+      "itemID": 3,
+      "fieldName": "volume",
+      "value": "12"
+    },
+    {
+      "itemID": 4,
+      "fieldName": "title",
+      "value": "PDF"
+    }
+  ],
+  "creators": [
+    {
+      "itemID": 1,
+      "orderIndex": 0,
+      "creatorType": "author",
+      "lastName": "Example",
+      "firstName": "Ada"
+    },
+    {
+      "itemID": 3,
+      "orderIndex": 0,
+      "creatorType": "author",
+      "lastName": "Example",
+      "firstName": "Ada"
+    },
+    {
+      "itemID": 3,
+      "orderIndex": 1,
+      "creatorType": "author",
+      "lastName": "Example",
+      "firstName": "Grace"
+    }
+  ],
+  "attachments": [
+    {
+      "itemID": 4,
+      "parentItemID": 3,
+      "linkMode": 0,
+      "contentType": "application/pdf",
+      "path": "storage:Example和Example - 2026 - Local Exploration Article.pdf",
+      "syncState": 0
+    }
+  ]
+}

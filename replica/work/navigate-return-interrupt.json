@@ -1,0 +1,4 @@
+{"schema_version":1,"operations":[
+ {"op":"interrupt","args":{"summary":"动作尚未发送输入；前快照两次 AX 之间仅懒加载的“查看 > 列 > 将列移至左侧”标题发生变化，保存材料并重新观察","evidence":["explore-ax-2d1df2ebb93f4775bd3513a024f0b623","explore-ax-19b71ae237a04d8aba03bdb51857ff15"]}},
+ {"op":"resolve","args":{"id":"capture-failure-navigate-return-1-before","status":"reviewed","summary":"与 initial-ui 相同的菜单懒加载占位标题；未发送返回导航输入，后续使用新的稳定快照重试","evidence":["explore-ax-2d1df2ebb93f4775bd3513a024f0b623","explore-ax-19b71ae237a04d8aba03bdb51857ff15"]}}
+]}

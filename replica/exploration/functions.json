@@ -1,0 +1,1119 @@
+{
+  "schema_version": 1,
+  "workflows": {
+    "collect-organize": {
+      "id": "collect-organize",
+      "title": "创建、导入并整理文库",
+      "goal": "从文献输入得到可检索、可组织的本地文库",
+      "entries": [
+        "文件 > 新建条目",
+        "文件 > 导入…",
+        "工具栏新建分类"
+      ],
+      "steps": [
+        "新建或导入条目",
+        "编辑元数据",
+        "组织分类和标签",
+        "添加笔记"
+      ],
+      "expected_result": "条目及其元数据、分类、标签和笔记在界面中可见并保持"
+    },
+    "read-annotate": {
+      "id": "read-annotate",
+      "title": "附件阅读与注释",
+      "goal": "附加并阅读本地 PDF，形成注释",
+      "entries": [
+        "文件 > 添加附件",
+        "条目附件",
+        "阅读器"
+      ],
+      "steps": [
+        "添加 PDF 附件",
+        "打开阅读器",
+        "创建高亮或笔记",
+        "返回文库"
+      ],
+      "expected_result": "PDF 可阅读，注释和附件状态保持"
+    },
+    "find-export": {
+      "id": "find-export",
+      "title": "检索、引用与导出",
+      "goal": "找到目标文献并生成可复用输出",
+      "entries": [
+        "快速搜索",
+        "高级搜索",
+        "文件 > 导出文献库…",
+        "引用/书目操作"
+      ],
+      "steps": [
+        "检索并选择条目",
+        "执行导出或创建书目",
+        "检查输出"
+      ],
+      "expected_result": "选中结果和导出内容符合输入"
+    },
+    "maintain": {
+      "id": "maintain",
+      "title": "文库维护与偏好",
+      "goal": "处理重复、回收站、布局和本地设置",
+      "entries": [
+        "重复条目",
+        "回收站",
+        "Zotero > 设置",
+        "查看"
+      ],
+      "steps": [
+        "检查重复条目",
+        "移动/恢复回收站条目",
+        "调整设置"
+      ],
+      "expected_result": "维护操作和设置产生可预测结果"
+    },
+    "sync-collaborate": {
+      "id": "sync-collaborate",
+      "title": "同步、群组与订阅",
+      "goal": "连接 Zotero 服务进行同步与协作",
+      "entries": [
+        "同步按钮",
+        "新建群组…",
+        "新建订阅",
+        "设置 > 同步"
+      ],
+      "steps": [
+        "检查本地入口和前置条件",
+        "在授权账号下验证服务流程"
+      ],
+      "expected_result": "账号与服务状态正确反映"
+    },
+    "extend-automate": {
+      "id": "extend-automate",
+      "title": "集成、插件与自动化",
+      "goal": "连接浏览器、文字处理和开发者工具",
+      "entries": [
+        "工具 > 安装浏览器扩展…",
+        "工具 > 插件",
+        "工具 > 开发者",
+        "AppleScript/URL Scheme"
+      ],
+      "steps": [
+        "清点入口与依赖",
+        "在授权外部组件下验证"
+      ],
+      "expected_result": "集成入口和边界明确"
+    }
+  },
+  "features": {
+    "item-entry": {
+      "id": "item-entry",
+      "title": "手动新建与编辑文献条目",
+      "workflow_id": "collect-organize",
+      "entries": [
+        "文件 > 新建条目；工具栏新建条目；条目详情"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "新建并编辑普通文献"
+        },
+        {
+          "id": "reopen",
+          "title": "退出并重开后的条目持久化"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "item-entry",
+        "confidence": "observed",
+        "summary": "手动条目在创建/编辑后可保存；正常退出后的 SQLite 快照和重开 UI 均证明条目、分类、笔记、标签、附件及注释持久化",
+        "inputs": [
+          "Replica Exploration 空分类",
+          "标题 Local Replication Study；作者 Example, Ada；出版物 Journal of Local Testing；日期 2026",
+          "已保存隔离文库"
+        ],
+        "outputs": [
+          "分类中出现 Local Replication Study，详情显示预期元数据与更新后的修改日期",
+          "完整性健康的快照；重开后相同条目、笔记与阅读注释"
+        ],
+        "side_effects": [
+          "隔离文库条目数据写入；实时 SQLite 差分因 EXCLUSIVE 锁 blocked",
+          "新增退出状态数据库快照证据"
+        ],
+        "unknowns": [
+          "运行中逐动作 SQLite 差分仍受 EXCLUSIVE 锁限制"
+        ],
+        "state_ids": [
+          "collection.empty",
+          "item.editing.blank",
+          "item.editing.saved",
+          "library.reopened"
+        ],
+        "action_ids": [
+          "item-edit-1",
+          "library-reopen-1"
+        ],
+        "evidence": [
+          "explore-runtime-042d15dbff734486a50777b6f69aabb7",
+          "explore-runtime-57434ab1a624442cbba199fbd8bba12b",
+          "explore-runtime-e43d3562127d44fba9c988c21f71572b"
+        ],
+        "branches": [
+          "normal",
+          "reopen"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "手动创建期刊文章并编辑核心元数据成功",
+            "input": "合成标题、作者、出版物和日期",
+            "output": "列表和详情显示预期条目，修改时间更新",
+            "action_ids": [
+              "item-edit-1"
+            ],
+            "evidence": [
+              "explore-runtime-042d15dbff734486a50777b6f69aabb7",
+              "explore-runtime-57434ab1a624442cbba199fbd8bba12b"
+            ]
+          },
+          "reopen": {
+            "confidence": "observed",
+            "summary": "正常退出和重开后数据保持，数据库完整性及外键检查通过",
+            "input": "同一隔离 profile 与 datadir",
+            "output": "两条期刊、笔记、标签、PDF 高亮和评论均恢复",
+            "action_ids": [
+              "library-reopen-1"
+            ],
+            "evidence": [
+              "explore-runtime-e43d3562127d44fba9c988c21f71572b"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "collections-tags": {
+      "id": "collections-tags",
+      "title": "分类与标签管理",
+      "workflow_id": "collect-organize",
+      "entries": [
+        "新建分类；分类树；标签窗格"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "创建分类、分配条目和标签"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "collections-tags",
+        "confidence": "observed",
+        "summary": "工具栏可创建并自动选中分类；详情可显示多个标签，左侧标签选择器能勾选/取消筛选。两次标签添加均看到结果，但正式后快照被动态编辑器中断，保留为待补轨迹",
+        "inputs": [
+          "Replica Exploration 分类名",
+          "local-testing 与 replica-exploration 标签",
+          "标签选择器点击"
+        ],
+        "outputs": [
+          "新分类及选中状态、两个可见标签、标签 checkbox 0/1 切换"
+        ],
+        "side_effects": [
+          "隔离文库新增分类和标签元数据"
+        ],
+        "unknowns": [
+          "标签添加的完整 uninterrupted 动作轨迹、编辑/删除、嵌套分类与拖拽组织尚未覆盖",
+          "实时数据库差分 blocked"
+        ],
+        "state_ids": [
+          "main.empty",
+          "collection.empty",
+          "item.tagged.2",
+          "library.exported"
+        ],
+        "action_ids": [
+          "collection-create-1",
+          "tag-filter-1"
+        ],
+        "evidence": [
+          "explore-runtime-38d12a494073472cbf34e852376d5c72",
+          "explore-runtime-796988c92bd24e11a1017d3478a18b07"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "分类创建和标签筛选正常；标签添加结果已见但完整轨迹待补",
+            "input": "分类名与标签选择器操作",
+            "output": "新分类与标签筛选状态",
+            "action_ids": [
+              "collection-create-1",
+              "tag-filter-1"
+            ],
+            "evidence": [
+              "explore-runtime-38d12a494073472cbf34e852376d5c72",
+              "explore-runtime-796988c92bd24e11a1017d3478a18b07"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "notes": {
+      "id": "notes",
+      "title": "独立笔记与条目笔记",
+      "workflow_id": "collect-organize",
+      "entries": [
+        "文件 > 新建笔记；工具栏新建笔记；笔记编辑器"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "创建并保存笔记"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "notes",
+        "confidence": "observed",
+        "summary": "文件 > 新建笔记 > 新建独立笔记会在当前分类创建笔记并打开右侧 WebArea 编辑器；正文保存后成为列表标题，列表标题会规范化部分标点",
+        "inputs": [
+          "当前 Replica Exploration 分类",
+          "正文 Replica note body: local persistence check."
+        ],
+        "outputs": [
+          "条目列表出现笔记，编辑器显示完整正文，列表标题显示去除冒号的文本"
+        ],
+        "side_effects": [
+          "隔离文库新增笔记；实时数据库差分 blocked"
+        ],
+        "unknowns": [
+          "正常退出后的 note HTML 字段和重开状态待数据库/重启复核",
+          "撤销、删除、复杂富文本和条目子笔记尚未覆盖"
+        ],
+        "state_ids": [
+          "item.tagged.2",
+          "note.editing"
+        ],
+        "action_ids": [
+          "note-create-2"
+        ],
+        "evidence": [
+          "explore-runtime-4e9c793f2e8f485f88e2b302b1dfce55"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "独立笔记创建与正文编辑成功",
+            "input": "固定 ASCII 测试正文",
+            "output": "编辑器正文与笔记列表标题可见",
+            "action_ids": [
+              "note-create-2"
+            ],
+            "evidence": [
+              "explore-runtime-4e9c793f2e8f485f88e2b302b1dfce55"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "import": {
+      "id": "import",
+      "title": "文献格式导入",
+      "workflow_id": "collect-organize",
+      "entries": [
+        "文件 > 导入…；从剪贴板导入；文档关联"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "导入本地 RIS/BibTeX"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "import",
+        "confidence": "observed",
+        "summary": "文件 > 导入…先选择文件或 Mendeley 来源；文件导入选项默认创建新分类并复制附件到 Zotero 存储，RIS 字段按文献模型映射",
+        "inputs": [
+          "项目内 sample.ris，含 1 个合成期刊条目"
+        ],
+        "outputs": [
+          "显示已导入 1 个条目；新建 sample 分类；标题、两位作者、期刊、日期、卷期页码、DOI、摘要和关键词正确显示"
+        ],
+        "side_effects": [
+          "隔离文库新增分类、条目和标签"
+        ],
+        "unknowns": [
+          "BibTeX、RDF、损坏/空文件、取消、剪贴板和批量导入尚未实测",
+          "实时数据库差分 blocked"
+        ],
+        "state_ids": [
+          "note.editing",
+          "import.ris.selected"
+        ],
+        "action_ids": [
+          "import-ris-1"
+        ],
+        "evidence": [
+          "explore-runtime-0a433e1846d7459a81d2bef27db32cac"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "RIS 单文件正常导入成功，核心字段完整",
+            "input": "合成 RIS 文件与默认导入选项",
+            "output": "1 个新分类和 1 个可见期刊条目",
+            "action_ids": [
+              "import-ris-1"
+            ],
+            "evidence": [
+              "explore-runtime-0a433e1846d7459a81d2bef27db32cac"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "attachments": {
+      "id": "attachments",
+      "title": "本地附件管理",
+      "workflow_id": "read-annotate",
+      "entries": [
+        "文件 > 添加附件；附件页；存储目录"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "添加本地 PDF 附件"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "attachments",
+        "confidence": "observed",
+        "summary": "文件 > 添加附件 > 附加文件…将选中 PDF 复制为子附件；文件自动按创建者-年份-标题命名，父条目显示 PDF 标志，详情提供预览、页数与索引状态",
+        "inputs": [
+          "Local Exploration Article 及项目内 sample.pdf"
+        ],
+        "outputs": [
+          "子附件 PDF 与父条目层级；自动文件名、1 页和已索引=是；隔离存储新增文件"
+        ],
+        "side_effects": [
+          "隔离 attachment-storage 新增 PDF 和附件元数据"
+        ],
+        "unknowns": [
+          "链接文件、网页快照、多附件、删除和重命名规则边界尚未覆盖",
+          "实时数据库差分 blocked"
+        ],
+        "state_ids": [
+          "import.ris.selected",
+          "attachment.pdf.selected"
+        ],
+        "action_ids": [
+          "attachment-add-1"
+        ],
+        "evidence": [
+          "explore-runtime-06efdb9ef9b949659d01a5b5a44d934a",
+          "explore-runtime-caf0628baecc4995b188f4abe682d3a8"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "本地 PDF 子附件添加成功",
+            "input": "单页合成 PDF",
+            "output": "自动重命名的已索引子附件和隔离存储文件",
+            "action_ids": [
+              "attachment-add-1"
+            ],
+            "evidence": [
+              "explore-runtime-06efdb9ef9b949659d01a5b5a44d934a",
+              "explore-runtime-caf0628baecc4995b188f4abe682d3a8"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "reader-annotate": {
+      "id": "reader-annotate",
+      "title": "PDF 阅读与注释",
+      "workflow_id": "read-annotate",
+      "entries": [
+        "附件阅读器；注释工具"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "阅读 PDF 并创建注释"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "reader-annotate",
+        "confidence": "observed",
+        "summary": "双击子附件打开独立 Zotero Reader 标签页；查找结果可用 Control+Alt+1 转为高亮，侧边栏显示页码、注释文本、原文和评论，点击文库标签返回",
+        "inputs": [
+          "单页合成 PDF",
+          "查找 Local Exploration",
+          "评论 Replica highlight comment"
+        ],
+        "outputs": [
+          "1/1 查找结果、页 1 高亮、评论与原文可见、文库视图恢复"
+        ],
+        "side_effects": [
+          "隔离附件的阅读状态与注释数据更新；外部附件目录有变化"
+        ],
+        "unknowns": [
+          "下划线、区域/绘图/文字注释、删除、颜色、快捷键冲突和重开后的注释状态尚未覆盖",
+          "实时数据库差分 blocked"
+        ],
+        "state_ids": [
+          "attachment.pdf.selected",
+          "reader.returned"
+        ],
+        "action_ids": [
+          "reader-annotate-1"
+        ],
+        "evidence": [
+          "explore-runtime-62e8c4df821e4281a8dfce87adfdbb59",
+          "explore-runtime-c85573a1d0464f2c8541e5807bbacf84"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "PDF 阅读、高亮和评论正常完成",
+            "input": "PDF 文本查找与固定评论",
+            "output": "侧边栏可见高亮和评论，成功返回文库",
+            "action_ids": [
+              "reader-annotate-1"
+            ],
+            "evidence": [
+              "explore-runtime-62e8c4df821e4281a8dfce87adfdbb59"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "search": {
+      "id": "search",
+      "title": "快速与高级检索",
+      "workflow_id": "find-export",
+      "entries": [
+        "快速搜索；高级搜索；标签筛选"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "快速与高级搜索"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "search",
+        "confidence": "observed",
+        "summary": "快速搜索匹配标题、摘要和注释；高级搜索提供结果类型、全部/任一匹配和字段/操作符条件，默认标题包含可正确筛选并可清空关闭",
+        "inputs": [
+          "Local Exploration",
+          "Synthetic",
+          "空字符串",
+          "Local Exploration、Synthetic",
+          "高级搜索 标题 包含 Local Exploration"
+        ],
+        "outputs": [
+          "标题/摘要匹配的期刊条目、相关注释结果、清空后的完整列表",
+          "快速与高级搜索均显示目标期刊，清空后恢复完整列表"
+        ],
+        "side_effects": [
+          "仅改变视图筛选状态",
+          "仅改变并恢复筛选状态"
+        ],
+        "unknowns": [
+          "多条件/条件组、保存搜索、零结果和标签选择器组合尚未覆盖"
+        ],
+        "state_ids": [
+          "reader.returned",
+          "search.results",
+          "library.exported"
+        ],
+        "action_ids": [
+          "quick-search-2",
+          "advanced-search-1"
+        ],
+        "evidence": [
+          "explore-runtime-94860eb9558e4ef7874d9643c61ef8fe",
+          "explore-runtime-f3e75f830c93422cbed6c1a9df50a330"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "快速搜索和高级搜索正常，清空恢复正常",
+            "input": "标题、摘要及高级标题条件",
+            "output": "目标条目和恢复后的完整列表",
+            "action_ids": [
+              "quick-search-2",
+              "advanced-search-1"
+            ],
+            "evidence": [
+              "explore-runtime-94860eb9558e4ef7874d9643c61ef8fe",
+              "explore-runtime-f3e75f830c93422cbed6c1a9df50a330"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "export-citation": {
+      "id": "export-citation",
+      "title": "文库导出、快速复制与书目",
+      "workflow_id": "find-export",
+      "entries": [
+        "文件 > 导出文献库…；条目上下文菜单；引用样式"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "导出文库与创建书目"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "export-citation",
+        "confidence": "observed",
+        "summary": "文件 > 导出文献库…提供多种格式；RIS 使用 UTF-8，导出笔记默认勾选、导出文件默认不勾选；输出包含文库中的文献记录",
+        "inputs": [
+          "含两条期刊、笔记、PDF 与注释的隔离文库",
+          "RIS 格式和项目 exports 输出目录"
+        ],
+        "outputs": [
+          "library.ris 含两个 TY-JOUR 记录及正确标题、作者、期刊、DOI、摘要和标签"
+        ],
+        "side_effects": [
+          "登记 exports 目录新增文本文件"
+        ],
+        "unknowns": [
+          "BibTeX/CSL JSON/RDF、附件与注释导出、快速复制、书目创建和取消尚未覆盖",
+          "实时数据库差分 blocked"
+        ],
+        "state_ids": [
+          "reader.returned",
+          "library.exported"
+        ],
+        "action_ids": [
+          "library-export-1"
+        ],
+        "evidence": [
+          "explore-runtime-dbb1f6f738834674afe78bfd62b77177",
+          "explore-runtime-e3073d52c93141daa7304bc75821018c"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "RIS 文库导出成功，记录数与字段正确",
+            "input": "两条合成期刊与默认 RIS 选项",
+            "output": "项目内 library.ris 两条完整记录",
+            "action_ids": [
+              "library-export-1"
+            ],
+            "evidence": [
+              "explore-runtime-dbb1f6f738834674afe78bfd62b77177",
+              "explore-runtime-e3073d52c93141daa7304bc75821018c"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "styles": {
+      "id": "styles",
+      "title": "引用样式管理",
+      "workflow_id": "find-export",
+      "entries": [
+        "设置 > 引用 > 样式；书目格式"
+      ],
+      "branches": [],
+      "conclusion": null
+    },
+    "duplicates-trash": {
+      "id": "duplicates-trash",
+      "title": "重复条目与回收站",
+      "workflow_id": "maintain",
+      "entries": [
+        "重复条目；回收站；删除/恢复"
+      ],
+      "branches": [],
+      "conclusion": {
+        "feature_id": "duplicates-trash",
+        "confidence": "observed",
+        "summary": "重复条目视图提供合并选择上下文；回收站为空时显示无条目并禁用新建/附件/笔记按钮，均可从分类树往返",
+        "inputs": [
+          "无重复、空回收站的隔离文库"
+        ],
+        "outputs": [
+          "重复条目选择上下文、空回收站与禁用按钮、sample 恢复 1 个条目"
+        ],
+        "side_effects": [],
+        "unknowns": [
+          "重复检测与合并、移至回收站、恢复、永久删除和自动清理尚未实测"
+        ],
+        "state_ids": [
+          "library.exported"
+        ],
+        "action_ids": [
+          "duplicates-trash-1"
+        ],
+        "evidence": [
+          "explore-runtime-9083040a53774aac9dc43f9274838214"
+        ],
+        "branches": [],
+        "branch_results": {},
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "preferences-layout": {
+      "id": "preferences-layout",
+      "title": "偏好设置与界面布局",
+      "workflow_id": "maintain",
+      "entries": [
+        "Zotero > 设置；查看菜单；布局/密度/列"
+      ],
+      "branches": [
+        {
+          "id": "normal",
+          "title": "查看和调整安全设置"
+        }
+      ],
+      "conclusion": {
+        "feature_id": "preferences-layout",
+        "confidence": "observed",
+        "summary": "主窗口支持我的文库/最近阅读等导航；设置包含常规、账户、导出、引用和高级分类，覆盖外观、文件处理、阅读器、快速复制、样式、集成、数据目录与索引",
+        "inputs": [
+          "空文库导航操作",
+          "只读设置页检查"
+        ],
+        "outputs": [
+          "最近阅读与我的文库可逆往返；设置分类可见且关闭后恢复主窗口"
+        ],
+        "side_effects": [],
+        "unknowns": [
+          "布局/密度/字体和列调整、设置修改后的持久化尚未覆盖",
+          "账号与外部加载项保持未配置"
+        ],
+        "state_ids": [
+          "main.empty",
+          "main.recent.empty",
+          "library.exported"
+        ],
+        "action_ids": [
+          "navigate-recent-1",
+          "navigate-return-3",
+          "preferences-review-1"
+        ],
+        "evidence": [
+          "explore-runtime-e00979d156704497accdf5d95f4ae74f",
+          "explore-runtime-a46aa291ba424798a449fcdaae08de9e",
+          "explore-runtime-b0e6c3b1b6a54b2380a6847587069b51"
+        ],
+        "branches": [
+          "normal"
+        ],
+        "branch_results": {
+          "normal": {
+            "confidence": "observed",
+            "summary": "主导航和设置只读访问正常",
+            "input": "导航点击与设置快捷键",
+            "output": "可逆视图切换和完整设置分类",
+            "action_ids": [
+              "navigate-recent-1",
+              "navigate-return-3",
+              "preferences-review-1"
+            ],
+            "evidence": [
+              "explore-runtime-e00979d156704497accdf5d95f4ae74f",
+              "explore-runtime-b0e6c3b1b6a54b2380a6847587069b51"
+            ]
+          }
+        },
+        "original_sha256": "dd2591edd905059c681a7195714c509e48fa3cdfe3d67eef44e973cc62283c27"
+      }
+    },
+    "sync-groups": {
+      "id": "sync-groups",
+      "title": "账号同步与群组",
+      "workflow_id": "sync-collaborate",
+      "entries": [
+        "同步；新建群组；设置同步"
+      ],
+      "branches": [],
+      "conclusion": null
+    },
+    "feeds": {
+      "id": "feeds",
+      "title": "文献订阅",
+      "workflow_id": "sync-collaborate",
+      "entries": [
+        "文件 > 新建订阅"
+      ],
+      "branches": [],
+      "conclusion": null
+    },
+    "integration": {
+      "id": "integration",
+      "title": "浏览器与文字处理集成",
+      "workflow_id": "extend-automate",
+      "entries": [
+        "安装浏览器扩展；文字处理插件；本地 HTTP 服务"
+      ],
+      "branches": [],
+      "conclusion": null
+    },
+    "plugins-developer": {
+      "id": "plugins-developer",
+      "title": "插件与开发者工具",
+      "workflow_id": "extend-automate",
+      "entries": [
+        "工具 > 插件；工具 > 开发者"
+      ],
+      "branches": [],
+      "conclusion": null
+    },
+    "automation": {
+      "id": "automation",
+      "title": "AppleScript、URL Scheme 与 RTF 扫描",
+      "workflow_id": "extend-automate",
+      "entries": [
+        "zotero://；AppleScript；工具 > RTF 扫描"
+      ],
+      "branches": [],
+      "conclusion": null
+    }
+  },
+  "coverage": {
+    "basis": "仅统计已发现的入口、状态和代表性行为分支",
+    "total": 38,
+    "pending": 2,
+    "blocked": 7,
+    "by_status": {
+      "blocked": 7,
+      "reviewed": 13,
+      "explored": 16,
+      "pending": 2
+    },
+    "by_kind": {
+      "ax-gap": {
+        "total": 12,
+        "blocked": 1,
+        "reviewed": 11
+      },
+      "branch": {
+        "total": 12,
+        "explored": 10,
+        "blocked": 1,
+        "pending": 1
+      },
+      "control": {
+        "total": 4,
+        "explored": 3,
+        "pending": 1
+      },
+      "logic": {
+        "total": 6,
+        "reviewed": 1,
+        "explored": 1,
+        "blocked": 4
+      },
+      "menu": {
+        "total": 0
+      },
+      "page": {
+        "total": 2,
+        "explored": 2
+      },
+      "static": {
+        "total": 1,
+        "reviewed": 1
+      },
+      "visual-review": {
+        "total": 1,
+        "blocked": 1
+      }
+    },
+    "states": 14,
+    "actions": 23,
+    "entries": 1934,
+    "unmapped_entries": [],
+    "unclassified": [],
+    "unfinished_captures": [],
+    "failed_captures": [
+      "initial",
+      "initial-ui",
+      "navigate-return-1-before",
+      "navigate-return-2-before",
+      "item-create-1-after",
+      "tag-add-1-after",
+      "tag-added",
+      "tag-stable",
+      "tag-settled",
+      "tag-add-2-after",
+      "note-create-1-before",
+      "quick-search-1-after"
+    ],
+    "unfinished_actions": [],
+    "blockers": [
+      {
+        "id": "capture-failure-initial",
+        "kind": "ax-gap",
+        "title": "取证失败：initial",
+        "evidence": [
+          "explore-runtime-94e8f80421fc4027af43e26cdc3bdce3"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "state_id": null,
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T03:52:46.656858+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T03:39:25.954160+00:00",
+        "resolution": {
+          "id": "capture-failure-initial",
+          "status": "blocked",
+          "summary": "原版主库连接生命周期 EXCLUSIVE 锁使运行中在线备份超时；不修改原 App，UI 流程继续，数据副作用在正常退出后补查",
+          "evidence": [
+            "sqlite-live-backup-lock"
+          ],
+          "attempts": [
+            "初始 exploration_capture.py capture initial：SQLite 一致性备份 30 秒超时",
+            "直接 sqlite3 mode=ro 查询：database is locked",
+            "静态核对 db.js：DB_LOCK_EXCLUSIVE=true"
+          ],
+          "resume_condition": "正常退出隔离实例后取得只读一致性快照；若必须运行中逐动作数据库差分，需要不改变原版的安全新取证方法",
+          "feature_id": "item-entry"
+        }
+      },
+      {
+        "id": "sync-online-blocked",
+        "kind": "branch",
+        "title": "账号同步、群组与在线服务",
+        "feature_id": "sync-groups",
+        "evidence": [
+          "zotero-package-inventory"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "state_id": null,
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T03:52:46.663505+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T03:52:46.663230+00:00",
+        "resolution": {
+          "id": "sync-online-blocked",
+          "status": "blocked",
+          "summary": "隔离 profile 无账号且本轮未授权登录或联网副作用；仅记录入口，不执行同步/建群",
+          "evidence": [
+            "desktop-permission",
+            "explore-ax-56299e05aef042bdb1ed81a06efe29ce"
+          ],
+          "attempts": [
+            "检查初始窗口同步按钮与新建群组菜单",
+            "核对隔离 user.js 已禁用自动同步"
+          ],
+          "resume_condition": "用户提供专用测试账号并明确授权具体联网、同步和群组操作",
+          "feature_id": "sync-groups"
+        }
+      },
+      {
+        "id": "visual-pixel-review",
+        "kind": "visual-review",
+        "title": "截图像素级视觉复核",
+        "feature_id": "preferences-layout",
+        "state_id": "main.empty",
+        "evidence": [
+          "explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T05:27:42.260246+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T05:27:42.258526+00:00",
+        "resolution": {
+          "id": "visual-pixel-review",
+          "status": "blocked",
+          "summary": "所有关键状态已保存目标窗口 JPEG，Computer Use 的 AX/文本和几何信息已核对；当前模型工具明确提示不支持图像输入，不能声称完成像素级视觉审查",
+          "evidence": [
+            "explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36",
+            "preflight-check"
+          ],
+          "attempts": [
+            "调用 Computer Use getScreenshot，工具返回 image omitted because you do not support image input",
+            "使用 AX 文本、角色、值、动作和 frame 核对主要布局"
+          ],
+          "resume_condition": "由支持图像输入的 Agent 或用户查看保存的窗口截图，复核颜色、间距、图标和动效",
+          "feature_id": "preferences-layout"
+        }
+      },
+      {
+        "id": "recovery-collection-empty",
+        "kind": "logic",
+        "title": "空分类历史状态的恢复路径",
+        "feature_id": "collections-tags",
+        "state_id": "collection.empty",
+        "evidence": [
+          "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T05:30:08.676250+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T05:30:08.673994+00:00",
+        "resolution": {
+          "id": "recovery-collection-empty",
+          "status": "blocked",
+          "summary": "新建条目第一次后快照中断，collection.empty 到后续状态没有完整动作边；已从更后面的 library.reopened 实际执行 library-reset-1 恢复 main.empty，但未重放该历史状态",
+          "evidence": [
+            "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+          ],
+          "attempts": [
+            "检查 exploration.route 状态图",
+            "核对空分类创建与后续条目创建证据"
+          ],
+          "resume_condition": "需要逐状态恢复证明时，从保留测试数据重建空分类并记录返回/重置动作",
+          "feature_id": "collections-tags"
+        }
+      },
+      {
+        "id": "recovery-item-blank",
+        "kind": "logic",
+        "title": "空白条目历史状态的恢复路径",
+        "feature_id": "item-entry",
+        "state_id": "item.editing.blank",
+        "evidence": [
+          "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T05:30:08.680849+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T05:30:08.677949+00:00",
+        "resolution": {
+          "id": "recovery-item-blank",
+          "status": "blocked",
+          "summary": "空白条目由异步后快照中断的创建动作产生，没有可计入 route 的后续完整反向边；后继重开状态已通过重置恢复初始，但该历史节点未单独恢复",
+          "evidence": [
+            "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+          ],
+          "attempts": [
+            "检查 item-create-1 中断材料与状态图"
+          ],
+          "resume_condition": "从保留数据重建空白条目后记录取消/删除或重置的完整动作",
+          "feature_id": "item-entry"
+        }
+      },
+      {
+        "id": "recovery-item-saved",
+        "kind": "logic",
+        "title": "已编辑条目历史状态的恢复路径",
+        "feature_id": "item-entry",
+        "state_id": "item.editing.saved",
+        "evidence": [
+          "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T05:30:08.684715+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T05:30:08.682810+00:00",
+        "resolution": {
+          "id": "recovery-item-saved",
+          "status": "blocked",
+          "summary": "标签添加两次后快照中断使 item.editing.saved 到标签状态缺少正式动作边；后继 library.reopened 已通过 library-reset-1 恢复 main.empty，历史节点恢复未被单独证明",
+          "evidence": [
+            "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+          ],
+          "attempts": [
+            "检查 item-edit-1 成功轨迹和 tag-add-1 中断现场"
+          ],
+          "resume_condition": "重建已编辑条目并记录到后继状态或初始状态的完整路径",
+          "feature_id": "item-entry"
+        }
+      },
+      {
+        "id": "recovery-item-tagged",
+        "kind": "logic",
+        "title": "单标签历史状态的恢复路径",
+        "feature_id": "collections-tags",
+        "state_id": "item.tagged",
+        "evidence": [
+          "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+        ],
+        "status": "blocked",
+        "safety": "review",
+        "history": [
+          {
+            "status": "pending",
+            "resolution": null,
+            "updated_at": "2026-11-13T05:30:08.689030+00:00"
+          }
+        ],
+        "created_at": "2026-11-13T05:30:08.686637+00:00",
+        "resolution": {
+          "id": "recovery-item-tagged",
+          "status": "blocked",
+          "summary": "单标签到双标签动作后快照中断，状态图缺少完整前进/恢复边；后续重置已恢复初始，但历史单标签节点未重放",
+          "evidence": [
+            "explore-runtime-2dd7718508f648689a5230b4a808bb70"
+          ],
+          "attempts": [
+            "检查 tag-add-2 中断与 tag-settled 采集材料"
+          ],
+          "resume_condition": "重建单标签条目并记录取消筛选/删除标签或重置的完整路径",
+          "feature_id": "collections-tags"
+        }
+      }
+    ]
+  },
+  "limits": [
+    "覆盖仅针对本机 Zotero 10.0.6 中文 UI、已发现入口和代表性输入，不声称穷举",
+    "运行中 SQLite 差分、像素级视觉审查、账号联网、外部集成、永久删除、复杂分支与部分标签添加轨迹未覆盖",
+    "四个历史状态缺少逐状态恢复路径，已分别登记 blocked"
+  ]
+}

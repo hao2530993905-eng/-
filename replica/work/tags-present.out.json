@@ -1,0 +1,41 @@
+{
+  "id": "tags-present",
+  "status": "captured",
+  "state_id": null,
+  "started_at": "2026-11-13T04:34:57.431438+00:00",
+  "logs": [
+    "explore-runtime-9a31ccdaf6924846b0018ed46c1b817e",
+    "explore-runtime-4d24811eb4cf4250b9760ecae73fd227",
+    "explore-runtime-58d4692bb6444221a27192f2e52fc03c",
+    "explore-runtime-6e4259604a904aeabcae2a0fc4d0dc70"
+  ],
+  "tool": {
+    "path": "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax"
+  },
+  "ax": "explore-ax-58f616b52b994b1ca569cb76a8d5d7d4",
+  "screenshots": [
+    "explore-screenshot-94f86eb1d8604fba9d708d36df236b02"
+  ],
+  "storage": {
+    "status": "blocked",
+    "logical_sha256": null,
+    "evidence": {
+      "state/manifest.json": "explore-runtime-609e7fca90604adfb6acaabe2f3308e1"
+    }
+  },
+  "external": {
+    "status": "captured",
+    "evidence": {
+      "external/manifest.json": "explore-runtime-143a67d438cb4a0ea864dc6aa720842c",
+      "external/sample-bib.bib": "explore-runtime-288a639ea8dc4205805fa0a08f3274e2",
+      "external/sample-bib.value.json": "explore-runtime-84e7adf88596493bb23307c578ae8895",
+      "external/sample-pdf.pdf": "explore-runtime-f5d0451adb254646ba28119fd83661ce",
+      "external/sample-ris.ris": "explore-runtime-bc790c94376f48ab95254c9efb5c6081",
+      "external/sample-ris.value.json": "explore-runtime-22c8e3569de74814a6c40a00685402bd"
+    }
+  },
+  "stability_ax": "explore-ax-864477bc27e14fdcbee726c76510655f",
+  "finished_at": "2026-11-13T04:35:01.434125+00:00",
+  "pid": 46450,
+  "frontmost": true
+}

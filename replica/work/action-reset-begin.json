@@ -1,0 +1,8 @@
+{
+ "id":"library-reset-1","candidate_id":"reset-exploration-library","from_capture":"library-reopen-1-after","channel":"system",
+ "tool":"app_instances.py + project-local mv/cp + fresh profile",
+ "operation":"正常退出，移动隔离测试目录到证据区，创建新的空 profile/datadir 并重开，恢复初始空文库",
+ "precondition":"重开持久化已验证且 post-quit-sqlite 已登记；只移动项目内合成测试材料",
+ "expected_result":"新实例显示空我的文库和初始欢迎状态，旧测试材料完整保留在证据区",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

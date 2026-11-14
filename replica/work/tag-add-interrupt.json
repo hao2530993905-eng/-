@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "interrupt",
+      "args": {
+        "summary": "local-testing 已实际添加并显示 1 个标签；后快照被标签编辑器展开/滚动变化打断。保留现场，不重复添加同名标签",
+        "evidence": [
+          "explore-runtime-fa1e303d87a047d0bca8d94405b0278f",
+          "explore-runtime-2f8d70d6e28b4ba7a48b3b53e9238367",
+          "explore-runtime-81fc26c23b0349b1a7e1838e7ec9fd8c",
+          "explore-ax-4d5a18b86b274eb0bc63734a2aeee094",
+          "explore-ax-92c9070ea26c49cc85bb07354dcf321b"
+        ]
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-tag-add-1-after",
+        "status": "reviewed",
+        "summary": "标签已添加；异步详情展开导致后快照不稳定，单独采集稳定状态后继续第二个标签的完整动作",
+        "evidence": [
+          "explore-ax-4d5a18b86b274eb0bc63734a2aeee094",
+          "explore-ax-92c9070ea26c49cc85bb07354dcf321b"
+        ]
+      }
+    }
+  ]
+}

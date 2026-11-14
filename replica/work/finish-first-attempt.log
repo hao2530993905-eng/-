@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/computeruse/Desktop/harness更新/replicate-macos-app/scripts/exploration.py", line 801, in <module>
+    main()
+  File "/Users/computeruse/Desktop/harness更新/replicate-macos-app/scripts/exploration.py", line 765, in main
+    result = finish(args.project)
+  File "/Users/computeruse/Desktop/harness更新/replicate-macos-app/scripts/exploration.py", line 678, in finish
+    require(not errors, "探索尚未收敛：\n" + "\n".join(errors))
+  File "/Users/computeruse/Desktop/harness更新/replicate-macos-app/scripts/common.py", line 18, in require
+    raise ValueError(message)
+ValueError: 探索尚未收敛：
+尚未完成定向逆向分析复核；不适用时须说明依据
+尚未完成菜单、页面、行为分支和静态入口的覆盖复核
+状态 collection.empty 缺少回到初始状态的已验证路径或恢复阻塞说明
+状态 item.editing.blank 缺少回到初始状态的已验证路径或恢复阻塞说明
+状态 item.editing.saved 缺少回到初始状态的已验证路径或恢复阻塞说明
+状态 item.tagged 缺少回到初始状态的已验证路径或恢复阻塞说明

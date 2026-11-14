@@ -1,0 +1,4 @@
+{"schema_version":1,"operations":[
+ {"op":"classify","args":{"capture_id":"item-created","state_id":"item.editing.blank","title":"新期刊条目编辑","meaning":"已创建的空白期刊文章选中，右侧条目详情可编辑，标题获得焦点，出现可关闭的同步提醒"}},
+ {"op":"resolve","args":{"id":"capture-failure-item-create-1-after","status":"reviewed","summary":"动作实际创建条目，后快照不稳定来自异步同步提醒和条目详情加载；已中断并单独保存 item-created 稳定现场，不重复执行创建","evidence":["explore-ax-47acff5d51f5429f938aae467f2ebe76","explore-ax-bc96d8c73999460f81e30a55d7aeb050"]}}
+]}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "interrupt",
+      "args": {
+        "summary": "replica-exploration 已实际成为第二个标签；后快照被编辑器/菜单异步变化打断。保留两个标签的现场，不再重复添加",
+        "evidence": [
+          "explore-runtime-5d2b517ad59f404395781fb44ef95ccd",
+          "explore-runtime-ed3d123e56a74a20b6c87e40b1959f5b",
+          "explore-runtime-e536042d5dcf4db3b23ecf4991ec5d3b",
+          "explore-runtime-f168e1cbf66542d7854436f6f3c69df6",
+          "explore-ax-8d401d6023b945ffbd806f8608d13fcb",
+          "explore-ax-0f8fbf540b8149818a98a547e01446dc"
+        ]
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-tag-add-2-after",
+        "status": "reviewed",
+        "summary": "第二标签已出现在详情与左侧选择器；后快照不稳定属于动态编辑界面，单独采集稳定状态",
+        "evidence": [
+          "explore-ax-8d401d6023b945ffbd806f8608d13fcb",
+          "explore-ax-0f8fbf540b8149818a98a547e01446dc"
+        ]
+      }
+    }
+  ]
+}

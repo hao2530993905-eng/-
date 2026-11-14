@@ -1,0 +1,7 @@
+{
+  "role": "a",
+  "app_path": "/Applications/Zotero.app",
+  "test_data": "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration",
+  "purpose": "隔离资料库中的 Zotero 主要本地工作流探索",
+  "arguments": ["-no-remote", "-profile", "/Users/computeruse/Desktop/zotero复刻/replica/work/profile-a", "-datadir", "/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration/library"]
+}

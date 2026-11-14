@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/usr/bin/sips",
+    "-s",
+    "format",
+    "jpeg",
+    "-s",
+    "formatOptions",
+    "95",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/note-base/window-1898.png",
+    "--out",
+    "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/note-base/window-1898.jpg"
+  ],
+  "started_at": "2026-11-13T04:37:51.401638+00:00",
+  "timeout": 30,
+  "stdout": "/Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/note-base/window-1898.png\n  /Users/computeruse/Desktop/zotero复刻/replica/evidence/exploration/captures/note-base/window-1898.jpg\n",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:37:51.447669+00:00"
+}

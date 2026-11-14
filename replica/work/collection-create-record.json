@@ -1,0 +1,5 @@
+{"schema_version":1,"operations":[
+ {"op":"classify","args":{"capture_id":"collection-create-1-after","state_id":"collection.empty","title":"Replica Exploration 空分类","meaning":"新建分类已被创建并选中，窗口标题与分类树同步，中央条目表为空"}},
+ {"op":"interpret","args":{"action_id":"collection-create-1","outcome":"changed","summary":"通过工具栏输入并确认后创建 Replica Exploration 分类且自动选中；声明的 exports/attachment-storage 未变化","side_effects":["在隔离文库中新增一个测试分类；运行中 SQLite 差分 blocked"]}},
+ {"op":"resolve","args":{"id":"collection-create-normal","status":"explored","summary":"工具栏新建分类、输入名称和 Return 确认构成成功轨迹；新分类被选中","evidence":["explore-runtime-38d12a494073472cbf34e852376d5c72","explore-runtime-1d862a375e494fe5831a069b9447cfd0","explore-runtime-066303b52f4c4bb8b2080820b9019a4a"],"action_ids":["collection-create-1"]}}
+]}

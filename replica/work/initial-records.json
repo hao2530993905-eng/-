@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {"op":"add-evidence","args":{"evidence_id":"desktop-permission","kind":"other","path":"/Users/computeruse/Desktop/zotero复刻/replica/evidence/preflight/desktop-permission.json","tool":"conversation","summary":"用户要求按 replicate-macos-app 探索 Zotero；本地记录桌面提醒、截图范围与隔离边界"}},
+    {"op":"add-evidence","args":{"evidence_id":"preflight-check","kind":"runtime","path":"/Users/computeruse/Desktop/zotero复刻/replica/evidence/preflight/summary.md","tool":"bootstrap.py; ax.swift; Computer Use; swiftc","summary":"arm64、权限、AX、Computer Use 与最小构建检查；REA 版本限制"}},
+    {"op":"add-evidence","args":{"evidence_id":"rea-doctor","kind":"reverse-engineering","path":"/Users/computeruse/Desktop/zotero复刻/replica/evidence/preflight/rea-doctor.txt","tool":"npx rea-agents@6.9.0 doctor","status":"blocked","summary":"REA doctor 因 Node 24.21.0 低于所需 24.22.1 未能运行；使用本地 CLI"}},
+    {"op":"add-evidence","args":{"evidence_id":"zotero-package-inventory","kind":"reverse-engineering","path":"/Users/computeruse/Desktop/zotero复刻/replica/evidence/reverse-engineering/inventory-summary.md","tool":"file; lipo; plutil; codesign; otool; unzip; rg","summary":"Zotero 包、组件、入口和隔离参数的静态清单；运行行为待 UI 复核"}},
+    {"op":"add-evidence","args":{"evidence_id":"zotero-main-binary","kind":"reverse-engineering","path":"/Users/computeruse/Desktop/zotero复刻/replica/evidence/reverse-engineering/zotero-7daa49fec5d2/file.txt","tool":"file; lipo; codesign; otool; nm; strings","summary":"主程序格式与身份原始材料，目录含完整清单、导入导出与签名信息"}}
+  ]
+}

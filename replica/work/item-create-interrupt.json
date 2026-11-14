@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "interrupt",
+      "args": {
+        "summary": "AXPick 已实际创建期刊文章并聚焦标题，但后快照遇到异步同步提示和界面变化；保留动作日志及失败采集，从当前已创建条目继续，不重复新建",
+        "evidence": [
+          "explore-runtime-b2d60cc9a5aa459d91adf198f3e4b36f",
+          "explore-ax-47acff5d51f5429f938aae467f2ebe76",
+          "explore-ax-bc96d8c73999460f81e30a55d7aeb050"
+        ]
+      }
+    }
+  ]
+}

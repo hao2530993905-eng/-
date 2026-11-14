@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "perform",
+    "--pid",
+    "46450",
+    "--action",
+    "AXPress",
+    "--",
+    "org.zotero.zotero",
+    "Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Button[0 个标签] > Button[添加]"
+  ],
+  "started_at": "2026-11-13T04:07:16.847019+00:00",
+  "timeout": 60,
+  "stdout": "AXPress\tWindow[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Button[0 个标签] > Button[添加]\n",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:07:16.915176+00:00"
+}

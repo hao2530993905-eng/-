@@ -1,0 +1,13 @@
+{
+  "id": "navigate-return-2",
+  "candidate_id": "navigate-return-library",
+  "from_capture": "recent-stable",
+  "channel": "ax",
+  "precondition": "最近阅读空视图稳定，左侧我的文库行可见",
+  "expected_result": "恢复我的文库窗口标题与空文库视图",
+  "operation": {
+    "verb": "click",
+    "path": "Window[最近阅读 - Zotero] > Group[最近阅读 - Zotero] > Group#4 > Outline[分类] > Group > Row[我的文库]"
+  },
+  "equivalence_reason": "使用 AX 点击与刚才 Computer Use 相同的左侧导航行"
+}

@@ -1,0 +1,102 @@
+{
+  "status": "in_progress",
+  "coverage": {
+    "basis": "仅统计已发现的入口、状态和代表性行为分支",
+    "total": 34,
+    "pending": 2,
+    "blocked": 3,
+    "by_status": {
+      "blocked": 3,
+      "reviewed": 13,
+      "explored": 16,
+      "pending": 2
+    },
+    "by_kind": {
+      "ax-gap": {
+        "total": 12,
+        "blocked": 1,
+        "reviewed": 11
+      },
+      "branch": {
+        "total": 12,
+        "explored": 10,
+        "blocked": 1,
+        "pending": 1
+      },
+      "control": {
+        "total": 4,
+        "explored": 3,
+        "pending": 1
+      },
+      "logic": {
+        "total": 2,
+        "reviewed": 1,
+        "explored": 1
+      },
+      "menu": {
+        "total": 0
+      },
+      "page": {
+        "total": 2,
+        "explored": 2
+      },
+      "static": {
+        "total": 1,
+        "reviewed": 1
+      },
+      "visual-review": {
+        "total": 1,
+        "blocked": 1
+      }
+    },
+    "states": 14,
+    "actions": 23,
+    "entries": 1934,
+    "unclassified_count": 0,
+    "unfinished_captures_count": 0,
+    "failed_captures_count": 12,
+    "unfinished_actions_count": 0,
+    "unmapped_entries_count": 0
+  },
+  "pending_action": null,
+  "current_capture": "library-reset-1-after",
+  "completion": null,
+  "pending_total": 2,
+  "pending": [
+    {
+      "id": "tag-add-normal",
+      "kind": "branch",
+      "title": "为合成条目添加标签",
+      "feature_id": "collections-tags",
+      "branch_id": "normal",
+      "evidence": [
+        "explore-runtime-57434ab1a624442cbba199fbd8bba12b"
+      ],
+      "status": "pending",
+      "safety": "test-data",
+      "state_id": null,
+      "history": [],
+      "created_at": "2026-11-13T04:07:14.424746+00:00",
+      "precondition": "Local Replication Study 已选中；仅添加 local-testing 标签",
+      "input_class": "正常条目标签"
+    },
+    {
+      "id": "remaining-entry-review",
+      "kind": "control",
+      "title": "其他辅助控件与未覆盖入口",
+      "feature_id": "preferences-layout",
+      "evidence": [
+        "explore-screenshot-866a4b727cd74afaa6e0efecdbda8c36"
+      ],
+      "status": "pending",
+      "safety": "review",
+      "state_id": null,
+      "history": [],
+      "created_at": "2026-11-13T05:27:42.262685+00:00",
+      "precondition": "仅用于归并已发现但尚未单独执行的结构或辅助入口；后续按功能批次补查",
+      "input_class": "覆盖限制"
+    }
+  ],
+  "truncated": false,
+  "unclassified": []
+}

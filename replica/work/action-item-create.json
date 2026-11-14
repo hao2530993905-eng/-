@@ -1,0 +1,7 @@
+{
+ "id":"item-create-1","candidate_id":"item-create-normal","from_capture":"collection-create-1-after","channel":"ax",
+ "precondition":"Replica Exploration 空分类已选中，文件 > 新建条目 > 期刊文章入口可用",
+ "expected_result":"在该分类中创建一条期刊文章并显示可编辑条目详情",
+ "operation":{"verb":"perform","path":"MenuBar > MenuBarItem[文件] > MenuItem[新建条目] > MenuItem[期刊文章]","action":"AXPick"},
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

@@ -1,0 +1,2150 @@
+{
+  "app_path" : "/Applications/Zotero.app",
+  "build" : "10.0.6",
+  "bundle_id" : "org.zotero.zotero",
+  "frames" : "窗口为屏幕坐标，窗口内元素相对所在窗口左上角",
+  "frontmost" : false,
+  "node_count" : 128,
+  "pid" : 46450,
+  "root" : null,
+  "roots" : [
+    {
+      "actions" : [
+        "AXRaise"
+      ],
+      "children" : [
+        {
+          "actions" : [
+            "AXShowMenu",
+            "AXScrollToVisible",
+            "AXPress"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                0,
+                0,
+                1000,
+                0
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#1",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXApplicationGroup",
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                0,
+                0,
+                927,
+                36
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#2",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXApplicationGroup",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "description" : "列出所有标签页",
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                931,
+                4,
+                28,
+                28
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Button[列出所有标签页]",
+              "role" : "AXButton",
+              "selected" : false,
+              "subrole" : "AXUnknown",
+              "title" : "列出所有标签页",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "description" : "与 zotero.org 同步",
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                968,
+                4,
+                28,
+                28
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Button[与 zotero.org 同步]",
+              "role" : "AXButton",
+              "selected" : false,
+              "subrole" : "AXUnknown",
+              "title" : "与 zotero.org 同步",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                0,
+                37,
+                1000,
+                34
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#3",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXApplicationStatus",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                0,
+                71,
+                200,
+                41
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Toolbar#1",
+              "role" : "AXToolbar",
+              "selected" : false,
+              "subrole" : "AXUnknown",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                0,
+                112,
+                200,
+                289
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#4",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXApplicationGroup",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                0,
+                400,
+                200,
+                200
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#5",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXApplicationGroup",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                200,
+                71,
+                443,
+                41
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Toolbar#2",
+              "role" : "AXToolbar",
+              "selected" : false,
+              "subrole" : "AXUnknown",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                200,
+                112,
+                443,
+                489
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#6",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXApplicationGroup",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                643,
+                71,
+                320,
+                530
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > Group#7",
+              "role" : "AXGroup",
+              "selected" : false,
+              "subrole" : "AXUnknown",
+              "truncated" : true,
+              "value" : ""
+            },
+            {
+              "actions" : [
+                "AXShowMenu",
+                "AXScrollToVisible",
+                "AXPress"
+              ],
+              "enabled" : true,
+              "focused" : false,
+              "frame" : [
+                963,
+                71,
+                37,
+                530
+              ],
+              "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero] > TabGroup",
+              "role" : "AXTabGroup",
+              "selected" : false,
+              "subrole" : "AXUnknown",
+              "truncated" : true,
+              "value" : "<element>"
+            }
+          ],
+          "description" : "我的文库 - Zotero",
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "frame" : [
+            0,
+            0,
+            1000,
+            600
+          ],
+          "path" : "Window[我的文库 - Zotero] > Group[我的文库 - Zotero]",
+          "role" : "AXGroup",
+          "selected" : false,
+          "subrole" : "AXUnknown",
+          "title" : "我的文库 - Zotero",
+          "value" : ""
+        },
+        {
+          "actions" : [
+            "AXPress"
+          ],
+          "children" : [
+
+          ],
+          "enabled" : true,
+          "focused" : false,
+          "frame" : [
+            13,
+            11,
+            12,
+            14
+          ],
+          "path" : "Window[我的文库 - Zotero] > Button#1",
+          "role" : "AXButton",
+          "subrole" : "AXCloseButton"
+        },
+        {
+          "actions" : [
+            "AXPress",
+            "AXZoomWindow",
+            "AXShowMenu"
+          ],
+          "children" : [
+            {
+              "focused" : false,
+              "frame" : [
+                52,
+                10,
+                14,
+                16
+              ],
+              "path" : "Window[我的文库 - Zotero] > Button#2 > Group",
+              "role" : "AXGroup",
+              "truncated" : true
+            }
+          ],
+          "enabled" : true,
+          "focused" : false,
+          "frame" : [
+            53,
+            11,
+            12,
+            14
+          ],
+          "help" : "this button also has an action to zoom the window",
+          "path" : "Window[我的文库 - Zotero] > Button#2",
+          "role" : "AXButton",
+          "subrole" : "AXFullScreenButton"
+        },
+        {
+          "actions" : [
+            "AXPress"
+          ],
+          "children" : [
+
+          ],
+          "enabled" : true,
+          "focused" : false,
+          "frame" : [
+            33,
+            11,
+            12,
+            14
+          ],
+          "path" : "Window[我的文库 - Zotero] > Button#3",
+          "role" : "AXButton",
+          "subrole" : "AXMinimizeButton"
+        }
+      ],
+      "focused" : false,
+      "frame" : [
+        0,
+        30,
+        1000,
+        600
+      ],
+      "path" : "Window[我的文库 - Zotero]",
+      "role" : "AXWindow",
+      "subrole" : "AXStandardWindow",
+      "title" : "我的文库 - Zotero"
+    },
+    {
+      "actions" : [
+        "AXCancel"
+      ],
+      "children" : [
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_aboutThisMacRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[关于本机]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "关于本机"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_systemInformationRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[系统信息]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "系统信息"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_systemSettingsRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[系统设置…, 1项更新]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "系统设置…, 1项更新"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_appStoreRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[App Store]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "App Store"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_recentsRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[最近使用的项目]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "最近使用的项目",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem#3",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_forceQuitPanelRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[强制退出…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌥⌘⎋",
+              "title" : "强制退出…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_forceQuitRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[强制退出“Zotero”]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌥⇧⌘⎋",
+              "title" : "强制退出“Zotero”"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem#4",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_sleepRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[睡眠]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "睡眠"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_restartRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[重新启动…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "重新启动…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_restartNowRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[重新启动]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "重新启动"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_shutDownRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[关机…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "关机…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_shutDownNowRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[关机]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "关机"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem#5",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_lockScreenRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[锁定屏幕]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌃⌘Q",
+              "title" : "锁定屏幕"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_logOutRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[退出登录“computer use”…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⇧⌘Q",
+              "title" : "退出登录“computer use”…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_logOutNowRequested:",
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem[退出登录“computer use”]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌥⇧⌘Q",
+              "title" : "退出登录“computer use”"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Apple] > MenuItem#6",
+              "role" : "AXMenuItem",
+              "selected" : false
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[Apple]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "Apple"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[关于 Zotero]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "关于 Zotero"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[设置]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘,",
+              "title" : "设置"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[服务]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "服务",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem#3",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[隐藏 Zotero]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘H",
+              "title" : "隐藏 Zotero"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[隐藏其他]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌥⌘H",
+              "title" : "隐藏其他"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[显示所有]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "显示所有"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem#4",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[Zotero] > MenuItem[退出 Zotero]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘Q",
+              "title" : "退出 Zotero"
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "identifier" : "_NS:15",
+          "path" : "MenuBar > MenuBarItem[Zotero]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "Zotero"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[新建条目]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "新建条目",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[根据标识符新增...]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "根据标识符新增..."
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[添加附件]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "添加附件",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[新建笔记]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "新建笔记",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[新建分类…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "新建分类…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[新建群组…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "新建群组…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[新建订阅]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "新建订阅",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[关闭]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘W",
+              "title" : "关闭"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem#3",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[在访达中显示]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "在访达中显示"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem#4",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[导入…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⇧⌘I",
+              "title" : "导入…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[从剪贴板导入]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌥⇧⌘I",
+              "title" : "从剪贴板导入"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[文件] > MenuItem[导出文献库…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "导出文献库…"
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[文件]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "文件"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[撤销]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘Z",
+              "title" : "撤销"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[重做]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⇧⌘Z",
+              "title" : "重做"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[剪切]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘X",
+              "title" : "剪切"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "copy:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[复制]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘C",
+              "title" : "复制"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[粘贴]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘V",
+              "title" : "粘贴"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[删除]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌦",
+              "title" : "删除"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[全选]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘A",
+              "title" : "全选"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem#3",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[查找]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘F",
+              "title" : "查找"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[编辑] > MenuItem[高级搜索]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⇧⌘F",
+              "title" : "高级搜索"
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[编辑]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "编辑"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[布局]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "布局",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[密度]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "密度",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[字体大小]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "字体大小",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[笔记字体大小]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "笔记字体大小",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[笔记标签页字体大小]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "笔记标签页字体大小",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[列]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "列",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[排序方式]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "排序方式",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[显示子分类中的条目]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "显示子分类中的条目"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "mark" : "✓",
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[隐藏不匹配的注释]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "隐藏不匹配的注释"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem#3",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[查看] > MenuItem[显示标签页列表]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘;",
+              "title" : "显示标签页列表"
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[查看]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "查看"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem[RTF 扫描]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "RTF 扫描"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem[安装浏览器扩展…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "安装浏览器扩展…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem[插件]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "插件"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem[开发者]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "开发者",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[工具] > MenuItem[管理附件]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "管理附件",
+              "truncated" : true
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[工具]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "工具"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_zoomFill:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[Fill]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌃F",
+              "title" : "Fill"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_zoomCenter:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[Center]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌃C",
+              "title" : "Center"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[Move & Resize]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "Move & Resize",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[Full Screen Tile]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "Full Screen Tile"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "_removeWindowFromStageManagerSet:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[Remove Window from Set]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "Remove Window from Set"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem#3",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[最小化]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘M",
+              "title" : "最小化"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[缩放]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "缩放"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem#4",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "makeKeyAndOrderFront:",
+              "path" : "MenuBar > MenuBarItem[窗口] > MenuItem[我的文库 - Zotero]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "我的文库 - Zotero"
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[窗口]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "窗口"
+        },
+        {
+          "actions" : [
+            "AXCancel",
+            "AXPress",
+            "AXPick"
+          ],
+          "children" : [
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[支持与文档]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "shortcut" : "⌘?",
+              "title" : "支持与文档"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[故障排除信息]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "故障排除信息"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[论坛]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "论坛"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem#1",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[报告错误…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "报告错误…"
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[调试日志]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "调试日志",
+              "truncated" : true
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[以故障排除模式重启...]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "以故障排除模式重启..."
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : false,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem#2",
+              "role" : "AXMenuItem",
+              "selected" : false
+            },
+            {
+              "actions" : [
+                "AXCancel",
+                "AXPress",
+                "AXPick"
+              ],
+              "disclosing" : false,
+              "enabled" : true,
+              "expanded" : false,
+              "focused" : false,
+              "identifier" : "menuItemHit:",
+              "path" : "MenuBar > MenuBarItem[帮助] > MenuItem[检查更新…]",
+              "role" : "AXMenuItem",
+              "selected" : false,
+              "title" : "检查更新…"
+            }
+          ],
+          "disclosing" : false,
+          "enabled" : true,
+          "expanded" : false,
+          "focused" : false,
+          "path" : "MenuBar > MenuBarItem[帮助]",
+          "role" : "AXMenuBarItem",
+          "selected" : false,
+          "title" : "帮助"
+        }
+      ],
+      "disclosing" : false,
+      "enabled" : true,
+      "expanded" : false,
+      "focused" : false,
+      "path" : "MenuBar",
+      "role" : "AXMenuBar",
+      "selected" : false
+    }
+  ],
+  "taken_at" : "2026-11-13T03:36:16Z",
+  "version" : "10.0.6",
+  "windows" : [
+    {
+      "bounds" : {
+        "Height" : 600,
+        "Width" : 1000,
+        "X" : 0,
+        "Y" : 30
+      },
+      "id" : 1898,
+      "owner_pid" : 46450
+    }
+  ]
+}

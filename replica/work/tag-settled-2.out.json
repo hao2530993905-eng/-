@@ -1,0 +1,41 @@
+{
+  "id": "tag-settled-2",
+  "status": "captured",
+  "state_id": null,
+  "started_at": "2026-11-13T04:32:38.356654+00:00",
+  "logs": [
+    "explore-runtime-50419620df5f420e9b4b56dc614094ae",
+    "explore-runtime-0a1f00c2394e4007bca05bfdf37d7d8f",
+    "explore-runtime-0abae8af6ba6447289ce52cd7813c3f0",
+    "explore-runtime-e2abb2b8c4a94f799d13741c08388d4d"
+  ],
+  "tool": {
+    "path": "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax"
+  },
+  "ax": "explore-ax-e61d32ec5269437f909c1e3d68260174",
+  "screenshots": [
+    "explore-screenshot-f1a1fcc8e7a64f5baca50b40a00a8dbc"
+  ],
+  "storage": {
+    "status": "blocked",
+    "logical_sha256": null,
+    "evidence": {
+      "state/manifest.json": "explore-runtime-fc1cbdb65a2f4bd49642d81cd28499a6"
+    }
+  },
+  "external": {
+    "status": "captured",
+    "evidence": {
+      "external/manifest.json": "explore-runtime-6a964e46f6494e5692fde09362b07370",
+      "external/sample-bib.bib": "explore-runtime-1f8495f6a5924e1b89045721d30cb5fe",
+      "external/sample-bib.value.json": "explore-runtime-33e26a55861344c6a72cb745c3c37781",
+      "external/sample-pdf.pdf": "explore-runtime-cb85bef472144243ae3738a6f8462d35",
+      "external/sample-ris.ris": "explore-runtime-61d3aae38ad94c23bcd9f0fde0c8be3c",
+      "external/sample-ris.value.json": "explore-runtime-b1c0bb2066904734a798b26a4c32de1c"
+    }
+  },
+  "stability_ax": "explore-ax-99e8fc3056f3420d9245b1ab808a2b4f",
+  "finished_at": "2026-11-13T04:32:39.969591+00:00",
+  "pid": 46450,
+  "frontmost": true
+}

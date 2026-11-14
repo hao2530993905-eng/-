@@ -1,0 +1,1 @@
+{"schema_version":1,"operations":[{"op":"classify","args":{"capture_id":"search-results","state_id":"search.results","title":"快速搜索结果","meaning":"搜索框为 Local Exploration，匹配期刊条目、PDF 附件及 Local Exploration 高亮注释可见"}}]}

@@ -1,0 +1,12 @@
+{
+ "id":"tag-add-2","candidate_id":"tag-add-normal","from_capture":"tag-settled-2","channel":"ax",
+ "precondition":"合成条目已有 local-testing，1 个标签的添加入口可用；菜单和详情已稳定",
+ "expected_result":"添加第二个标签 replica-exploration，Return 提交后 Escape 关闭空白编辑行，标签计数变为 2",
+ "operations":[
+  {"verb":"perform","path":"Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Button[1 个标签] > Button[添加]","action":"AXPress"},
+  {"verb":"type","text":"replica-exploration"},
+  {"verb":"key","keys":"return"},
+  {"verb":"key","keys":"escape"}
+ ],
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

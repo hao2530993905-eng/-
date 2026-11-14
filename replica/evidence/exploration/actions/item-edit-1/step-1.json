@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/computeruse/Desktop/zotero复刻/replica/bin/ax",
+    "set",
+    "--pid",
+    "46450",
+    "--attribute",
+    "AXValue",
+    "--",
+    "org.zotero.zotero",
+    "Window[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > Unknown[标题] > TextArea[标题]",
+    "Local Replication Study"
+  ],
+  "started_at": "2026-11-13T04:05:24.147288+00:00",
+  "timeout": 60,
+  "stdout": "AXValue\tWindow[Replica Exploration - Zotero] > Group[Replica Exploration - Zotero] > Group[条目详情] > Group#1 > Group > Unknown[标题] > TextArea[标题]\n",
+  "stderr": "",
+  "exit_code": 0,
+  "finished_at": "2026-11-13T04:05:24.244224+00:00"
+}

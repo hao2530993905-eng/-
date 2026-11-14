@@ -1,0 +1,8 @@
+{
+ "id":"import-ris-1","candidate_id":"import-ris-normal","from_capture":"note-create-2-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click/pressKey/paste",
+ "operation":"通过文件 > 导入…选择项目内 sample.ris，处理导入选项并读取稳定 AX",
+ "precondition":"sample.ris 已登记且仅含合成文献；只导入隔离文库，不访问网络",
+ "expected_result":"RIS 的期刊标题、两位作者、期刊、年份、DOI、摘要和关键词导入为可见条目",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

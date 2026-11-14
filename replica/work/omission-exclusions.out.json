@@ -1,0 +1,47 @@
+{
+  "applied": 4,
+  "results": [
+    {
+      "status": "excluded",
+      "reason": "requires_external_service",
+      "note": "首版建议省略：浏览器/Word/LibreOffice 集成需要外部应用、加载项和 HTTP 服务；不影响本地核心工作流",
+      "evidence": [
+        "zotero-package-inventory",
+        "explore-runtime-b0e6c3b1b6a54b2380a6847587069b51"
+      ],
+      "attempts": [],
+      "updated_at": "2026-11-13T05:37:23.590481+00:00"
+    },
+    {
+      "status": "excluded",
+      "reason": "missing_external_condition",
+      "note": "首版建议省略：未提供第三方插件及兼容/安全验证条件，核心文献功能不依赖该能力",
+      "evidence": [
+        "zotero-package-inventory"
+      ],
+      "attempts": [],
+      "updated_at": "2026-11-13T05:37:23.591087+00:00"
+    },
+    {
+      "status": "excluded",
+      "reason": "missing_external_condition",
+      "note": "首版建议省略：AppleScript、zotero:// 和 RTF 扫描需要独立自动化授权及格式样例，尚未具备完整验证条件",
+      "evidence": [
+        "zotero-package-inventory"
+      ],
+      "attempts": [],
+      "updated_at": "2026-11-13T05:37:23.591117+00:00"
+    },
+    {
+      "status": "excluded",
+      "reason": "requires_external_service",
+      "note": "首版建议省略：feeds 依赖在线服务，本轮未授权联网流程；本地文献导入不受影响",
+      "evidence": [
+        "zotero-package-inventory",
+        "desktop-permission"
+      ],
+      "attempts": [],
+      "updated_at": "2026-11-13T05:37:23.591147+00:00"
+    }
+  ]
+}

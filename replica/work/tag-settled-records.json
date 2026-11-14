@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "op": "classify",
+      "args": {
+        "capture_id": "tag-settled-2",
+        "state_id": "item.tagged",
+        "title": "条目已添加首个标签",
+        "meaning": "菜单懒加载完成后，Local Replication Study 保留 1 个标签 local-testing，左侧标签选择器可见",
+        "merge_reason": "动态菜单标题和空白标签编辑行不改变已保存标签及条目详情的业务语义"
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-tag-added",
+        "status": "reviewed",
+        "summary": "差异仅为“将列移至左侧”菜单标题的懒加载/占位切换；后续稳定快照成功，未重复标签输入",
+        "evidence": [
+          "explore-ax-9700a589782b44ed97863636cf9237fb",
+          "explore-ax-bda68d90c50049e087d0d9ed1e0eba7c"
+        ]
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-tag-stable",
+        "status": "reviewed",
+        "summary": "Escape 收起空白编辑行后仍遇到同一菜单标题占位切换；不是标签数据变化",
+        "evidence": [
+          "explore-ax-86b5a5d3521e4aa3ba5d2b06b3b1b875",
+          "explore-ax-f5334543831740c1b152ad0a139590b9"
+        ]
+      }
+    },
+    {
+      "op": "resolve",
+      "args": {
+        "id": "capture-failure-tag-settled",
+        "status": "reviewed",
+        "summary": "打开再关闭查看菜单完成懒加载后，后续采集成功；失败材料仅保留为 AX 动态菜单证据",
+        "evidence": [
+          "explore-ax-88cc3b01f927463687d16e4251256213",
+          "explore-ax-442ddb3f084c4bdfb804d4eb2dc89bf9"
+        ]
+      }
+    }
+  ]
+}

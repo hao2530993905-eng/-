@@ -1,0 +1,599 @@
+{
+  "baseFieldMappings": {
+    "row_count": 72,
+    "content_sha256": "ac18a9f77fde82cbfcc38294007a8b4389fdf3d528fa177c88280da6eee871f1",
+    "columns": [
+      "itemTypeID",
+      "baseFieldID",
+      "fieldID"
+    ]
+  },
+  "baseFieldMappingsCombined": {
+    "row_count": 72,
+    "content_sha256": "ac18a9f77fde82cbfcc38294007a8b4389fdf3d528fa177c88280da6eee871f1",
+    "columns": [
+      "itemTypeID",
+      "baseFieldID",
+      "fieldID"
+    ]
+  },
+  "charsets": {
+    "row_count": 40,
+    "content_sha256": "62138b16462d01a48ca8789d89135d2db0647d52c3912b777538c707bf011587",
+    "columns": [
+      "charsetID",
+      "charset"
+    ]
+  },
+  "collectionItems": {
+    "row_count": 3,
+    "content_sha256": "e0a25da36e0a391ae3d7e26b72da9e55358af99ad2498da2a19f697eb262ebc2",
+    "columns": [
+      "collectionID",
+      "itemID",
+      "orderIndex"
+    ]
+  },
+  "collectionRelations": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "collectionID",
+      "predicateID",
+      "object"
+    ]
+  },
+  "collections": {
+    "row_count": 2,
+    "content_sha256": "c3dd8e9d8801fbdbdcdf90772253967a48ee7226cd4a408bbbad7f5af1b3d6ea",
+    "columns": [
+      "collectionID",
+      "collectionName",
+      "parentCollectionID",
+      "clientDateModified",
+      "libraryID",
+      "key",
+      "version",
+      "clientVersion",
+      "synced"
+    ]
+  },
+  "creatorTypes": {
+    "row_count": 37,
+    "content_sha256": "520c27bce7f27afd101e18951f0d805ec61f6b6691446a331c30b6ef03ee3c1a",
+    "columns": [
+      "creatorTypeID",
+      "creatorType"
+    ]
+  },
+  "creators": {
+    "row_count": 3,
+    "content_sha256": "54f2ea27456adb65753fce3b99d88e67be68a60f8d5d00d54950663d48a725d3",
+    "columns": [
+      "creatorID",
+      "firstName",
+      "lastName",
+      "fieldMode",
+      "firstNameNormalized",
+      "lastNameNormalized"
+    ]
+  },
+  "customBaseFieldMappings": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "customItemTypeID",
+      "baseFieldID",
+      "customFieldID"
+    ]
+  },
+  "customFields": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "customFieldID",
+      "fieldName",
+      "label"
+    ]
+  },
+  "customItemTypeFields": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "customItemTypeID",
+      "fieldID",
+      "customFieldID",
+      "hide",
+      "orderIndex"
+    ]
+  },
+  "customItemTypes": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "customItemTypeID",
+      "typeName",
+      "label",
+      "display",
+      "icon"
+    ]
+  },
+  "dbDebug1": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "a"
+    ]
+  },
+  "deletedCollections": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "collectionID",
+      "dateDeleted"
+    ]
+  },
+  "deletedItems": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "itemID",
+      "dateDeleted"
+    ]
+  },
+  "deletedSearches": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "savedSearchID",
+      "dateDeleted"
+    ]
+  },
+  "feedItems": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "itemID",
+      "guid",
+      "readTime",
+      "translatedTime"
+    ]
+  },
+  "feeds": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "libraryID",
+      "name",
+      "url",
+      "lastUpdate",
+      "lastCheck",
+      "lastCheckError",
+      "cleanupReadAfter",
+      "cleanupUnreadAfter",
+      "refreshInterval"
+    ]
+  },
+  "fieldFormats": {
+    "row_count": 3,
+    "content_sha256": "6dce09867e7241f81900a8c960a1965346103e07097a009136b2f5994360935b",
+    "columns": [
+      "fieldFormatID",
+      "regex",
+      "isInteger"
+    ]
+  },
+  "fields": {
+    "row_count": 123,
+    "content_sha256": "e0d7b0ed7a8510c2bb6a26e1ecc7a83af647eb4bc609c0cb7c4920c55c80e560",
+    "columns": [
+      "fieldID",
+      "fieldName",
+      "fieldFormatID"
+    ]
+  },
+  "fieldsCombined": {
+    "row_count": 123,
+    "content_sha256": "e4e928b8a6c0c57452c24316a2a0267023380f1367a3c124d079508d555db4f9",
+    "columns": [
+      "fieldID",
+      "fieldName",
+      "label",
+      "fieldFormatID",
+      "custom"
+    ]
+  },
+  "fileTypeMimeTypes": {
+    "row_count": 33,
+    "content_sha256": "361efed9f2199b536827d831bfa281f0667b7d4c97979ff747b1689619a7f477",
+    "columns": [
+      "fileTypeID",
+      "mimeType"
+    ]
+  },
+  "fileTypes": {
+    "row_count": 8,
+    "content_sha256": "dea92c6c6f0ae3db7bdad4af0392856b7a2ef599092e03e681b411fdadd59439",
+    "columns": [
+      "fileTypeID",
+      "fileType"
+    ]
+  },
+  "fulltextItems": {
+    "row_count": 1,
+    "content_sha256": "dc62d5bdfb83bb6bbe2155745a4103a783d5badf2f0bb65fcff1c492f6024c8f",
+    "columns": [
+      "itemID",
+      "indexedPages",
+      "totalPages",
+      "indexedChars",
+      "totalChars",
+      "version",
+      "synced"
+    ]
+  },
+  "groupItems": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "itemID",
+      "createdByUserID",
+      "lastModifiedByUserID"
+    ]
+  },
+  "groups": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "groupID",
+      "libraryID",
+      "name",
+      "description",
+      "version"
+    ]
+  },
+  "itemAnnotations": {
+    "row_count": 1,
+    "content_sha256": "b2dfe3cd3a05351fc0a9300120aa8d33f7426d19ac670678e5430d25d13af817",
+    "columns": [
+      "itemID",
+      "parentItemID",
+      "type",
+      "authorName",
+      "text",
+      "textNormalized",
+      "comment",
+      "commentNormalized",
+      "color",
+      "pageLabel",
+      "sortIndex",
+      "position",
+      "isExternal"
+    ]
+  },
+  "itemAttachments": {
+    "row_count": 1,
+    "content_sha256": "17187dc05ae304d52bd6e4642c75d5ffa3d898ab522b237fee1b39783b3bd2b3",
+    "columns": [
+      "itemID",
+      "parentItemID",
+      "linkMode",
+      "contentType",
+      "charsetID",
+      "path",
+      "syncState",
+      "storageModTime",
+      "storageHash",
+      "lastProcessedModificationTime",
+      "lastRead"
+    ]
+  },
+  "itemCreators": {
+    "row_count": 3,
+    "content_sha256": "621b49d0265e5dcafcb8ebd3e4c63036d0530be0243944f31b8652a89033a3fc",
+    "columns": [
+      "itemID",
+      "creatorID",
+      "creatorTypeID",
+      "orderIndex"
+    ]
+  },
+  "itemData": {
+    "row_count": 13,
+    "content_sha256": "8765653b411c803563b9bdf893fb533787a36e0f89a56767db7cf7118e403721",
+    "columns": [
+      "itemID",
+      "fieldID",
+      "valueID"
+    ]
+  },
+  "itemDataValues": {
+    "row_count": 10,
+    "content_sha256": "9d550e9e0c61b818b604eadd724c46b0b4ac9e5915d7814a1dfbafb062e43866",
+    "columns": [
+      "valueID",
+      "value",
+      "valueNormalized"
+    ]
+  },
+  "itemNotes": {
+    "row_count": 1,
+    "content_sha256": "d260327f0a2437540c2b86c3e39952d112e13dadf9aeb5684a003fb90b0d4971",
+    "columns": [
+      "itemID",
+      "parentItemID",
+      "note",
+      "title"
+    ]
+  },
+  "itemRelations": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "itemID",
+      "predicateID",
+      "object"
+    ]
+  },
+  "itemTags": {
+    "row_count": 4,
+    "content_sha256": "c97851300e8684a77e3f4a02c99163dc4f5c4cd9fc96eeaba1c6fa097b7e7ddd",
+    "columns": [
+      "itemID",
+      "tagID",
+      "type"
+    ]
+  },
+  "itemTypeCreatorTypes": {
+    "row_count": 170,
+    "content_sha256": "c21b802f6ff46a5d2285517644a5013f9bcb9abd7b4c35ad5f29793d2e0eb371",
+    "columns": [
+      "itemTypeID",
+      "creatorTypeID",
+      "primaryField"
+    ]
+  },
+  "itemTypeFields": {
+    "row_count": 770,
+    "content_sha256": "b4d56c8a229d3805b34dacb3fe14a59ab85c356607125f08bc7944b1e118eb1e",
+    "columns": [
+      "itemTypeID",
+      "fieldID",
+      "hide",
+      "orderIndex"
+    ]
+  },
+  "itemTypeFieldsCombined": {
+    "row_count": 770,
+    "content_sha256": "b4d56c8a229d3805b34dacb3fe14a59ab85c356607125f08bc7944b1e118eb1e",
+    "columns": [
+      "itemTypeID",
+      "fieldID",
+      "hide",
+      "orderIndex"
+    ]
+  },
+  "itemTypes": {
+    "row_count": 40,
+    "content_sha256": "8a6cc041ab800557567ac344c71086119d75c82a730dbc5312c8008088c86c79",
+    "columns": [
+      "itemTypeID",
+      "typeName",
+      "templateItemTypeID",
+      "display"
+    ]
+  },
+  "itemTypesCombined": {
+    "row_count": 40,
+    "content_sha256": "f4849cf17f4aff085bd65be1397014b4e87998804633b2e6353e16af3bc774a8",
+    "columns": [
+      "itemTypeID",
+      "typeName",
+      "display",
+      "custom"
+    ]
+  },
+  "items": {
+    "row_count": 5,
+    "content_sha256": "523177c14672ab69b30d2f1194deafc354dc0cb8beb2a8ded4662aa2dd65db17",
+    "columns": [
+      "itemID",
+      "itemTypeID",
+      "dateAdded",
+      "dateModified",
+      "clientDateModified",
+      "libraryID",
+      "key",
+      "version",
+      "clientVersion",
+      "synced"
+    ]
+  },
+  "libraries": {
+    "row_count": 1,
+    "content_sha256": "210a85453aeb8c3db90ecbd408d7f1bab37499c9821eb76b4605efaa1822ceba",
+    "columns": [
+      "libraryID",
+      "type",
+      "editable",
+      "filesEditable",
+      "version",
+      "clientVersion",
+      "storageVersion",
+      "lastSync",
+      "archived",
+      "isAdmin"
+    ]
+  },
+  "proxies": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "proxyID",
+      "multiHost",
+      "autoAssociate",
+      "scheme"
+    ]
+  },
+  "proxyHosts": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "hostID",
+      "proxyID",
+      "hostname"
+    ]
+  },
+  "publicationsItems": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "itemID"
+    ]
+  },
+  "relationPredicates": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "predicateID",
+      "predicate"
+    ]
+  },
+  "retractedItems": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "itemID",
+      "data",
+      "flag"
+    ]
+  },
+  "savedSearchConditions": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "savedSearchID",
+      "searchConditionID",
+      "condition",
+      "operator",
+      "value"
+    ]
+  },
+  "savedSearches": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "savedSearchID",
+      "savedSearchName",
+      "clientDateModified",
+      "libraryID",
+      "key",
+      "version",
+      "clientVersion",
+      "synced"
+    ]
+  },
+  "settings": {
+    "row_count": 4,
+    "content_sha256": "38de7c80b9c6a2d21b0c89d8474e4a82d5500d200b2c7ba18d94eb4abe1996c4",
+    "columns": [
+      "setting",
+      "key",
+      "value"
+    ]
+  },
+  "storageDeleteLog": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "libraryID",
+      "key",
+      "dateDeleted"
+    ]
+  },
+  "syncCache": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "libraryID",
+      "key",
+      "syncObjectTypeID",
+      "version",
+      "data"
+    ]
+  },
+  "syncDeleteLog": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "syncObjectTypeID",
+      "libraryID",
+      "key",
+      "dateDeleted"
+    ]
+  },
+  "syncObjectTypes": {
+    "row_count": 7,
+    "content_sha256": "a61178e4e7e9f5dac24080d05e3776d091992d675a4241a0f1354f3a74173cd9",
+    "columns": [
+      "syncObjectTypeID",
+      "name"
+    ]
+  },
+  "syncQueue": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "libraryID",
+      "key",
+      "syncObjectTypeID",
+      "lastCheck",
+      "tries"
+    ]
+  },
+  "syncedSettings": {
+    "row_count": 1,
+    "content_sha256": "85b3cba1f558811c6a25f5c4bc0c1e2df07c525d3ae0d77c53b1a5e173f22088",
+    "columns": [
+      "setting",
+      "libraryID",
+      "value",
+      "version",
+      "synced"
+    ]
+  },
+  "tags": {
+    "row_count": 3,
+    "content_sha256": "127245f63828d8b7c6887dbeaa36bbcb028d441c0f4d4b3c8fd7d1b52a14158a",
+    "columns": [
+      "tagID",
+      "name",
+      "nameNormalized"
+    ]
+  },
+  "translatorCache": {
+    "row_count": 748,
+    "content_sha256": "4d44f93bb282951ad87c6fa27d306c4b2b9b0b95bcc11256cf111930dbe4864d",
+    "columns": [
+      "fileName",
+      "metadataJSON",
+      "lastModifiedTime"
+    ]
+  },
+  "users": {
+    "row_count": 0,
+    "content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "columns": [
+      "userID",
+      "name"
+    ]
+  },
+  "version": {
+    "row_count": 9,
+    "content_sha256": "845a9b8e30af07b4ee3285cfa13068e479a8029385d173a201a5d8b5db3eec1a",
+    "columns": [
+      "schema",
+      "version"
+    ]
+  }
+}

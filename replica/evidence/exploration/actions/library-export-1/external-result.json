@@ -1,0 +1,6 @@
+{
+  "id": "library-export-1",
+  "success": true,
+  "source": "Computer Use AX 与 shell：RIS 格式和 UTF-8 被选中，保存面板写入 exports/library.ris；文件含 2 个 TY-JOUR 记录，Local Replication Study 与 Local Exploration Article 的作者、期刊、DOI、摘要、卷期页码和关键词正确",
+  "summary": "文库 RIS 导出正常完成，实际输出路径、记录数和核心字段已验证；未包含真实数据"
+}

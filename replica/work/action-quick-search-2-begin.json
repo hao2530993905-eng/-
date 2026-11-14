@@ -1,0 +1,7 @@
+{
+ "id":"quick-search-2","candidate_id":"quick-search-normal","from_capture":"search-results","channel":"computer-use",
+ "tool":"Computer Use cua App.setValue/pressKey",
+ "operation":"把快速搜索改为 Synthetic 核对摘要匹配，再清空搜索恢复全部条目并读取稳定 AX",
+ "precondition":"当前 Local Exploration 搜索结果稳定；仅改变搜索和选择状态",
+ "expected_result":"Synthetic 能通过摘要找到 Local Exploration Article；清空后恢复未筛选列表"
+}

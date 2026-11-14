@@ -1,0 +1,4 @@
+{"schema_version":1,"operations":[
+ {"op":"add-evidence","args":{"evidence_id":"post-quit-sqlite","kind":"runtime","path":"/Users/computeruse/Desktop/zotero复刻/replica/evidence/post-quit/db-snapshot/manifest.json","feature_id":"item-entry","tool":"storage_capture.py SQLite online backup","summary":"正常退出后的完整 SQLite 快照、Schema、全表清单、声明值与健康检查；integrity_check=ok，外键为空"}},
+ {"op":"add-evidence","args":{"evidence_id":"post-quit-key-values","kind":"runtime","path":"/Users/computeruse/Desktop/zotero复刻/replica/work/post-quit-key-values.json","feature_id":"item-entry","tool":"jq","summary":"退出后条目、分类、笔记、标签、创作者与附件关键值"}}
+]}

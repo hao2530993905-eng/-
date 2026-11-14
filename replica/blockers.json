@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "issues": {
+    "sqlite-live-backup": {
+      "id": "sqlite-live-backup",
+      "summary": "初始在线备份等待 30 秒后超时；静态代码确认连接生命周期 EXCLUSIVE 锁",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "item-entry",
+          "collections-tags",
+          "notes",
+          "import",
+          "attachments",
+          "reader-annotate",
+          "export-citation"
+        ]
+      },
+      "status": "open",
+      "events": [
+        {
+          "result": "failed",
+          "summary": "初始在线备份等待 30 秒后超时；静态代码确认连接生命周期 EXCLUSIVE 锁",
+          "source": "replica/evidence/reverse-engineering/database-lock/initial-capture-failure.json",
+          "created_at": "2026-11-13T03:44:39.116425+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 1,
+        "unresolved": 0
+      },
+      "assessments": [
+        {
+          "decision": "continue",
+          "reason": "原因已由原版代码和实际超时共同确认；UI 探索可独立推进，数据副作用只作部分验证并在正常退出后补查",
+          "source": "replica/evidence/reverse-engineering/database-lock/assessment.md",
+          "source_sha256": "f3f9b65211d3f6265a1d7ad14617353739dfe81cb0542b0077dc2f06afe81406",
+          "scope": {
+            "kind": "features",
+            "feature_ids": [
+              "item-entry",
+              "collections-tags",
+              "notes",
+              "import",
+              "attachments",
+              "reader-annotate",
+              "export-citation"
+            ]
+          },
+          "next_step": "将运行中存储采集显式标为 blocked，完成 UI 正常流程；正常退出后执行只读 SQLite 快照与查询",
+          "resume_condition": null,
+          "event_count": 1,
+          "created_at": "2026-11-13T03:44:39.223468+00:00"
+        }
+      ]
+    },
+    "preferences-layout.在我的文库与最近阅读之间导航": {
+      "id": "preferences-layout.在我的文库与最近阅读之间导航",
+      "summary": "Computer Use 点击最近阅读后，窗口标题、当前分组和中央条目表均切换；声明的 IO 范围无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "preferences-layout"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "Computer Use 点击最近阅读后，窗口标题、当前分组和中央条目表均切换；声明的 IO 范围无变化",
+          "source": "navigate-recent-1",
+          "created_at": "2026-11-13T03:55:50.573609+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "preferences-layout.从最近阅读返回我的文库": {
+      "id": "preferences-layout.从最近阅读返回我的文库",
+      "summary": "AX 点击我的文库后恢复初始窗口标题和空文库视图；两次导航形成完整可逆轨迹",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "preferences-layout"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "AX 点击我的文库后恢复初始窗口标题和空文库视图；两次导航形成完整可逆轨迹",
+          "source": "navigate-return-3",
+          "created_at": "2026-11-13T04:01:00.111306+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "collections-tags.normal.创建本地测试分类": {
+      "id": "collections-tags.normal.创建本地测试分类",
+      "summary": "通过工具栏输入并确认后创建 Replica Exploration 分类且自动选中；声明的 exports/attachment-storage 未变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "collections-tags"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "通过工具栏输入并确认后创建 Replica Exploration 分类且自动选中；声明的 exports/attachment-storage 未变化",
+          "source": "collection-create-1",
+          "created_at": "2026-11-13T04:02:28.653235+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "item-entry.normal.手动新建期刊条目并编辑元数据": {
+      "id": "item-entry.normal.手动新建期刊条目并编辑元数据",
+      "summary": "五个 AX 字段设置和 Tab 均成功；列表标题/创建者及详情字段显示预期值，修改日期更新；声明 IO 范围无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "item-entry"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "五个 AX 字段设置和 Tab 均成功；列表标题/创建者及详情字段显示预期值，修改日期更新；声明 IO 范围无变化",
+          "source": "item-edit-1",
+          "created_at": "2026-11-13T04:07:14.503946+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "notes.normal.新建并保存独立笔记": {
+      "id": "notes.normal.新建并保存独立笔记",
+      "summary": "Computer Use 完成新建独立笔记与正文输入；列表和编辑器均显示预期内容，声明 IO 无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "notes"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "Computer Use 完成新建独立笔记与正文输入；列表和编辑器均显示预期内容，声明 IO 无变化",
+          "source": "note-create-2",
+          "created_at": "2026-11-13T04:41:24.907377+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "import.normal.从本地 RIS 文件导入合成文献": {
+      "id": "import.normal.从本地 RIS 文件导入合成文献",
+      "summary": "本地 RIS 文件经来源选择、文件选择器和默认选项导入 1 个条目；导入完成计数与全部核心字段均符合样例",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "import"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "本地 RIS 文件经来源选择、文件选择器和默认选项导入 1 个条目；导入完成计数与全部核心字段均符合样例",
+          "source": "import-ris-1",
+          "created_at": "2026-11-13T04:46:25.524666+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "attachments.normal.向测试条目添加本地 PDF 附件": {
+      "id": "attachments.normal.向测试条目添加本地 PDF 附件",
+      "summary": "附加文件选择器完成后，PDF 复制到隔离存储并自动按元数据重命名；父条目展开、附件预览和索引状态出现；外部差分观察到新存储文件",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "attachments"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "附加文件选择器完成后，PDF 复制到隔离存储并自动按元数据重命名；父条目展开、附件预览和索引状态出现；外部差分观察到新存储文件",
+          "source": "attachment-add-1",
+          "created_at": "2026-11-13T04:49:35.509013+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "reader-annotate.normal.打开 PDF 阅读器并创建测试注释": {
+      "id": "reader-annotate.normal.打开 PDF 阅读器并创建测试注释",
+      "summary": "完整阅读器加载 PDF；查找 Local Exploration 返回 1/1，Control+Alt+1 创建高亮，侧边栏显示文本与评论；随后返回文库。外部差分观察到隔离附件目录变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "reader-annotate"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "完整阅读器加载 PDF；查找 Local Exploration 返回 1/1，Control+Alt+1 创建高亮，侧边栏显示文本与评论；随后返回文库。外部差分观察到隔离附件目录变化",
+          "source": "reader-annotate-1",
+          "created_at": "2026-11-13T04:54:39.090929+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "search.normal.快速搜索定位合成文献": {
+      "id": "search.normal.快速搜索定位合成文献",
+      "summary": "Synthetic 搜索通过摘要保留目标条目并过滤注释，清空后恢复完整条目层级；声明 IO 无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "search"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "Synthetic 搜索通过摘要保留目标条目并过滤注释，清空后恢复完整条目层级；声明 IO 无变化",
+          "source": "quick-search-2",
+          "created_at": "2026-11-13T04:59:22.414161+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "export-citation.normal.将隔离文库导出到项目 exports 目录": {
+      "id": "export-citation.normal.将隔离文库导出到项目 exports 目录",
+      "summary": "RIS/UTF-8 导出到登记目录，文件记录数和核心字段已用 shell 验证；外部差分捕获新文件及解析文本",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "export-citation"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "RIS/UTF-8 导出到登记目录，文件记录数和核心字段已用 shell 验证；外部差分捕获新文件及解析文本",
+          "source": "library-export-1",
+          "created_at": "2026-11-13T05:04:23.603134+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "preferences-layout.normal.设置页面与安全的布局选项": {
+      "id": "preferences-layout.normal.设置页面与安全的布局选项",
+      "summary": "常规、账户、导出、引用和高级页均可只读访问；隔离数据目录、禁用更新/HTTP、未登录和未安装文字处理加载项已核实；返回文库，声明 IO 无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "preferences-layout"
+        ]
+      },
+      "status": "open",
+      "events": [
+        {
+          "result": "unresolved",
+          "summary": "常规、账户、导出、引用和高级页均可只读访问；隔离数据目录、禁用更新/HTTP、未登录和未安装文字处理加载项已核实；返回文库，声明 IO 无变化",
+          "source": "preferences-review-1",
+          "created_at": "2026-11-13T05:07:44.517767+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 1
+      }
+    },
+    "search.normal.高级搜索按标题条件筛选": {
+      "id": "search.normal.高级搜索按标题条件筛选",
+      "summary": "高级搜索默认条件已核对，标题包含 Local Exploration 命中目标，清空与关闭恢复列表；声明 IO 无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "search"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "高级搜索默认条件已核对，标题包含 Local Exploration 命中目标，清空与关闭恢复列表；声明 IO 无变化",
+          "source": "advanced-search-1",
+          "created_at": "2026-11-13T05:10:42.842794+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    },
+    "duplicates-trash.重复条目和回收站视图": {
+      "id": "duplicates-trash.重复条目和回收站视图",
+      "summary": "重复条目无匹配，回收站为空且创建类按钮禁用；返回 sample 恢复 1 个条目，未执行合并或删除，声明 IO 无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "duplicates-trash"
+        ]
+      },
+      "status": "open",
+      "events": [
+        {
+          "result": "unresolved",
+          "summary": "重复条目无匹配，回收站为空且创建类按钮禁用；返回 sample 恢复 1 个条目，未执行合并或删除，声明 IO 无变化",
+          "source": "duplicates-trash-1",
+          "created_at": "2026-11-13T05:13:31.359932+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 1
+      }
+    },
+    "collections-tags.normal.使用标签选择器筛选条目": {
+      "id": "collections-tags.normal.使用标签选择器筛选条目",
+      "summary": "local-testing 在 0/1 间切换并恢复；当前所有顶级条目均匹配，因此列表未变化，声明 IO 无变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "collections-tags"
+        ]
+      },
+      "status": "open",
+      "events": [
+        {
+          "result": "unresolved",
+          "summary": "local-testing 在 0/1 间切换并恢复；当前所有顶级条目均匹配，因此列表未变化，声明 IO 无变化",
+          "source": "tag-filter-1",
+          "created_at": "2026-11-13T05:18:22.978416+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 1
+      }
+    },
+    "item-entry.reopen.正常退出并重开隔离文库": {
+      "id": "item-entry.reopen.正常退出并重开隔离文库",
+      "summary": "正常退出后 SQLite 快照健康且字段完整，重开后 UI 恢复相同业务数据与注释；声明 IO 无额外变化",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "item-entry"
+        ]
+      },
+      "status": "open",
+      "events": [
+        {
+          "result": "unresolved",
+          "summary": "正常退出后 SQLite 快照健康且字段完整，重开后 UI 恢复相同业务数据与注释；声明 IO 无额外变化",
+          "source": "library-reopen-1",
+          "created_at": "2026-11-13T05:24:05.205739+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 1
+      }
+    },
+    "preferences-layout.保留证据并重置为空隔离文库": {
+      "id": "preferences-layout.保留证据并重置为空隔离文库",
+      "summary": "旧测试材料完整保留在项目证据区，新隔离实例恢复初始空文库；未删除真实数据",
+      "scope": {
+        "kind": "features",
+        "feature_ids": [
+          "preferences-layout"
+        ]
+      },
+      "status": "resolved",
+      "events": [
+        {
+          "result": "passed",
+          "summary": "旧测试材料完整保留在项目证据区，新隔离实例恢复初始空文库；未删除真实数据",
+          "source": "library-reset-1",
+          "created_at": "2026-11-13T05:27:42.509065+00:00"
+        }
+      ],
+      "resumes": [],
+      "streak": {
+        "failed": 0,
+        "unresolved": 0
+      }
+    }
+  }
+}

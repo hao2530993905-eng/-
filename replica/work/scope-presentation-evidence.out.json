@@ -1,0 +1,19 @@
+{
+  "applied": 1,
+  "results": [
+    {
+      "id": "scope-presentation",
+      "kind": "other",
+      "path": "/Users/computeruse/Desktop/zotero复刻/replica/evidence/scope-presentation.json",
+      "feature_id": null,
+      "tool": "conversation",
+      "summary": "向用户展示的 Zotero 能力、建议纳入/省略项、依赖和限制完整清单",
+      "status": "observed",
+      "created_at": "2026-11-13T05:40:31.882946+00:00",
+      "origin": {
+        "source_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "build_sha256": null
+      }
+    }
+  ]
+}

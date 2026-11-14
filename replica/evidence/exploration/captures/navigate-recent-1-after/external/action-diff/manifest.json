@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "no_change_in_scope",
+  "invalid_artifacts": [],
+  "unsupported_artifacts": [],
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "unchanged": [],
+  "clipboard_changed": false,
+  "clipboard": {
+    "before": null,
+    "after": null
+  },
+  "artifacts": {},
+  "coverage": "declared_inputs_and_roots_only"
+}

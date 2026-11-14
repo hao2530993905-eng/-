@@ -1,0 +1,1 @@
+/Users/computeruse/Desktop/zotero复刻/replica/bin/ax: Mach-O 64-bit executable arm64

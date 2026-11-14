@@ -1,0 +1,8 @@
+{
+ "id":"attachment-add-1","candidate_id":"attachment-add-pdf","from_capture":"import-ris-1-after","channel":"computer-use",
+ "tool":"Computer Use cua App.click/pressKey/setValue",
+ "operation":"通过文件 > 添加附件 > 附加文件…选择 sample.pdf，并读取附件出现后的稳定 AX",
+ "precondition":"Local Exploration Article 已选中，附加文件入口可用；sample.pdf 已登记为测试输入",
+ "expected_result":"PDF 作为该条目的子附件出现，附件计数和列表层级更新，文件只进入隔离存储",
+ "test_data":"/Users/computeruse/Desktop/zotero复刻/replica/fixtures/exploration"
+}

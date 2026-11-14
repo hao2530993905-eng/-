@@ -1,0 +1,20 @@
+用法（未编译时用 swift ax.swift 代替 ax）：
+  ax check
+  ax uti FILE                                   逐行输出文件的类型标识及其全部上级类型
+  ax dump BUNDLE_ID [--pid PID] [--root PATH] [--skip-menubar] [--max-depth N] [--max-nodes N]
+                    [--out FILE.json] [--flat FILE.txt] [--no-frames]
+  ax perform BUNDLE_ID PATH [--pid PID] [--action AXPress]
+  ax set BUNDLE_ID PATH VALUE [--pid PID] [--attribute AXValue]
+  ax key BUNDLE_ID COMBO [--pid PID]            例如 cmd+shift+n、escape、return、down
+  ax type BUNDLE_ID TEXT [--pid PID]
+  ax click BUNDLE_ID PATH [--pid PID] [--right] [--count N] [--modifiers cmd,shift]
+  ax click-point BUNDLE_ID WINDOW_PATH X_RATIO Y_RATIO [--pid PID]
+  ax hover BUNDLE_ID PATH [--pid PID] [--seconds 1.0]
+  ax drag BUNDLE_ID PATH TO_PATH [--pid PID]
+
+元素路径由 " > " 连接的段组成，段写作 Role[标签] 或 Role，兄弟重复时追加 #序号；
+dump 输出的 path 可以原样传给其他命令和 --root。选项放在 -- 之前，-- 后的参数均按原文处理。
+没有 --out 和 --flat 时，逐行输出到标准输出。
+逐行输出的第一行以 "# ax-dump " 开头，后接记录 App 身份和导出时间的 JSON。
+key、type、click、hover、drag 会先把 App 切到前台；键盘事件只投递给该 App 的进程，
+鼠标事件发出前确认目标位置属于该 App。
